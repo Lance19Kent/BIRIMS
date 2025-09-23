@@ -1,14 +1,19 @@
-# Tech Stack for programmers
+# Tech Stack for Front-End Developers
     - HTML
     - CSS
     - Javascript
     - Node.js
     - Tailwind
+    - Git
+    
+# Tech Stack for Back-End Developers
     - Laravel
     - Php
     - Mysql
-    - Git
+    - Node.js
+    - Javascript
 
+    
 ## Instructions for setup
     1. Learn Git
     2. Download and Install Xampp, VsCode, Composer (latest version)
