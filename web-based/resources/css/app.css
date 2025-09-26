@@ -5,12 +5,20 @@
 @source '../**/*.blade.php';
 @source '../**/*.js';
 
+
 @theme {
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 } 
 
-h1{
-    font-size: 50px;
-    color:red;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
 }
+
+/* h1{
+    margin-left: 100px;
+} */
+@tailwind utilities;
