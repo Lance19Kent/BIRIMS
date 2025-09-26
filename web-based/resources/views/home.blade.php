@@ -14,7 +14,7 @@
     <header class="h-20 bg-white flex">
         <div class="h-[100%] w-[189px] flex items-center gap-2.5">
             <img src="{{asset('img/Ellipse.png')}}" alt="Barangay Logo">
-            <h1 class="font-medium font text-[30px] text-[#EA580C] ml-[100px]">BIRIMS</h1>
+            <h1 class="font-medium font text-[30px] text-[#EA580C]  mt-[100px]">BIRIMS</h1>
         </div>
         <div class="h-[100%] w-full bg-sky-100">
             <ul>
