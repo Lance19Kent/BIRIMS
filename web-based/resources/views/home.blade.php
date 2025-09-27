@@ -7,13 +7,16 @@
     <link rel="icon" href="{{asset('img/Ellipse.png')}}" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
     <link href="/web-based/resources/css/app.css" rel="stylesheet">
     @vite('resources/css/app.css')
     @vite('resources/js/app.js')
 </head>
 <body class="h-screen min-h[100vh] w-screen bg-[#F4F4F5]">
-    <header class="h-20 bg-white flex pl-10 ">
+    <header class="h-20 bg-white flex pl-10">
         <div class="h-[100%] w-[189px] flex items-center gap-2.5">
             <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="25" cy="25" r="25" fill="#EA580C"/>
@@ -21,7 +24,7 @@
             <h1 class="font-medium font text-[30px] text-[#EA580C]">BIRIMS</h1>
         </div>
         <div class="h-[100%] w-full flex justify-end items-center pr-10">
-            <ul class="flex gap-[30px] text-[#A1A1AA]">
+            <ul class="flex gap-[40px] text-[#A1A1AA]">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Clearance</a></li>
                 <li><a href="#">Residency</a></li>
@@ -31,8 +34,19 @@
             </ul>
         </div>
     </header>
-    <main class="h-[calc(100vh-80px)] w-full bg-amber-100 flex-1">
-        <section>
+    <main class="h-[calc(100vh-80px)] w-full bg-[#F4F4F5] flex-1">
+        <section class="h-full w-full flex justify-between items-center px-30">
+            <div class="w-[550px] flex flex-col gap-[20px] p-[10px]">
+                <h1 class="text-[50px] font-medium leading-[65px]" style="font-family: 'IBM Plex Serif', serif;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+                <p class="text-[18px] font-medium text-[#A1A1AA] leading-[27px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut  labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
+                <a href="#" class="w-[190px] flex items-center pt-[10px] pb-[10px] pl-[20px] pr-[20px] bg-[#EA580C] rounded-[4px] justify-center gap-2">
+                    <p class="text-white text-[20px] font-medium">Get Started</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg>
+                </a>
+            </div>
+            <div class="w-[550px] h-[430px] flex justify-end">
+                <img src="{{asset('img/hero-pic.png')}}" alt="Hero Image" class="w-[500px] h-[430px] whitespace-nowrap">
+            </div>
         </section>
     </main>
     <footer class="h-[230px] bg-white flex justify-between items-center px-20">
