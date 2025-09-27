@@ -5,6 +5,6 @@
     --font-ibm-plex-serif: 'IBM Plex Serif', serif;
 }
 @tailwind utilities;
-/* *{
+*{
     font-family: var(--font-poppins);
-} */
+}

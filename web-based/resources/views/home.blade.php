@@ -15,8 +15,8 @@
     @vite('resources/css/app.css')
     @vite('resources/js/app.js')
 </head>
-<body class="h-screen min-h[100vh] w-screen bg-[#F4F4F5]">
-    <header class="h-20 bg-white flex pl-10">
+<body class="min-h-screen w-screen bg-[#F4F4F5]">
+    <header class="h-20 w-screen bg-white flex pl-10 fixed">
         <div class="h-[100%] w-[189px] flex items-center gap-2.5">
             <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="25" cy="25" r="25" fill="#EA580C"/>
@@ -26,7 +26,7 @@
         <div class="h-[100%] w-full flex justify-end items-center pr-10">
             <ul class="flex gap-[40px] text-[#A1A1AA]">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Clearance</a></li>
+                <li><a href="#info-screen">Clearance</a></li>
                 <li><a href="#">Residency</a></li>
                 <li><a href="#">Indigency</a></li>
                 <li><a href="#">Business</a></li>
@@ -34,9 +34,9 @@
             </ul>
         </div>
     </header>
-    <main class="h-[calc(100vh-80px)] w-full bg-[#F4F4F5] flex-1">
-        <section class="h-full w-full flex justify-between items-center px-30">
-            <div class="w-[550px] flex flex-col gap-[20px] p-[10px]">
+    <main class="min-h-screen w-full bg-[#F4F4F5] flex-1 flex flex-col">
+        <section class="h-screen w-full flex justify-between items-center-safe px-30">
+            <div class="w-[550px] flex flex-col gap-[20px]">
                 <h1 class="text-[50px] font-medium leading-[65px]" style="font-family: 'IBM Plex Serif', serif;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
                 <p class="text-[18px] font-medium text-[#A1A1AA] leading-[27px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut  labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
                 <a href="#" class="w-[190px] flex items-center pt-[10px] pb-[10px] pl-[20px] pr-[20px] bg-[#EA580C] rounded-[4px] justify-center gap-2">
@@ -46,6 +46,12 @@
             </div>
             <div class="w-[550px] h-[430px] flex justify-end">
                 <img src="{{asset('img/hero-pic.png')}}" alt="Hero Image" class="w-[500px] h-[430px] whitespace-nowrap">
+            </div>
+        </section>
+        <section class="h-screen w-full bg-white" id="info-screen">
+            <div>
+            <h1 style="font-family: 'IBM Plex Serif', serif;" class="text-[50px] font-medium">Get Your Documents In Just 3 Easy Steps!</h1>
+                <p class="font-medium text-[18px] text-[#A1A1AA]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut  labore et dolore </p>
             </div>
         </section>
     </main>
