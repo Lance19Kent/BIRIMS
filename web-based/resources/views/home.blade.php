@@ -81,7 +81,7 @@
                 </div>
             </div>
         </section>
-        <section class="min-h-screen w-full flex flex-col items-center justify-center gap-[50px] py-12" id="cards-certificates">
+        <section class="min-h-screen w-full flex flex-col items-center justify-center gap-[50px] py-12 pb-[100px]" id="cards-certificates">
             <div class="flex flex-col gap-1 items-center justify-center">
                 <h1 style="font-family: 'IBM Plex Serif', serif;" class="font-medium text-[50px]">Lorem ipsum dolor sit amet</h1>
                 <p class="font-medium text-[16px] text-[#A1A1AA]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut  labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
