@@ -27,7 +27,7 @@
             <ul class="flex gap-[40px] text-[#A1A1AA]">
                 <li><a href="#">Home</a></li>
                 <li><a href="#info-screen">Clearance</a></li>
-                <li><a href="#">Residency</a></li>
+                <li><a href="#cards-certificates">Residency</a></li>
                 <li><a href="#">Indigency</a></li>
                 <li><a href="#">Business</a></li>
                 <li><a href="#" class="p-[12px] bg-[#EA580C] text-white rounded-[4px]">SIGN-IN</a></li>
@@ -81,8 +81,33 @@
                 </div>
             </div>
         </section>
+        <section class="min-h-screen w-full flex flex-col items-center justify-center gap-[50px] py-12" id="cards-certificates">
+            <div class="flex flex-col gap-1 items-center justify-center">
+                <h1 style="font-family: 'IBM Plex Serif', serif;" class="font-medium text-[50px]">Lorem ipsum dolor sit amet</h1>
+                <p class="font-medium text-[16px] text-[#A1A1AA]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut  labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
+            </div>
+            <div class="flex gap-[100px] flex-col justify-between w-full">
+                <div class="flex justify-between items-center w-full px-[100px]">
+                <div class="h-[400px] w-[300px] bg-white rounded-[8px] shadow-[10px_10px_0_#FDBA74]">
+                </div>
+                <div class="h-[400px] w-[300px] bg-white rounded-[8px] shadow-[10px_10px_0_#FDBA74]">
+                </div>
+                <div class="h-[400px] w-[300px] bg-white rounded-[8px] shadow-[10px_10px_0_#FDBA74]">
+                </div>
+            </div>
+            <div class="flex justify-between items-center w-full px-[100px]">
+                <div class="h-[400px] w-[300px] bg-white rounded-[8px] shadow-[10px_10px_0_#FDBA74]">
+                </div>
+                <div class="h-[400px] w-[300px] bg-white rounded-[8px] shadow-[10px_10px_0_#FDBA74]">
+                </div>
+                <div class="h-[400px] w-[300px] bg-white rounded-[8px] shadow-[10px_10px_0_#FDBA74]">
+                </div>
+            </div>
+            </div>
+
+        </section>
     </main>
-    <footer class="h-[230px] bg-amber flex justify-between items-center px-20">
+    <footer class="h-[230px] bg-white flex justify-between items-center px-20">
         <div class="w-[450px]">
             <div class="flex items-center gap-2.5 mb-4">
                 <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
