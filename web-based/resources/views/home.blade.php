@@ -15,7 +15,7 @@
     @vite('resources/css/app.css')
     @vite('resources/js/app.js')
 </head>
-<body class="min-h-screen w-screen bg-[#F4F4F5]">
+<body class="min-h-screen w-full bg-[#F4F4F5]">
     <header class="h-20 w-screen bg-white flex pl-10 fixed">
         <div class="h-[100%] w-[189px] flex items-center gap-2.5">
             <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -28,8 +28,8 @@
                 <li><a href="#">Home</a></li>
                 <li><a href="#info-screen">Clearance</a></li>
                 <li><a href="#cards-certificates">Residency</a></li>
-                <li><a href="#">Indigency</a></li>
-                <li><a href="#">Business</a></li>
+                <li><a href="#blotter">Indigency</a></li>
+                <li><a href="#contact-us">Business</a></li>
                 <li><a href="#" class="p-[12px] bg-[#EA580C] text-white rounded-[4px]">SIGN-IN</a></li>
             </ul>
         </div>
@@ -88,24 +88,103 @@
             </div>
             <div class="flex gap-[100px] flex-col justify-between w-full">
                 <div class="flex justify-between items-center w-full px-[100px]">
-                <div class="h-[400px] w-[300px] bg-white rounded-[8px] shadow-[10px_10px_0_#FDBA74]">
-                </div>
-                <div class="h-[400px] w-[300px] bg-white rounded-[8px] shadow-[10px_10px_0_#FDBA74]">
-                </div>
-                <div class="h-[400px] w-[300px] bg-white rounded-[8px] shadow-[10px_10px_0_#FDBA74]">
+                    <div class="h-[400px] w-[300px] bg-white rounded-[8px] shadow-[10px_10px_0_#FDBA74]">
+                        <img src="{{asset('img/certificates/certificate1.png')}}" alt="Barangay Certificate of Residency">
+                        <div class=" px-[20px] flex flex-col gap-[15px] mt-4">
+                            <h1 class="font-semibold text-[18px]">Barangay Certificate of Residency</h1>
+                            <p class="font-normal text-[14px] text-[#52525B]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                            <a href="#" class="w-full h-[45px] border-[1px] border-[#FDBA74] rounded-[4px] flex justify-center items-center font-medium text-[16px] text-[#FDBA74]">Get Certificate</a>
+                        </div>
+                    </div>
+                    <div class="h-[400px] w-[300px] bg-white rounded-[8px] shadow-[10px_10px_0_#FDBA74]">
+                        <img src="{{asset('img/certificates/certificate2.png')}}" alt="Barangay Certificate of No Indigency">
+                        <div class=" px-[20px] flex flex-col gap-[15px] mt-4">
+                            <h1 class="font-semibold text-[18px]">Barangay Certificate of Indigency </h1>
+                            <p class="font-normal text-[14px] text-[#52525B]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                            <a href="#" class="w-full h-[45px] border-[1px] border-[#FDBA74] rounded-[4px] flex justify-center items-center font-medium text-[16px] text-[#FDBA74]">Get Certificate</a>
+                        </div>
+                    </div>
+                    <div class="h-[400px] w-[300px] bg-white rounded-[8px] shadow-[10px_10px_0_#FDBA74]">
+                        <img src="{{asset('img/certificates/certificate3.png')}}" alt="Barangay Certificate of No Objection">
+                        <div class=" px-[20px] flex flex-col gap-[15px] mt-4">
+                            <h1 class="font-semibold text-[18px]">Barangay Certificate of No Objection</h1>
+                            <p class="font-normal text-[14px] text-[#52525B]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                            <a href="#" class="w-full h-[45px] border-[1px] border-[#FDBA74] rounded-[4px] flex justify-center items-center font-medium text-[16px] text-[#FDBA74]">Get Certificate</a>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="flex justify-between items-center w-full px-[100px]">
                 <div class="h-[400px] w-[300px] bg-white rounded-[8px] shadow-[10px_10px_0_#FDBA74]">
-                </div>
+                        <img src="{{asset('img/certificates/certificate4.png')}}" alt="Barangay Certificate for Business">
+                        <div class=" px-[20px] flex flex-col gap-[15px] mt-4">
+                            <h1 class="font-semibold text-[18px]">Barangay Certificate for Business</h1>
+                            <p class="font-normal text-[14px] text-[#52525B]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                            <a href="#" class="w-full h-[45px] border-[1px] border-[#FDBA74] rounded-[4px] flex justify-center items-center font-medium text-[16px] text-[#FDBA74]">Get Certificate</a>
+                        </div>
+                    </div>
                 <div class="h-[400px] w-[300px] bg-white rounded-[8px] shadow-[10px_10px_0_#FDBA74]">
-                </div>
+                        <img src="{{asset('img/certificates/certificate5.png')}}" alt="Barangay Certificate of Oath Taking">
+                        <div class=" px-[20px] flex flex-col gap-[15px] mt-4">
+                            <h1 class="font-semibold text-[18px]">Barangay Certificate of Oath Taking </h1>
+                            <p class="font-normal text-[14px] text-[#52525B]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                            <a href="#" class="w-full h-[45px] border-[1px] border-[#FDBA74] rounded-[4px] flex justify-center items-center font-medium text-[16px] text-[#FDBA74]">Get Certificate</a>
+                        </div>
+                    </div>
                 <div class="h-[400px] w-[300px] bg-white rounded-[8px] shadow-[10px_10px_0_#FDBA74]">
-                </div>
+                        <img src="{{asset('img/certificates/certificate6.png')}}" alt="Barangay Certificate of Sedula">
+                        <div class=" px-[20px] flex flex-col gap-[15px] mt-4">
+                            <h1 class="font-semibold text-[18px]">Barangay Certificate of Sedula</h1>
+                            <p class="font-normal text-[14px] text-[#52525B]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                            <a href="#" class="w-full h-[45px] border-[1px] border-[#FDBA74] rounded-[4px] flex justify-center items-center font-medium text-[16px] text-[#FDBA74]">Get Certificate</a>
+                        </div>
+                    </div>
             </div>
             </div>
-
         </section>
+        <!-- <section class="min-h-screen w-full bg-white flex items-center justify-center px-[150px] pb-[100px]" id="blotter">
+            <img src="{{asset('img/blotter-pic.png')}}" alt="Blotter">
+            <div class="flex flex-col gap-6 pl-20 w-[550px]">
+                <h1 style="font-family: var(--font-ibm-plex-serif);" class="font-medium text-[50px] leading-[65px]">Need To File For a Blotter</h1>
+                <p class="font-medium text-[18px] text-[#A1A1AA]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut  labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
+                <a href="#" class="w-[190px] flex items-center pt-[10px] pb-[10px] pl-[20px] pr-[20px] bg-[#EA580C] rounded-[4px] justify-center gap-2">
+                    <p class="text-white text-[18px] font-medium">Get Started</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg>
+                </a>
+            </div>
+        </section> -->
+        <!-- <section class="min-h-screen w-full flex items-center justify-center pb-[100px]" id="contact-us">
+            <div class="w-[600px] h-full flex flex-col gap-6 justify-center items-start px-20">
+                <h1 class="font-medium text-[50px] leading-[65px]" style="font-family: var(--font-ibm-plex-serif);">Frequently Asked Questions</h1>
+                <p class="font-medium text-[18px] text-[#A1A1AA]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut  labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
+                <a href="#" class="w-[190px] flex items-center pt-[10px] pb-[10px] pl-[20px] pr-[20px] bg-[#EA580C] rounded-[4px] justify-center gap-2">
+                    <p class="text-white text-[18px] font-medium">Contact Us</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg>
+                </a>
+            </div>
+            <div class="w-[600px] h-full flex flex-col gap-6 justify-center items-start px-10">
+                <details class="mb-3">
+                    <summary class="font-medium text-[18px] cursor-pointer">How to apply for a Barangay Clearance?</summary>
+                    <p class="mt-2 text-[16px] text-[#A1A1AA]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
+                </details>
+                <details class="mb-3">
+                    <summary class="font-medium text-[18px] cursor-pointer">What are the requirements to request for my documents?</summary>
+                    <p class="mt-2 text-[16px] text-[#A1A1AA]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
+                </details>
+                <details class="mb-3">
+                    <summary class="font-medium text-[18px] cursor-pointer">What are the types of documents i can request for?</summary>
+                    <p class="mt-2 text-[16px] text-[#A1A1AA]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
+                </details>
+                <details class="mb-3">
+                    <summary class="font-medium text-[18px] cursor-pointer">Do i need to pay for a fee to deliver my documents?</summary>
+                    <p class="mt-2 text-[16px] text-[#A1A1AA]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
+                </details>
+                <details class="mb-3">
+                    <summary class="font-medium text-[18px] cursor-pointer">Does (company name) support delivery services?</summary>
+                    <p class="mt-2 text-[16px] text-[#A1A1AA]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
+                </details>
+            </div>
+        </section> -->
     </main>
     <footer class="h-[230px] bg-white flex justify-between items-center px-20">
         <div class="w-[450px]">
