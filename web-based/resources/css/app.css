@@ -1,10 +1,10 @@
 @import 'tailwindcss';
-
+@tailwind utilities;
 :root{
     --font-poppins: 'Poppins', sans-serif;
     --font-ibm-plex-serif: 'IBM Plex Serif', serif;
 }
-@tailwind utilities;
+
 *{
     font-family: var(--font-poppins);
 }
