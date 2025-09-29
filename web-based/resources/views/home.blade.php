@@ -142,7 +142,7 @@
             </div>
             </div>
         </section>
-        <!-- <section class="min-h-screen w-full bg-white flex items-center justify-center px-[150px] pb-[100px]" id="blotter">
+        <section class="min-h-screen w-full bg-white flex items-center justify-center px-[150px] pb-[100px]" id="blotter">
             <img src="{{asset('img/blotter-pic.png')}}" alt="Blotter">
             <div class="flex flex-col gap-6 pl-20 w-[550px]">
                 <h1 style="font-family: var(--font-ibm-plex-serif);" class="font-medium text-[50px] leading-[65px]">Need To File For a Blotter</h1>
@@ -152,7 +152,7 @@
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg>
                 </a>
             </div>
-        </section> -->
+        </section>
         <!-- <section class="min-h-screen w-full flex items-center justify-center pb-[100px]" id="contact-us">
             <div class="w-[600px] h-full flex flex-col gap-6 justify-center items-start px-20">
                 <h1 class="font-medium text-[50px] leading-[65px]" style="font-family: var(--font-ibm-plex-serif);">Frequently Asked Questions</h1>
