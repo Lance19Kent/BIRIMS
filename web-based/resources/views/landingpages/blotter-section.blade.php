@@ -1,5 +1,5 @@
 <section class="w-full bg-white flex items-center justify-center px-[150px] pb-[60px]" style="height: calc(100vh - 80px);" id="blotter">
-    <img src="{{asset('img/blotter-pic.png')}}" alt="Blotter">
+    <img src="{{asset('assets/svg/blotter-svg.svg')}}" alt="Blotter">
     <div class="flex flex-col gap-6 pl-20 w-[550px]">
         <h1 style="font-family: var(--font-ibm-plex-serif);" class="font-medium text-[50px] leading-[65px]">Need To File For a Blotter</h1>
         <p class="font-medium text-[18px] text-[#A1A1AA]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut  labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>

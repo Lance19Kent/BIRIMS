@@ -8,6 +8,6 @@
         </a>
     </div>
     <div class="w-[550px] h-[430px] flex justify-end">
-        <img src="{{asset('img/hero-pic.png')}}" alt="Hero Image" class="w-[500px] h-[430px] whitespace-nowrap">
+        <img src="{{asset('assets/svg/hero-svg.svg')}}" alt="Hero Image" class="w-[500px] h-[430px] whitespace-nowrap">
     </div>
 </section>

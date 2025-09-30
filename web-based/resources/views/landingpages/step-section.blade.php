@@ -5,7 +5,7 @@
     </div>
     <div class="w-full px-35 flex justify-between">
         <div class="flex flex-col justify-center items-center">
-            <img src="{{asset('img/fill-up.png')}}" alt="Step 1" class="w-[200px] h-[200px]">
+            <img src="{{asset('assets/svg/fill-up.svg')}}" alt="Fill-up Form Photo" class="w-[200px] h-[200px]">
             <h2 class="font-semibold text-[16px] mt-4 mb-2">Fill Up The Form</h2>
             <p class="font-medium text-[16px] text-[#A1A1AA] w-[200px] text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
         </div>
@@ -15,7 +15,7 @@
             </svg>
         </div>
         <div class="flex flex-col justify-center items-center">
-            <img src="{{asset('img/payment.png')}}" alt="Step 1" class="w-[200px] h-[200px]">
+            <img src="{{asset('assets/svg/payment.svg')}}" alt="Payment Photo" class="w-[200px] h-[200px]">
             <h2 class="font-semibold text-[16px] mt-4 mb-2">Payment</h2>
             <p class="font-medium text-[16px] text-[#A1A1AA] w-[200px] text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
         </div>
@@ -25,7 +25,7 @@
             </svg>
         </div>
         <div class="flex flex-col justify-center items-center">
-            <img src="{{asset('img/delivery.png')}}" alt="Step 1" class="w-[200px] h-[200px]">
+            <img src="{{asset('assets/svg/delivery.svg')}}" alt="Delivery Photo" class="w-[200px] h-[200px]">
             <h2 class="font-semibold text-[16px] mt-4 mb-2">Delivery</h2>
             <p class="font-medium text-[16px] text-[#A1A1AA] w-[200px] text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
         </div>
