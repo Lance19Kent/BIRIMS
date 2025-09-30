@@ -1,4 +1,4 @@
-<section class="w-full bg-white flex items-center justify-center px-[150px] pb-[60px]" style="height: calc(100vh - 80px);" id="blotter">
+<section class="h-screen w-full bg-white flex items-center justify-center px-[150px] pb-[60px]" id="blotter">
     <img src="{{asset('assets/svg/blotter-svg.svg')}}" alt="Blotter">
     <div class="flex flex-col gap-6 pl-20 w-[550px]">
         <h1 style="font-family: var(--font-ibm-plex-serif);" class="font-medium text-[50px] leading-[65px]">Need To File For a Blotter</h1>

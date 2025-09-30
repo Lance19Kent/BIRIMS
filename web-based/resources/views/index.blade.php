@@ -6,7 +6,7 @@
     <title>BIRIMS</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="{{asset('img/Ellipse.png')}}" type="image/x-icon">
+    <link rel="icon" href="{{asset('assets/img/Ellipse.png')}}" type="image/x-icon">
 
     <!-- Google Fonts: Poppins/IBM Plex Serif -->
     <link rel="preconnect" href="https://fonts.googleapis.com">

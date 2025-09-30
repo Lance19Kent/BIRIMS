@@ -1,4 +1,4 @@
-<section class="w-full flex items-center justify-center" style="height: calc(100vh - 80px);" id="contact-us">
+<section class="h-screen w-full flex items-center justify-center pb-[80px]" id="contact-us">
     <div class="w-[600px] h-full flex flex-col gap-6 justify-center items-start px-20">
         <h1 class="font-medium text-[50px] leading-[65px]" style="font-family: var(--font-ibm-plex-serif);">Frequently Asked Questions</h1>
         <p class="font-medium text-[18px] text-[#A1A1AA]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut  labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
