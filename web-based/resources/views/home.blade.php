@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-pt-[80px] scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -81,7 +81,7 @@
                 </div>
             </div>
         </section>
-        <!-- <section class="min-h-screen w-full flex flex-col items-center justify-center gap-[50px] py-12 pb-[100px]" id="cards-certificates">
+        <section class="min-h-screen w-full flex flex-col items-center justify-center gap-[50px] py-8" id="cards-certificates">
             <div class="flex flex-col gap-1 items-center justify-center">
                 <h1 style="font-family: 'IBM Plex Serif', serif;" class="font-medium text-[50px]">Lorem ipsum dolor sit amet</h1>
                 <p class="font-medium text-[16px] text-[#A1A1AA]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut  labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
@@ -142,7 +142,7 @@
             </div>
             </div>
         </section>
-        <section class="h-screen w-full bg-white flex items-center justify-center px-[150px]" id="blotter">
+        <section class="w-full bg-white flex items-center justify-center px-[150px] pb-[60px]" style="height: calc(100vh - 80px);" id="blotter">
             <img src="{{asset('img/blotter-pic.png')}}" alt="Blotter">
             <div class="flex flex-col gap-6 pl-20 w-[550px]">
                 <h1 style="font-family: var(--font-ibm-plex-serif);" class="font-medium text-[50px] leading-[65px]">Need To File For a Blotter</h1>
@@ -152,8 +152,8 @@
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg>
                 </a>
             </div>
-        </section> -->
-        <!-- <section class="h-screen w-full flex items-center justify-center pb-[50px]" id="contact-us">
+        </section>
+        <section class="w-full flex items-center justify-center" style="height: calc(100vh - 80px);" id="contact-us">
             <div class="w-[600px] h-full flex flex-col gap-6 justify-center items-start px-20">
                 <h1 class="font-medium text-[50px] leading-[65px]" style="font-family: var(--font-ibm-plex-serif);">Frequently Asked Questions</h1>
                 <p class="font-medium text-[18px] text-[#A1A1AA]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut  labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
@@ -210,12 +210,12 @@
                 </details>
             </div>
         </section>
-        <section class="h-screen w-full bg-white" id="create-account">
+        <section class="w-full bg-white" style="height: calc(100vh - 80px);" id="create-account">
                 <div class="w-[155px] h-[234px] bg-[#EA580C] absolute rounded-br-[500px]"></div>
                 <div class="w-[30px] h-[30px] bg-[#FFEDD5] rounded-full translate-x-[200px] translate-y-[50px] absolute"></div>
                 <div class="w-[30px] h-[30px] bg-[#FB923C] rounded-full translate-x-[170px] translate-y-[100px] absolute"></div>
 
-            <div class="w-full min-h-screen flex flex-col gap-[20px] justify-center items-center px-[150px] text-center pb-[100px]">
+            <div class="w-full h-full flex flex-col gap-[20px] justify-center items-center px-[150px] text-center pb-[100px]">
                 <div class="flex flex-col ">
                     <h1 class="z-10 relative text-[50px] font-medium" style="font-family: --font-ibm-plex-serif;">Create Your Account Now</h1>
                     <hr class="z-0 translate-y-[45px] absolute w-[528px] border-8 border-[#EA580C]">
@@ -226,9 +226,9 @@
                     <a href="#" class="text-[20px] text-[#EA580C] font-medium px-[8px] py-[10px] bg-white rounded-[4px] border border-[#EA580C]">Sign in To Account</a>
                 </div>
             </div>
-        </section> -->
+        </section>
     </main>
-    <!-- <footer class="h-[230px] flex justify-between items-center px-20">
+    <footer class="h-[230px] flex justify-between items-center px-20">
         <div class="w-[450px]">
             <div class="flex items-center gap-2.5 mb-4">
                 <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -311,6 +311,6 @@
                 </ul>
             </div>
         </div>
-    </footer> -->
+    </footer>
 </body>
 </html> 
