@@ -8,11 +8,11 @@
     <div class="h-[100%] w-full flex justify-end items-center pr-10">
         <ul class="flex gap-[40px] text-[#A1A1AA]">
             <li><a href="#">Home</a></li>
-            <li><a href="#info-screen">Clearance</a></li>
+            <li><a href="#step-section">Clearance</a></li>
             <li><a href="#cards-certificates">Residency</a></li>
             <li><a href="#blotter">Indigency</a></li>
             <li><a href="#contact-us">Business</a></li>
-            <li><a href="#create-account" class="p-[12px] bg-[#EA580C] text-white rounded-[4px]">SIGN-IN</a></li>
+            <li><a href="#create-account" class="p-[12px] bg-[var(--orange)] text-white rounded-[4px] border border-white transition-[150_300_ease] hover:bg-white hover:text-[var(--orange)] hover:border-[var(--orange)]">SIGN-IN</a></li>
         </ul>
     </div>
 </header>

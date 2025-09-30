@@ -1,8 +1,17 @@
 @import 'tailwindcss';
 @tailwind utilities;
 :root{
+    /* Fonts */
     --font-poppins: 'Poppins', sans-serif;
     --font-ibm-plex-serif: 'IBM Plex Serif', serif;
+
+    /* Component Colors */
+    --orange:#EA580C;
+    --gray:#F4F4F5;
+
+    /* Font Color */
+    --lightorange:#FDBA74;
+    --lightgray:#A1A1AA;
 }
 
 *{

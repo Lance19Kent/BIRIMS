@@ -1,4 +1,4 @@
-<section class="h-screen w-full bg-white flex flex-col items-center justify-center gap-[30px] pb-[80px]" id="info-screen">
+<section class="h-screen w-full bg-white flex flex-col items-center justify-center gap-[30px] pb-[80px]" id="step-section">
     <div class="flex flex-col gap-2 justify-center items-center">
         <h1 style="font-family: 'IBM Plex Serif', serif;" class="text-[50px] font-medium">Get Your Documents In Just 3 Easy Steps!</h1>
         <p class="font-medium text-[18px] text-[#A1A1AA]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut  labore et dolore </p>
