@@ -25,4 +25,7 @@
     .certificates-btn{
         @apply w-full h-[45px] border-[1px] border-[#FDBA74] rounded-[4px] flex justify-center items-center font-medium text-[16px] text-[#FDBA74] duration-150 ease-in hover:text-white hover:bg-[var(--lightorange)]
     }
+    .footer-nav{
+        @apply text-[#A1A1AA] text-[16px] font-medium hover:underline duration-150 ease-in hover:text-[var(--orange)]
+    }
 }
