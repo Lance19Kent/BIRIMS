@@ -5,55 +5,55 @@
     </div>
     <div class="flex gap-[100px] flex-col justify-between w-full">
         <div class="flex justify-between items-center w-full px-[100px]">
-            <div class="h-[400px] w-[300px] bg-white rounded-[8px] shadow-[10px_10px_0_#FDBA74]">
+            <div class="certificates">
                 <img src="{{asset('assets/svg/certificates/residency.svg')}}" alt="Barangay Certificate of Residency Photo">
                 <div class=" px-[20px] flex flex-col gap-[15px] mt-4">
                     <h1 class="font-semibold text-[18px]">Barangay Certificate of Residency</h1>
                     <p class="font-normal text-[14px] text-[#52525B]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
-                    <a href="#" class="w-full h-[45px] border-[1px] border-[#FDBA74] rounded-[4px] flex justify-center items-center font-medium text-[16px] text-[#FDBA74]">Get Certificate</a>
+                    <a href="#" class="certificates-btn">Get Certificate</a>
                 </div>
             </div>
-            <div class="h-[400px] w-[300px] bg-white rounded-[8px] shadow-[10px_10px_0_#FDBA74]">
+            <div class="certificates">
                 <img src="{{asset('assets/svg/certificates/indigency.svg')}}" alt="Barangay Certificate of Indigency Photo">
                 <div class=" px-[20px] flex flex-col gap-[15px] mt-4">
                     <h1 class="font-semibold text-[18px]">Barangay Certificate of Indigency </h1>
                     <p class="font-normal text-[14px] text-[#52525B]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
-                    <a href="#" class="w-full h-[45px] border-[1px] border-[#FDBA74] rounded-[4px] flex justify-center items-center font-medium text-[16px] text-[#FDBA74]">Get Certificate</a>
+                    <a href="#" class="certificates-btn">Get Certificate</a>
                 </div>
             </div>
-            <div class="h-[400px] w-[300px] bg-white rounded-[8px] shadow-[10px_10px_0_#FDBA74]">
+            <div class="certificates">
                 <img src="{{asset('assets/svg/certificates/no-objection.svg')}}" alt="Barangay Certificate of No Objection Photo">
                 <div class=" px-[20px] flex flex-col gap-[15px] mt-4">
                     <h1 class="font-semibold text-[18px]">Barangay Certificate of No Objection</h1>
                     <p class="font-normal text-[14px] text-[#52525B]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
-                    <a href="#" class="w-full h-[45px] border-[1px] border-[#FDBA74] rounded-[4px] flex justify-center items-center font-medium text-[16px] text-[#FDBA74]">Get Certificate</a>
+                    <a href="#" class="certificates-btn">Get Certificate</a>
                 </div>
             </div>
         </div>
     </div>
     <div class="flex justify-between items-center w-full px-[100px]">
-        <div class="h-[400px] w-[300px] bg-white rounded-[8px] shadow-[10px_10px_0_#FDBA74]">
+        <div class="certificates">
                 <img src="{{asset('assets/svg/certificates/business.svg')}}" alt="Barangay Certificate for Business Photo">
                 <div class=" px-[20px] flex flex-col gap-[15px] mt-4">
                     <h1 class="font-semibold text-[18px]">Barangay Certificate for Business</h1>
                     <p class="font-normal text-[14px] text-[#52525B]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
-                    <a href="#" class="w-full h-[45px] border-[1px] border-[#FDBA74] rounded-[4px] flex justify-center items-center font-medium text-[16px] text-[#FDBA74]">Get Certificate</a>
+                    <a href="#" class="certificates-btn">Get Certificate</a>
                 </div>
             </div>
-        <div class="h-[400px] w-[300px] bg-white rounded-[8px] shadow-[10px_10px_0_#FDBA74]">
+        <div class="certificates">
                 <img src="{{asset('assets/svg/certificates/oath-taking.svg')}}" alt="Barangay Certificate of Oath Taking Photo">
                 <div class=" px-[20px] flex flex-col gap-[15px] mt-4">
                     <h1 class="font-semibold text-[18px]">Barangay Certificate of Oath Taking </h1>
                     <p class="font-normal text-[14px] text-[#52525B]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
-                    <a href="#" class="w-full h-[45px] border-[1px] border-[#FDBA74] rounded-[4px] flex justify-center items-center font-medium text-[16px] text-[#FDBA74]">Get Certificate</a>
+                    <a href="#" class="certificates-btn">Get Certificate</a>
                 </div>
             </div>
-        <div class="h-[400px] w-[300px] bg-white rounded-[8px] shadow-[10px_10px_0_#FDBA74]">
+        <div class="certificates">
                 <img src="{{asset('assets/svg/certificates/sedula.svg')}}" alt="Barangay Certificate of Sedula Photo">
                 <div class=" px-[20px] flex flex-col gap-[15px] mt-4">
                     <h1 class="font-semibold text-[18px]">Barangay Certificate of Sedula</h1>
                     <p class="font-normal text-[14px] text-[#52525B]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
-                    <a href="#" class="w-full h-[45px] border-[1px] border-[#FDBA74] rounded-[4px] flex justify-center items-center font-medium text-[16px] text-[#FDBA74]">Get Certificate</a>
+                    <a href="#" class="certificates-btn">Get Certificate</a>
                 </div>
             </div>
     </div>
