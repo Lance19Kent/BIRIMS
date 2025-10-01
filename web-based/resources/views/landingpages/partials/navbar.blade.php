@@ -12,7 +12,7 @@
             <li><a href="#cards-certificates">Residency</a></li>
             <li><a href="#blotter">Indigency</a></li>
             <li><a href="#contact-us">Business</a></li>
-            <li><a href="#create-account" class="p-[12px] bg-[var(--orange)] text-white rounded-[4px] border border-white transition-[150_300_ease] hover:bg-white hover:text-[var(--orange)] hover:border-[var(--orange)]">SIGN-IN</a></li>
+            <li><a href="#create-account" class="p-[12px] bg-[var(--orange)] text-white rounded-[4px] border border-white duration-150 ease-in hover:bg-white hover:text-[var(--orange)] hover:border-[var(--orange)]">SIGN-IN</a></li>
         </ul>
     </div>
 </header>

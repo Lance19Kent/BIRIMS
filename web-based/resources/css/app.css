@@ -20,9 +20,9 @@
 
 @layer utilities{
     .certificates{
-         @apply h-[400px] w-[300px] bg-white rounded-[8px] shadow-[10px_10px_0_#FDBA74] transition-[150_300_ease] hover:translate-y-[-20px] hover:shadow-[10px_10px_10px_#FDBA74] cursor-pointer;
+         @apply h-[400px] w-[300px] bg-white rounded-[8px] shadow-[10px_10px_0_#FDBA74] duration-150 ease-in hover:translate-y-[-20px] hover:shadow-[10px_10px_10px_#FDBA74] cursor-pointer;
     }
     .certificates-btn{
-        @apply w-full h-[45px] border-[1px] border-[#FDBA74] rounded-[4px] flex justify-center items-center font-medium text-[16px] text-[#FDBA74] transition-[150_300_ease] hover:text-white hover:bg-[var(--lightorange)]
+        @apply w-full h-[45px] border-[1px] border-[#FDBA74] rounded-[4px] flex justify-center items-center font-medium text-[16px] text-[#FDBA74] duration-150 ease-in hover:text-white hover:bg-[var(--lightorange)]
     }
 }
