@@ -28,4 +28,7 @@
     .footer-nav{
         @apply text-[#A1A1AA] text-[16px] font-medium hover:underline duration-150 ease-in hover:text-[var(--orange)]
     }
+    .header-nav{
+        @apply duration-300 ease-out text-[#A1A1AA] hover:text-[var(--orange)]
+    }
 }
