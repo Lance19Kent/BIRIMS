@@ -9,51 +9,48 @@
             </svg>
         </a>
     </div>
-    <div class="w-[600px] h-full flex flex-col gap-6 justify-center items-start px-10">
-        <details class="border-b border-[#E4E4E7] pb-3 w-full">
-            <summary class="font-medium text-[18px] cursor-pointer list-none flex items-center justify-between">
-                <span>How to apply for a Barangay Clearance?</span>
-                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5.5 7.5L10.5 12.5L15.5 7.5" stroke="#27272A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </summary>
-            <p class="mt-2 text-[16px] text-[#A1A1AA]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
-        </details>
-        <details class="border-b border-[#E4E4E7] pb-3 w-full">
-            <summary class="font-medium text-[18px] cursor-pointer list-none flex items-center justify-between">
-                <span>What are the requirements to request for my documents?</span>
-                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5.5 7.5L10.5 12.5L15.5 7.5" stroke="#27272A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </summary>
-            <p class="mt-2 text-[16px] text-[#A1A1AA]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
-        </details>
-        <details class="border-b border-[#E4E4E7] pb-3 w-full">
-            <summary class="font-medium text-[18px] cursor-pointer list-none flex items-center justify-between">
-                <span>What are the types of documents i can request for?</span>
-                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5.5 7.5L10.5 12.5L15.5 7.5" stroke="#27272A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </summary>
-            <p class="mt-2 text-[16px] text-[#A1A1AA]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
-        </details>
-        <details class="border-b border-[#E4E4E7] pb-3 w-full">
-            <summary class="font-medium text-[18px] cursor-pointer list-none flex items-center justify-between">
-                <span>Do i need to pay for a fee to deliver my documents?</span>
-                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5.5 7.5L10.5 12.5L15.5 7.5" stroke="#27272A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </summary>
-            <p class="mt-2 text-[16px] text-[#A1A1AA]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
-        </details>
-        <details class="border-b border-[#E4E4E7] pb-3 w-full">
-            <summary class="font-medium text-[18px] cursor-pointer list-none flex items-center justify-between">
-                <span>Does (company name) support delivery services?</span>
-                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5.5 7.5L10.5 12.5L15.5 7.5" stroke="#27272A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </summary>
-            <p class="mt-2 text-[16px] text-[#A1A1AA]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
-        </details>
+    <div class="w-[600px] h-full flex flex-col gap-6 justify-center items-center px-10">
+        <ul class="w-[600px] h-full mt-[100px]">
+            <li class="p-[16px]">
+                <label for="first" class="faq-details">How do i request for my barangay documents?</label>
+                <input type="radio" name="accordion" id="first" class="hidden" checked class="bg-amber-300">
+                <div class="content">
+                    <p class="faq-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut  labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
+                </div>
+            </li>
+            <hr class="text-[#E4E4E7]">
+            <li class="p-[16px]">
+                <label for="second" class="faq-details">What are the requirements to request for my documents?</label>
+                <input type="radio" name="accordion" id="second" class="hidden">
+                <div class="content">
+                    <p class="faq-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut</p>
+                </div>
+            </li>
+            <hr class="text-[#E4E4E7]">
+            <li class="p-[16px]">
+                <label for="third" class="faq-details">What are the types of documents i can request for?</label>
+                <input type="radio" name="accordion" id="third" class="hidden">
+                <div class="content">
+                    <p class="faq-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolor</p>
+                </div>
+            </li>
+            <hr class="text-[#E4E4E7]">
+            <li class="p-[16px]">
+                <label for="fourth" class="faq-details">Do i need to pay for a fee to deliver my documents?</label>
+                <input type="radio" name="accordion" id="fourth" class="hidden">
+                <div class="content">
+                    <p class="faq-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolor</p>
+                </div>
+            </li>
+            <hr class="text-[#E4E4E7]">
+            <li class="p-[16px]">
+                <label for="fifth" class="faq-details">Does (company name) support delivery services?</label>
+                <input type="radio" name="accordion" id="fifth" class="hidden">
+                <div class="content">
+                    <p class="faq-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolor</p>
+                </div>
+            </li>
+            <hr class="text-[#E4E4E7]">
+        </ul>
     </div>
 </section>

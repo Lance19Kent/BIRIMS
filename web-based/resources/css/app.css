@@ -11,7 +11,7 @@
 
     /* Font Color */
     --lightorange:#FDBA74;
-    --lightgray:#A1A1AA;
+    --darkgray:#A1A1AA;
 }
 
 *{
@@ -31,4 +31,20 @@
     .header-nav{
         @apply duration-300 ease-out text-[#A1A1AA] hover:text-[var(--orange)]
     }
+    .faq-details{
+        @apply text-[18px] font-medium block pl-[10px] cursor-pointer
+    }
+    .faq-summary{
+        @apply text-[var(--darkgray)] px-[10px] pt-[10px]
+        }
+}
+
+/* CSS for FAQ Don't Touch! */
+.content{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+input[type="radio"]:checked + .content{
+    max-height: 400px;
 }
