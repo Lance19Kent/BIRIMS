@@ -12,7 +12,7 @@
             <li><a href="#cards-certificates" class="header-nav">Residency</a></li>
             <li><a href="#blotter" class="header-nav">Indigency</a></li>
             <li><a href="#contact-us" class="header-nav">Business</a></li>
-            <li><a href="#create-account" class="p-[12px] bg-[var(--orange)] text-white rounded-[4px] border border-white duration-150 ease-in hover:bg-white hover:text-[var(--orange)] hover:border-[var(--orange)]">SIGN-IN</a></li>
+            <li><a href="{{ url('login') }}" class="p-[12px] bg-[var(--orange)] text-white rounded-[4px] border border-white duration-150 ease-in hover:bg-white hover:text-[var(--orange)] hover:border-[var(--orange)]">SIGN-IN</a></li>
         </ul>
     </div>
 </header>
