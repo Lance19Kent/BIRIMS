@@ -14,14 +14,42 @@
         <svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
             <circle cx="15" cy="15" r="15"/>
         </svg> 
-        <h1 class="font-medium text-[20px]">BIRIMS</h1>
+        <a href="{{url('/')}}" class="font-medium text-[20px]">BIRIMS</a>
     </header>
-    <main class="flex-1 w-full relative z-30 pl-5 flex items-center" style="height: calc(100vh - 120px);">
+    <main class="flex-1 w-full relative z-30 pl-5 flex items-center justify-between pr-[270px]" style="height: calc(100vh - 120px);">
         <div class="w-[350px]">
             <h1 class="font-medium text-[40px] text-white ">Hey There, Welcome Back</h1>
             <p class="text-white font-medium text-[14px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut  labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
         </div>
-        <div></div>
+        <form class="w-[400px] h-[500px] flex flex-col gap-[50px]">
+            <div class="leading-10">
+                <h4 class="font-medium text-[18px] text-[var(--darkgray)]">Welcome to BIRIMS</h4>
+                <h6 class="text-[50px] font-medium" style="font-family: 'IBM Plex Serif, serif;'">Sign In</h6>
+            </div>
+            <div class="flex flex-col gap-[20px]">
+                <span class="flex flex-col relative">                
+                    <label class="font-semibold text-[14px]">Email</label>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 absolute bottom-[14px] w-[20px] stroke-[var(--darkgray)] peer-focus:opacity-0">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                    </svg>
+                    <input type="text" placeholder="example@chakraui" class="peer w-full duration-150 ease-out h-[50px] border-b p-3 focus:outline-none focus:border-b focus:border-[var(--orange)] placeholder:pl-[18px]">
+                </span>
+                <span class="flex flex-col">
+                    <div class="flex justify-between">
+                        <label class="font-semibold text-[14px]">Password</label>
+                        <a href="#" class="font-semibold text-[14px] text-[var(--orange)]">Forgot Password?</a>
+                    </div>                
+                    <input type="password" placeholder="Password" class="w-full h-[50px] border-b p-3">
+                </span>
+                <div class="flex gap-[8px]">
+                    <input type="checkbox" class="cursor-pointer accent-[var(--orange)]"><label class="text-[13px] font-semibold">I agree to the <a href="#" class="text-[var(--orange)]">Terms and Conditions</a> and <a href="#" class="text-[var(--orange)]">Privacy Policy</a></label>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <button type="submit" class="block bg-[var(--orange)] w-full h-[45px] text-[20px] font-medium text-white cursor-pointer rounded-[4px]">Sign in</button>
+                    <a href="{{url('signup')}}" class="bg-white text-center py-[8px] font-medium text-[var(--orange)] text-[20px] rounded-[4px] border border-[var(--orange)]">Create an Account</a>
+                </div>
+            </div>
+        </form>
     </main>
     <footer class="w-full h-[60px] relative pl-5 flex gap-4">
         <svg width="13" height="25" viewBox="0 0 13 25" fill="none" xmlns="http://www.w3.org/2000/svg">
