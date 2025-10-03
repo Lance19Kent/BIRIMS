@@ -11,7 +11,7 @@
         <p class="text-[18px] text-[#A1A1AA] font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut  labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
         <div class="flex gap-12 mt-4">
             <a href="{{ url('login')}}" class="text-[18px] text-white font-medium px-[20px] py-[10px] bg-[#EA580C] rounded-[4px] duration-150 ease-in border border-[#EA580C] hover:bg-white hover:text-[var(--orange)]">Create Account</a>
-            <a href="{{ url('signup')}}" class="text-[18px] text-[#EA580C] font-medium px-[20px] py-[10px] bg-white rounded-[4px] border duration-150 ease-in border-[#EA580C] hover:bg-[var(--orange)] hover:text-white">Sign in To Account</a>
+            <a href="{{ url('signup')}}" class="text-[18px] text-[#EA580C] font-medium px-[20px] py-[10px] bg-white rounded-[4px] border duration-150 ease-in border-[#e6c6b5] hover:bg-[var(--orange)] hover:text-white">Sign in To Account</a>
         </div>
     </div>
     <img src="assets/svg/create-acc-svg-bg.svg" class="absolute bottom-0 right-0 w-[250px]">
