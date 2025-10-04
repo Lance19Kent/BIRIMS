@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LOGIN</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     @vite('resources/css/app.css')
     @vite('resources/js/app.js')
 </head>
@@ -21,7 +26,7 @@
             <h1 class="font-medium text-[40px] text-white ">Hey There, Welcome Back</h1>
             <p class="text-white font-medium text-[14px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut  labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
         </div>
-        <form class="w-[400px] h-[500px] flex flex-col gap-[50px]">
+        <form class="w-[400px] h-fit flex flex-col gap-[30px] ">
             <div class="leading-10">
                 <h4 class="font-medium text-[18px] text-[var(--darkgray)]">Welcome to BIRIMS</h4>
                 <h6 class="text-[50px] font-medium" style="font-family: 'IBM Plex Serif, serif;'">Sign In</h6>
@@ -29,22 +34,25 @@
             <div class="flex flex-col gap-[20px]">
                 <span class="flex flex-col relative">                
                     <label class="font-semibold text-[14px]">Email</label>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 absolute bottom-[14px] w-[20px] stroke-[var(--darkgray)] peer-focus:opacity-0">
+                        <input type="text" placeholder="example@chakraui" class="peer text-[15px] w-full duration-150 ease-out h-[45px] border-b focus:outline-none focus:border-b focus:border-[var(--orange)] placeholder:pl-[25px] placeholder-shown:placeholder:opacity-100 focus:placeholder-shown:placeholder:opacity-0">
+                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 absolute bottom-[10px] w-[20px] stroke-[var(--darkgray)] opacity-0 pointer-events-none peer-placeholder-shown:opacity-100 peer-focus:opacity-0">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
                     </svg>
-                    <input type="text" placeholder="example@chakraui" class="peer w-full duration-150 ease-out h-[50px] border-b p-3 focus:outline-none focus:border-b focus:border-[var(--orange)] placeholder:pl-[18px]">
                 </span>
-                <span class="flex flex-col">
+                <span class="flex flex-col relative">
                     <div class="flex justify-between">
                         <label class="font-semibold text-[14px]">Password</label>
                         <a href="#" class="font-semibold text-[14px] text-[var(--orange)] duration-150 ease-out hover:underline">Forgot Password?</a>
                     </div>                
-                    <input type="password" placeholder="Password" class="w-full duration-150 ease-out h-[50px] border-b p-3 focus:outline-none focus:border-b focus:border-[var(--orange)] placeholder:pl-[18px]">
+                    <input type="password" placeholder="Password" class="peer w-full text-[15px] duration-150 ease-out h-[45px] border-b focus:outline-none focus:border-b focus:border-[var(--orange)] placeholder:pl-[25px] placeholder-shown:placeholder:opacity-100 focus:placeholder-shown:placeholder:opacity-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-[20px] absolute bottom-[13px] opacity-0 peer-placeholder-shown:opacity-100 peer-focus:opacity-0 stroke-[var(--darkgray)]">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" />
+                    </svg>
                 </span>
                 <div class="flex gap-[8px]">
                     <input type="checkbox" class="cursor-pointer accent-[var(--orange)]"><label class="text-[13px] font-semibold">I agree to the <a href="#" class="text-[var(--orange)] duration-150 ease-in hover:underline ">Terms and Conditions</a> and <a href="#" class="text-[var(--orange)] duration-150 ease-in hover:underline">Privacy Policy</a></label>
                 </div>
-                <div class="flex flex-col gap-3">
+                <div class="flex flex-col gap-4">
                     <button type="submit" class="block bg-[var(--orange)] w-full h-[45px] border border-[var(--orange)] text-[20px] font-medium text-white cursor-pointer rounded-[4px] duration-150 ease-out hover:text-[var(--orange)] hover:bg-white hover:border-[var(--orange)]">Sign in</button>
                     <a href="{{url('signup')}}" class="bg-white text-center py-[6px] font-medium text-[var(--orange)] text-[20px] rounded-[4px] border border-[var(--orange)] duration-150 ease-out hover:bg-[var(--orange)] hover:text-white">Create an Account</a>
                 </div>  
