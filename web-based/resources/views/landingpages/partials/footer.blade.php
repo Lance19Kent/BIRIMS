@@ -67,7 +67,7 @@
                 <li><a href="#" class="footer-nav">Home</a></li>
                 <li><a href="#" class="footer-nav">About</a></li>
                 <li><a href="#" class="footer-nav">Contact</a></li>
-                <li><a href="#" class="footer-nav">Sign In</a></li>
+                <li><a href="{{url('login')}}" class="footer-nav">Sign In</a></li>
             </ul>
         </div>
         <div class="flex flex-col gap-[5px]">

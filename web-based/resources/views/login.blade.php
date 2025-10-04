@@ -37,17 +37,17 @@
                 <span class="flex flex-col">
                     <div class="flex justify-between">
                         <label class="font-semibold text-[14px]">Password</label>
-                        <a href="#" class="font-semibold text-[14px] text-[var(--orange)]">Forgot Password?</a>
+                        <a href="#" class="font-semibold text-[14px] text-[var(--orange)] duration-150 ease-out hover:underline">Forgot Password?</a>
                     </div>                
-                    <input type="password" placeholder="Password" class="w-full h-[50px] border-b p-3">
+                    <input type="password" placeholder="Password" class="w-full duration-150 ease-out h-[50px] border-b p-3 focus:outline-none focus:border-b focus:border-[var(--orange)] placeholder:pl-[18px]">
                 </span>
                 <div class="flex gap-[8px]">
-                    <input type="checkbox" class="cursor-pointer accent-[var(--orange)]"><label class="text-[13px] font-semibold">I agree to the <a href="#" class="text-[var(--orange)]">Terms and Conditions</a> and <a href="#" class="text-[var(--orange)]">Privacy Policy</a></label>
+                    <input type="checkbox" class="cursor-pointer accent-[var(--orange)]"><label class="text-[13px] font-semibold">I agree to the <a href="#" class="text-[var(--orange)] duration-150 ease-in hover:underline ">Terms and Conditions</a> and <a href="#" class="text-[var(--orange)] duration-150 ease-in hover:underline">Privacy Policy</a></label>
                 </div>
                 <div class="flex flex-col gap-3">
-                    <button type="submit" class="block bg-[var(--orange)] w-full h-[45px] text-[20px] font-medium text-white cursor-pointer rounded-[4px]">Sign in</button>
-                    <a href="{{url('signup')}}" class="bg-white text-center py-[8px] font-medium text-[var(--orange)] text-[20px] rounded-[4px] border border-[var(--orange)]">Create an Account</a>
-                </div>
+                    <button type="submit" class="block bg-[var(--orange)] w-full h-[45px] border border-[var(--orange)] text-[20px] font-medium text-white cursor-pointer rounded-[4px] duration-150 ease-out hover:text-[var(--orange)] hover:bg-white hover:border-[var(--orange)]">Sign in</button>
+                    <a href="{{url('signup')}}" class="bg-white text-center py-[6px] font-medium text-[var(--orange)] text-[20px] rounded-[4px] border border-[var(--orange)] duration-150 ease-out hover:bg-[var(--orange)] hover:text-white">Create an Account</a>
+                </div>  
             </div>
         </form>
     </main>
