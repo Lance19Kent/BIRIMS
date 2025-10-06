@@ -37,4 +37,28 @@ document.addEventListener("DOMContentLoaded",function(){
                  console.log("Selected Gender:", selectGender.value);
         });
     }
+
+    // JS for Birthdate Inputs
+    let birthdateInput = document.getElementById('birthdateInput');
+
+    if(birthdateInput){
+        birthdateInput.addEventListener('change',() =>{
+            if(birthdateInput.value !==""){
+                birthdateInput.classList.remove("text-[var(--darkgray)]");
+                birthdateInput.classList.add('text-black');
+            }
+            else{
+                birthdateInput.classList.remove('text-black');
+                birthdateInput.classList.add("text-[var(--darkgray)]");
+            }
+        })
+    }
+
+    // JS for Inputting Phone Number Filterting
+    let phoneNumberInput = document.getElementById('phoneNumberInput');
+    if(phoneNumberInput){
+        phoneNumberInput.addEventListener("input",function(){
+            this.value = this.value.replace(/\D/g, "");
+        })
+    }
 });
