@@ -33,6 +33,13 @@
             </div>
             <div class="flex flex-col gap-[20px]">
                 <div>
+                    <div class="w-full h-fit pb-[10px] relative">
+                        <div class="before flex justify-around">
+                        <div id="step-one-dot" class="w-[30px] h-[30px] bg-[var(--darkgray)] rounded-[50px]"></div>
+                        <div id="step-one-two"  class="w-[30px] h-[30px] bg-[var(--darkgray)] rounded-[50px]"></div>
+                        <div id="step-one-three"  class="w-[30px] h-[30px] bg-[var(--darkgray)] rounded-[50px]"></div>
+                        </div>
+                    </div>
                     <h1 class="font-semibold text-[14px]">Step 1: Personal Information</h1>
                     <p class="text-red-600 text-[12px] font-semibold">* Indicates required field</p>
                 </div>
@@ -92,12 +99,6 @@
                     <button type="submit" class="bg-[var(--orange)] w-[350px] inline-block h-[45px] border border-[var(--orange)] text-[20px] font-medium text-white cursor-pointer rounded-[4px] duration-150 ease-out hover:text-[var(--orange)] hover:bg-white hover:border-[var(--orange)]">Next</button>
                     <a href="{{url('login')}}" class="bg-white inline-block text-center w-[350px] py-[6px] font-medium text-[var(--orange)] text-[20px] rounded-[4px] border border-[var(--orange)] duration-150 ease-out hover:bg-[var(--orange)] hover:text-white">Sign In</a>
                 </div>  
-                <div>
-                    <div id="step-one-dot" class="w-30px h-30px bg-amber-600"></div>
-                    <div id="step-one-dot"></div>
-                    <div id="step-one-dot"></div>
-                    <div id="step-one-dot"></div>
-                </div>
             </div>
         </form>
     </main>
