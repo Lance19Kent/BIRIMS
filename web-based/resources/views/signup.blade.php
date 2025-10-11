@@ -38,16 +38,17 @@
                     <h1 class="font-semibold text-[14px]">Personal Information</h1>
                     <p class="text-red-600 text-[12px] font-semibold">* Indicates required field</p>
                 </div>
+                <div class="flex flex-col gap-[25px]">
                 <div class="flex flex-col gap-7">
                     <div class="w-full flex justify-between">
-                        <span class="flex flex-col relative leading-3 w-[310px]">                
+                        <span class="flex flex-col relative leading-3 w-[330px]">                
                             <label class="font-semibold text-[13px]">First Name<span class="text-red-600 font-medium"> *</span></label>
                             <input type="text" placeholder="ex. Juan" class="peer text-[13px] w-full duration-150 ease-out h-[40px] border-b focus:outline-none focus:border-b focus:border-[var(--orange)] placeholder:pl-[25px] placeholder-shown:placeholder:opacity-100 focus:placeholder-shown:placeholder:opacity-0 placeholder:text-[var(--darkgray)] overflow-hidden text-ellipsis placeholder:text-[14px] capitalize">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-[18px] absolute bottom-[12px] stroke-[var(--darkgray)] opacity-0 peer-placeholder-shown:opacity-100 peer-focus:opacity-0">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
                             </svg>
                         </span>
-                        <span class="flex flex-col relative leading-3 w-[310px]">                
+                        <span class="flex flex-col relative leading-3 w-[330px]">                
                             <label class="font-semibold text-[13px]">Last Name<span class="text-red-600 font-medium"> *</span></label>
                             <input type="text" placeholder="ex. Dela Cruz" class="peer text-[13px] w-full duration-150 ease-out h-[40px] border-b focus:outline-none focus:border-b focus:border-[var(--orange)] placeholder:pl-[25px] placeholder-shown:placeholder:opacity-100 focus:placeholder-shown:placeholder:opacity-0 placeholder:text-[var(--darkgray)] overflow-hidden text-ellipsis placeholder:text-[14px] capitalize">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-[18px] absolute bottom-[12px] stroke-[var(--darkgray)] opacity-0 peer-placeholder-shown:opacity-100 peer-focus:opacity-0">
@@ -56,20 +57,20 @@
                         </span>
                     </div>
                         <div class="w-full flex justify-between">
-                        <span class="flex flex-col relative leading-3 w-[310px]">                
+                        <span class="flex flex-col relative leading-3 w-[330px]">                
                             <label class="font-semibold text-[13px]">Middle Name <span class="text-[12px]">(Optional)</span></label>
                             <input type="text" placeholder="ex. Santos" class="peer text-[13px] w-full duration-150 ease-out h-[40px] border-b focus:outline-none focus:border-b focus:border-[var(--orange)] placeholder:pl-[25px] placeholder-shown:placeholder:opacity-100 focus:placeholder-shown:placeholder:opacity-0 placeholder:text-[var(--darkgray)] overflow-hidden text-ellipsis placeholder:text-[14px] capitalize">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-[18px] absolute bottom-[12px] stroke-[var(--darkgray)] opacity-0 peer-placeholder-shown:opacity-100 peer-focus:opacity-0">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
                             </svg>
                         </span>
-                        <span class="flex flex-col relative leading-3 w-[310px]">                
+                        <span class="flex flex-col relative leading-3 w-[330px]">                
                             <label class="font-semibold text-[13px]">Birthdate<span class="text-red-600 font-medium"> *</span></label>
                             <input type="date" id="birthdateInput" class="peer text-[13px] text-[var(--darkgray)] w-full duration-150 ease-out h-[40px] border-b  border-black focus:outline-none focus:border-b focus:border-[var(--orange)] cursor-pointer">
                         </span>
                     </div>
                     <div class="w-full flex justify-between">
-                        <span class="flex flex-col relative leading-3 w-[310px]">                
+                        <span class="flex flex-col relative leading-3 w-[330px]">                
                             <label class="font-semibold text-[13px]">Gender<span class="text-red-600 font-medium"> *</span></label>
                             <div class="text-[var(--darkgray)] text-[14px]">                            
                                 <select id="selectGender" class="border-b border-black h-[40px] w-full focus:outline-0 cursor-pointer ">
@@ -81,7 +82,7 @@
                                 </select>
                             </div>
                         </span>
-                        <span class="flex flex-col relative leading-3 w-[310px]">                
+                        <span class="flex flex-col relative leading-3 w-[330px]">                
                             <label class="font-semibold text-[13px]">Phone Number<span class="text-red-600 font-medium"> *</span></label>
                             <input type="tel" inputmode="numeric" id="phoneNumberInput" maxlength="11" pattern="[0-9]{11}"  placeholder="Ex. 09xxxxxxxxx" class="relative peer text-[13px] w-full duration-150 ease-out h-[40px] border-b focus:outline-none focus:border-b focus:border-[var(--orange)] placeholder:pl-[25px] placeholder-shown:placeholder:opacity-100 focus:placeholder-shown:placeholder:opacity-0 placeholder:text-[var(--darkgray)] overflow-hidden text-ellipsis placeholder:text-[14px] capitalize">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-[18px] absolute bottom-[13px] stroke-[var(--darkgray)] opacity-0 peer-placeholder-shown:opacity-100 peer-focus:opacity-0">
@@ -91,9 +92,10 @@
                     </div>
                 </div>
                 <div class="flex gap-4 justify-between">
-                      <a href="{{url('signup1')}}" class="bg-[var(--orange)] w-[340px] inline-block h-[45px] border border-[var(--orange)] text-[18px] font-medium text-white cursor-pointer rounded-[4px] duration-150 ease-out hover:text-[var(--orange)] hover:bg-white hover:border-[var(--orange)]">Next</a>
-                    <a href="{{url('signup1')}}" class="bg-white block text-center w-[340px] py-[8px] font-medium text-[var(--orange)] text-[18px] rounded-[4px] border border-[var(--orange)] duration-150 ease-out hover:bg-[var(--orange)] hover:text-white">Sign In</a>
+                      <a href="{{url('signup2')}}" class="bg-[var(--orange)] w-[330px] border border-[var(--orange)] rounded-[4px] text-white text-[18px] text-center py-[8px] ease-out duration-150 hover:bg-white hover:text-[var(--orange)]">Next</a>
+                    <a href="{{url('login')}}" class="bg-white block text-center w-[330px] py-[8px] font-medium text-[var(--orange)] text-[18px] rounded-[4px] border border-[var(--orange)] duration-150 ease-out hover:bg-[var(--orange)] hover:text-white">Sign In</a>
                 </div>  
+                </div>
             </div>
         </form>
     </main>
