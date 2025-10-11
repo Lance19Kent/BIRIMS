@@ -49,12 +49,7 @@ input[type="radio"]:checked + .content{
     max-height: 400px;
 }
 
-.before::before{
+/* .before::after{
     content: '';
-    display: inline;
-    width: 480px;
-    position: absolute;
-    height: 5px;
-    background: var(--darkgray);
-    top:12px;
-}
+    
+} */
