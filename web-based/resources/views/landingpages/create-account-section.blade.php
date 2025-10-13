@@ -8,7 +8,7 @@
             <h1 class="z-10 relative text-[54px] font-medium" style="font-family: --font-ibm-plex-serif;">Create Your Account Now</h1>
             <hr class="z-0 translate-y-[48px] absolute w-[568px] border-5 border-[#EA580C]">
         </div>            
-        <p class="text-[18px] text-[#A1A1AA] font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut  labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
+        <p class="text-[18px] text-[#A1A1AA] font-medium">So what are you waiting for? Request now your first online barangay document by signing in or creating your account!</p>
         <div class="flex gap-12 mt-4">
             <a href="{{ url('signup')}}" class="text-[18px] text-white font-medium px-[20px] py-[10px] bg-[#EA580C] rounded-[4px] duration-150 ease-in border border-[#EA580C] hover:bg-white hover:text-[var(--orange)]">Create Account</a>
             <a href="{{ url('login')}}" class="text-[18px] text-[#EA580C] font-medium px-[20px] py-[10px] bg-white rounded-[4px] border duration-150 ease-in border-[#e6c6b5] hover:bg-[var(--orange)] hover:text-white">Sign in To Account</a>
