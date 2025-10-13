@@ -8,7 +8,7 @@
         </div>
         <p class="font-medium text-[#A1A1AA] text-[12px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut  labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
         <div class="flex items-center gap-4 mt-4">
-            <a href="#" class="fill-black duration-150 ease-in hover:fill-[var(--orange)]">            
+            <a href="https://www.facebook.com/brgysanbartolome2014" target="_blank" class="fill-black duration-150 ease-in hover:fill-[var(--orange)]">            
                 <svg width="26" height="25" viewBox="0 0 26 25" xmlns="http://www.w3.org/2000/svg">
                     <path d="M14.4014 5.35156C14.4014 4.3457 15.2998 3.98437 16.3057 3.98437C17.3115 3.98437 18.3857 4.29688 18.3857 4.29688L19.0303 0.468749C19.0303 0.468749 17.6631 0 14.4014 0C12.3994 0 11.2373 0.761718 10.3877 1.88476C9.58691 2.94922 9.55762 4.6582 9.55762 5.76172V8.27149H6.96973V12.0117H9.55762V25H14.4014V12.0117H18.2393L18.5225 8.27149H14.4014V5.35156Z"/>
                 </svg>
