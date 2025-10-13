@@ -21,7 +21,7 @@
         </svg> 
         <a href="{{url('/')}}" class="font-medium text-[20px]">BIRIMS</a>
     </header>
-    <main class="flex-1 w-full relative z-30 pl-5 flex items-center justify-between pr-[290px]" style="height: calc(100vh - 140px);">
+    <main class="flex-1 w-full relative z-30 pl-5 flex items-center justify-between pr-[270px]" style="height: calc(100vh - 140px);">
         <div>
             <h1 class="font-medium text-[37px] text-white w-[370px]">Get Started, Create An Account</h1>
             <p class="text-white font-medium text-[14px] w-[350px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut  labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
