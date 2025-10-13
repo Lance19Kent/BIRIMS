@@ -1,4 +1,4 @@
-<section class="h-screen w-full flex justify-between items-center-safe px-30 pt-[60px]">
+<section class="h-screen max-w-full flex justify-between items-center-safe px-30 pt-[60px]">
     <div class="w-[550px] flex flex-col gap-[20px]">
         <h1 class="text-[50px] font-medium leading-[65px]" style="font-family: 'IBM Plex Serif', serif;">Barangay Integrated Record and Incident Management System</h1>
         <p class="text-[18px] font-medium text-[#A1A1AA] leading-[27px]">A digital platform designed to simplify and secure the management of barangay resident records, incidents, clearances, and certifications. </p>
