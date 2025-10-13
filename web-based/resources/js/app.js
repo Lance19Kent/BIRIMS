@@ -1,10 +1,10 @@
 import './bootstrap';
 
-
 document.addEventListener("DOMContentLoaded",function(){
 
     // JS for Password Toggling
     let passwordField = document.querySelector("#passwordInput");
+    let confirmPasswordField = document.querySelector("#confirmPasswordInput");
     let showPassword = document.querySelector("#showPasswordIcon");
     let hidePassword = document.querySelector("#hidePasswordIcon");
 
@@ -20,6 +20,18 @@ document.addEventListener("DOMContentLoaded",function(){
         showPassword.classList.remove("hidden");
         hidePassword.classList.add("hidden");
     });
+    }else if(confirmPasswordField && showPassword && hidePassword){
+        showPassword.addEventListener("click",() =>{
+            confirmPasswordField.type ="text";
+            hidePassword.classList.remove("hidden");
+            showPassword.classList.add("hidden");
+        });
+
+        hidePassword.addEventListener("click",() =>{
+            confirmPasswordField.type = "password";
+            showPassword.classList.remove("hidden");
+            hidePassword.classList.add("hidden");
+        })
     }
 
     // JS for Gender Customization
