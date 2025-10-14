@@ -37,7 +37,7 @@
                     <p class="text-red-600 text-[12px] font-semibold">* Indicates required field</p>
                 </div>
                 <span class="flex flex-col relative leading-3">                
-                    <label class="font-semibold text-[13px]">Email</label>
+                    <label class="font-semibold text-[13px]">Email<span class="text-red-600 font-medium"> *</span></label>
                         <input type="text" placeholder="example@chakraui" class="peer text-[13px] w-full duration-150 ease-out h-[45px] border-b focus:outline-none focus:border-b focus:border-[var(--orange)] placeholder:pl-[25px] placeholder-shown:placeholder:opacity-100 focus:placeholder-shown:placeholder:opacity-0 placeholder:text-[var(--darkgray)] placeholder:text-[14px]">
                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 absolute bottom-[11px] w-[20px] stroke-[var(--darkgray)] opacity-0 pointer-events-none peer-placeholder-shown:opacity-100 peer-focus:opacity-0">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
@@ -45,7 +45,7 @@
                 </span>
                 <span class="flex flex-col relative leading-3">
                     <div class="flex justify-between">
-                        <label class="font-semibold text-[13px]">Password</label>
+                        <label class="font-semibold text-[13px]">Password<span class="text-red-600 font-medium"> *</span></label>
                     </div>                
                     <input type="password" placeholder="Password" class="peer w-full text-[13px] duration-150 ease-out h-[45px] border-b focus:outline-none focus:border-b focus:border-[var(--orange)] placeholder:pl-[25px] placeholder-shown:placeholder:opacity-100 focus:placeholder-shown:placeholder:opacity-0 placeholder:text-[var(--darkgray)] pr-[25px] placeholder:text-[14px]" id="passwordInput">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-[20px] absolute bottom-[15px] opacity-0 peer-placeholder-shown:opacity-100 peer-focus:opacity-0 stroke-[var(--darkgray)]">
@@ -61,7 +61,7 @@
                 </span>
                 <span class="flex flex-col relative leading-3">
                     <div class="flex justify-between">
-                        <label class="font-semibold text-[13px]">Confirm Password</label>
+                        <label class="font-semibold text-[13px]">Confirm Password<span class="text-red-600 font-medium"> *</span></label>
                     </div>                
                     <input type="password" placeholder="Password" class="peer w-full text-[13px] duration-150 ease-out h-[45px] border-b focus:outline-none focus:border-b focus:border-[var(--orange)] placeholder:pl-[25px] placeholder-shown:placeholder:opacity-100 focus:placeholder-shown:placeholder:opacity-0 placeholder:text-[var(--darkgray)] pr-[25px] placeholder:text-[14px]" id="confirmPasswordInput">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-[20px] absolute bottom-[15px] opacity-0 peer-placeholder-shown:opacity-100 peer-focus:opacity-0 stroke-[var(--darkgray)]">
