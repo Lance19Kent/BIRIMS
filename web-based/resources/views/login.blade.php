@@ -23,8 +23,8 @@
     </header>
     <main class="flex-1 w-full relative z-30 pl-5 flex items-center justify-between pr-[270px]" style="height: calc(100vh - 140px);">
         <div class="w-[350px]">
-            <h1 class="font-medium text-[40px] text-white ">Hey There, Welcome Back</h1>
-            <p class="text-white font-medium text-[14px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut  labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
+            <h1 class="font-medium text-[40px] text-white ">Hey There, Welcome!</h1>
+            <p class="text-white font-medium text-[15px]">Access your account and manage everything with ease! Let’s get things done together and make today productive. </p>
         </div>
         <form class="w-[400px] h-fit flex flex-col gap-[30px] ">
             <div class="leading-10">
