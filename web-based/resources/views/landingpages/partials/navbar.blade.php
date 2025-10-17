@@ -7,8 +7,8 @@
     </div>
     <div class="h-[100%] w-full flex justify-end items-center pr-10">
         <ul class="flex gap-[40px]">
-            <li><a href="" class="header-nav">Home</a></li>
-            <li><a href="{{url('contact')}}" class="header-nav">About Us</a></li>
+            <li><a href="{{url('/')}}" class="header-nav">Home</a></li>
+            <li><a href="{{url('about')}}" class="header-nav">About Us</a></li>
             <li><a href="{{url('contact')}}" class="header-nav">Contact</a></li>
             <li><a href="{{url('faq')}}" class="header-nav">FAQs</a></li>
             <li><a href="{{ url('login') }}" class="p-[12px] bg-[var(--orange)] text-white rounded-[4px] border border-white duration-150 ease-in hover:bg-white hover:text-[var(--orange)] hover:border-[var(--orange)]">SIGN-IN</a></li>
