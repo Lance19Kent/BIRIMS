@@ -32,7 +32,7 @@
         <p class="font-medium text-[#A1A1AA] text-[12px]"></p>
 
     </div>
-    <div class="w-[580px] flex justify-between">
+    <div class="w-[580px] flex justify-end gap-[70px]">
         <div class="flex flex-col gap-[5px]">
             <h2 class="font-medium text-[18px]">Documents</h2>
             <ul class="flex flex-col gap-[5px]">
@@ -54,15 +54,6 @@
         <div class="flex flex-col gap-[5px]">
             <h2 class="font-medium text-[18px]">Resources</h2>
             <ul class="flex flex-col gap-[5px]">
-                <li><a href="#" class="footer-nav">Pricing</a></li>
-                <li><a href="#contact-us" class="footer-nav">FAQs</a></li>
-                <li><a href="#" class="footer-nav">Support</a></li>
-                <li><a href="#" class="footer-nav">Privacy Policy</a></li>
-            </ul>
-        </div>
-        <div class="flex flex-col gap-[5px]">
-            <h2 class="font-medium text-[18px]">Resources</h2>
-            <ul class="flex flex-col gap-[5px] ">
                 <li><a href="#" class="footer-nav">Pricing</a></li>
                 <li><a href="#contact-us" class="footer-nav">FAQs</a></li>
                 <li><a href="#" class="footer-nav">Support</a></li>

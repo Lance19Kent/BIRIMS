@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="sroll-pt-80px;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,9 +18,17 @@
     @vite('resources/js/app.js')
 </head>
 
-<body>
+<body class="h-screen w-full">
      <!-- Navbar Section -->
     @include('landingpages.partials.navbar')
     <!-- Navbar Section -->
+
+    <main class="flex-1 h-screen bg-[var(--gray)]">
+        <h1>sdas<h2>
+    </main>
+
+    <!-- Footer Section -->
+     @include('landingpages.partials.footer');
+    <!-- Footer Section -->
 </body>
 </html>

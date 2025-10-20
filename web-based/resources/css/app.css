@@ -7,7 +7,7 @@
 
     /* Component Colors */
     --orange:#EA580C;
-    --gray:#F4F4F5;
+    --gray:#F4F4F5;  
 
     /* Font Color */
     --lightorange:#FDBA74;
@@ -15,7 +15,7 @@
 }
 
 *{
-    font-family: var(--font-poppins);
+    font-family: var(--font-poppins);  
 }
 
 @layer utilities{
