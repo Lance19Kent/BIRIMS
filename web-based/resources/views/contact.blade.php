@@ -23,7 +23,7 @@
     @include('landingpages.partials.navbar')
     <!-- Navbar Section -->
 
-    <main class="w-full h-screen flex-1 bg-[var(--gray)] relative">
+    <main class="w-full min-h-screen flex-1 bg-[var(--gray)] relative pb-[40px]">
         <svg width="185" height="185" viewBox="0 0 185 185" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute bottom-0 right-0">
         <g clip-path="url(#clip0_58_1146)">
             <path d="M185 65.366H65.3661V185H185V65.366Z" fill="#FDBA74"/>
@@ -44,7 +44,7 @@
             <h1 style="font-family: 'IBM Plex Serif';" class="pt-[80px] relative z-10 text-[50px] font-medium">Contact us right now!</h1>
             <p class="relative z-10 text-[var(--darkgray)]">We are committed to processing the information in order to contact you and talk about your project. </p>
         </div>
-        <div class="flex justify-center pt-[20px] items-center">
+        <div class="flex justify-center pt-[50px] items-center pb-[20px]">
             <div class="w-[500px] h-[300px] flex flex-col justify-center gap-[30px] pl-[50px] pr-[60px]">
                 <div class="flex gap-[20px]">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="var(--iconorange)" class="size-6">
@@ -72,8 +72,8 @@
                     <a href="#" class="text-[16px]">+28 277 6775</a>
                 </div>
             </div>
-            <div class="w-[500px] h-[350px] bg-amber-100 pr-[75px]">
-                <form class="flex flex-col gap-[30px]">
+            <div class="w-[500px]  pr-[55px]">
+                <form class="flex flex-col gap-[25px]">
                     <span class="flex flex-col relative leading-3">                
                         <label class="font-semibold text-[13px]">Name</label>
                             <input type="text" placeholder="Ex. Juan Dela Cruz" class="peer text-[13px] w-full duration-150 ease-out h-[45px] border-b focus:outline-none focus:border-b focus:border-[var(--orange)] placeholder:pl-[25px] placeholder-shown:placeholder:opacity-100 focus:placeholder-shown:placeholder:opacity-0 placeholder:text-[var(--darkgray)] placeholder:text-[14px] relative">
@@ -91,10 +91,20 @@
                     <span class="flex flex-col relative leading-3">                
                         <label class="font-semibold text-[13px]">Subject</label>
                             <input type="text" placeholder="Ex. Website Bug" class="peer text-[13px] w-full duration-150 ease-out h-[45px] border-b focus:outline-none focus:border-b focus:border-[var(--orange)] placeholder:pl-[25px] placeholder-shown:placeholder:opacity-100 focus:placeholder-shown:placeholder:opacity-0 placeholder:text-[var(--darkgray)] placeholder:text-[14px] relative">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="var(--darkgray)" class="size-5 absolute top-[22px] opacity-0 peer-placeholder-shown:opacity-100 peer-focus:opacity-0">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                            <svg width="14" height="8" viewBox="0 0 14 8" fill="var(--darkgray)" xmlns="http://www.w3.org/2000/svg" class="absolute top-[28px] opacity-0 peer-placeholder-shown:opacity-100 peer-focus:opacity-0">
+                                <path d="M0.666667 1.33333H12.6667C13.0667 1.33333 13.3333 1.06667 13.3333 0.666667C13.3333 0.266667 13.0667 0 12.6667 0H0.666667C0.266667 0 0 0.266667 0 0.666667C0 1.06667 0.266667 1.33333 0.666667 1.33333ZM7.33333 6.66667H0.666667C0.266667 6.66667 0 6.93333 0 7.33333C0 7.73333 0.266667 8 0.666667 8H7.33333C7.73333 8 8 7.73333 8 7.33333C8 6.93333 7.73333 6.66667 7.33333 6.66667ZM12.6667 3.33333H0.666667C0.266667 3.33333 0 3.6 0 4C0 4.4 0.266667 4.66667 0.666667 4.66667H12.6667C13.0667 4.66667 13.3333 4.4 13.3333 4C13.3333 3.6 13.0667 3.33333 12.6667 3.33333Z"/>
                             </svg>
+
                     </span>
+                    <span class="flex flex-col relative leading-3 gap-[10px]">                
+                        <label id="msgBox" class="font-semibold text-[13px]">Message</label>
+                        <textarea class="peer border-b h-[60px] text-[13px] placeholder:pl-[25px] focus:outline-none placeholder:text-[var(--darkgray)] placeholder:text-[14px] focus:placeholder:opacity-0 relative duration-150 ease-out focus:border-b focus:border-b-[var(--orange)]" placeholder="Hi, my name is..."></textarea>
+                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute top-[20px] 
+                        opacity-0 peer-placeholder-shown:opacity-100 peer-focus:opacity-0">
+                            <path d="M13.5 6.174C14.0893 6.36333 14.5 6.926 14.5 7.572V10.4293C14.5 11.1867 13.9353 11.8293 13.18 11.8913C12.9533 11.9093 12.7267 11.926 12.5 11.9393V14L10.5 12C9.59733 12 8.704 11.9633 7.82 11.8913C7.62755 11.8758 7.44035 11.8209 7.27 11.73M13.5 6.174C13.397 6.14084 13.2905 6.11959 13.1827 6.11067C11.3973 5.96246 9.60271 5.96246 7.81733 6.11067C7.06333 6.17333 6.5 6.81533 6.5 7.572V10.4293C6.5 10.9873 6.80667 11.4827 7.27 11.73M13.5 6.174V4.92467C13.5 3.844 12.732 2.90733 11.66 2.768C10.2805 2.5892 8.89099 2.49968 7.5 2.5C6.09 2.5 4.70133 2.59133 3.34 2.768C2.268 2.90733 1.5 3.844 1.5 4.92467V9.07533C1.5 10.156 2.268 11.0927 3.34 11.232C3.72467 11.282 4.11133 11.3253 4.5 11.3613V14.5L7.27 11.73" stroke="var(--darkgray)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                    <button class="h-[45px] w-full bg-[var(--orange)] text-white rounded-[4px] border border-[var(--orange)] cursor-pointer duration-150 ease-in hover:bg-white hover:text-[var(--orange)]">Submit</button>
                 </form>
             </div>
         </div>
