@@ -18,9 +18,15 @@
     @vite('resources/js/app.js')
 </head>
 
-<body>
+<body class="w-full h-full">
      <!-- Navbar Section -->
     @include('landingpages.partials.navbar')
     <!-- Navbar Section -->
+     <main class="h-screen w-full bg-[var(--gray)]">
+        
+     </main>
+    <!-- Footer Section -->
+     @include('landingpages.partials.footer')
+    <!-- Footer Section -->
 </body>
 </html>
