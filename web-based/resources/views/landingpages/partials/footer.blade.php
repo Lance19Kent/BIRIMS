@@ -46,8 +46,8 @@
             <h2 class="font-medium text-[18px]">Navigation</h2>
             <ul class="flex flex-col gap-[5px]">
                 <li><a href="#" class="footer-nav">Home</a></li>
-                <li><a href="#" class="footer-nav">About</a></li>
-                <li><a href="#" class="footer-nav">Contact</a></li>
+                <li><a href="{{url('about')}}" class="footer-nav">About</a></li>
+                <li><a href="{{url('contact')}}" class="footer-nav">Contact</a></li>
                 <li><a href="{{url('login')}}" class="footer-nav">Sign In</a></li>
             </ul>
         </div>
