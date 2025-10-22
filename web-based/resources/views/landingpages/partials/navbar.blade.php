@@ -7,10 +7,12 @@
     </div>
     <div class="h-[100%] w-full flex justify-end items-center pr-10">
         <ul class="flex gap-[40px]">
-            <li><a href="{{url('/')}}" class="header-nav">Home</a></li>
-            <li><a href="{{url('about')}}" class="header-nav">About Us</a></li>
-            <li><a href="{{url('contact')}}" class="header-nav">Contact</a></li>
-            <li><a href="{{url('faq')}}" class="header-nav">FAQs</a></li>
+            <!-- The request()->is() function checks if the current URL matches and adds active automatically.
+                    So when you move between pages, the correct menu stays highlighted -->
+            <li><a href="{{url('/')}}" class="header-nav {{request()-> is('/') ? 'active' : ''}}">Home</a></li>
+            <li><a href="{{url('about')}}" class="header-nav {{request()-> is('about') ? 'active' : ''}}">About Us</a></li>
+            <li><a href="{{url('contact')}}" class="header-nav {{request()-> is('contact') ? 'active' : ''}}">Contact</a></li>
+            <li><a href="{{url('faq')}}" class="header-nav {{request()-> is('faq') ? 'active' : ''}}">FAQs</a></li>
             <li><a href="{{ url('login') }}" class="p-[12px] bg-[var(--orange)] text-white rounded-[4px] border border-white duration-150 ease-in hover:bg-white hover:text-[var(--orange)] hover:border-[var(--orange)]">SIGN-IN</a></li>
         </ul>
     </div>

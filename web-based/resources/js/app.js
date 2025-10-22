@@ -74,11 +74,12 @@ document.addEventListener("DOMContentLoaded",function(){
         })
     }
 
-    const activePage = window.location.pathname;
-    const headerNav = document.querySelectorAll('.header-nav').forEach(link =>{
-        if(link.href.includes(`${activePage}`)){
-            link.classList.add('active');
-            console.log(activePage)
-        }
-    });
+//     const activePage = window.location.pathname;
+
+//    document.querySelectorAll('.header-nav').forEach(link =>{
+//         if(link.href.includes(`${activePage}`)){
+//             link.classList.add('active');
+//             console.log(activePage)
+//         }
+//     });
 });
