@@ -55,7 +55,7 @@
             <h2 class="font-medium text-[18px]">Resources</h2>
             <ul class="flex flex-col gap-[5px]">
                 <li><a href="#" class="footer-nav">Pricing</a></li>
-                <li><a href="#contact-us" class="footer-nav">FAQs</a></li>
+                <li><a href="{{url('faq')}}" class="footer-nav">FAQs</a></li>
                 <li><a href="#" class="footer-nav">Support</a></li>
                 <li><a href="#" class="footer-nav">Privacy Policy</a></li>
             </ul>

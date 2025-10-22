@@ -14,5 +14,5 @@
             <a href="{{ url('login')}}" class="text-[18px] text-[#EA580C] font-medium px-[20px] py-[10px] bg-white rounded-[4px] border duration-150 ease-in border-[#e6c6b5] hover:bg-[var(--orange)] hover:text-white">Sign in To Account</a>
         </div>
     </div>
-    <img src="assets/svg/create-acc-svg-bg.svg" class="absolute bottom-0 right-0 w-[250px]">
+    <img src="assets/svg/create-account.svg" class="absolute bottom-0 right-0 w-[250px]">
 </section>
