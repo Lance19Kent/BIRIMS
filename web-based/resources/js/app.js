@@ -73,4 +73,12 @@ document.addEventListener("DOMContentLoaded",function(){
             this.value = this.value.replace(/\D/g, "");
         })
     }
+
+    const activePage = window.location.pathname;
+    const headerNav = document.querySelectorAll('.header-nav').forEach(link =>{
+        if(link.href.includes(`${activePage}`)){
+            link.classList.add('active');
+            console.log(activePage)
+        }
+    });
 });
