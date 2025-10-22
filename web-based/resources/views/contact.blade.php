@@ -24,7 +24,7 @@
     <!-- Navbar Section -->
 
     <main class="w-full min-h-screen flex-1 bg-[var(--gray)] relative pb-[40px]">
-        <svg width="185" height="185" viewBox="0 0 185 185" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute bottom-0 right-0">
+        <svg  viewBox="0 0 185 185" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute bottom-0 right-0 w-[230px]">
         <g clip-path="url(#clip0_58_1146)">
             <path d="M185 65.366H65.3661V185H185V65.366Z" fill="#FDBA74"/>
             <path d="M125.184 5.55005H5.55005V125.184H125.184V5.55005Z" stroke="#111111" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
