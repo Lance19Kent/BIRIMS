@@ -36,6 +36,9 @@
     .faq-details{
         @apply text-[18px] font-medium block pl-[10px] cursor-pointer
     }
+    .faq-content{
+        @apply text-[18px] font-medium block pl-[10px]
+    }
     .faq-summary{
         @apply text-[var(--darkgray)] px-[10px] pt-[10px]
         }

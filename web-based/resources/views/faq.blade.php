@@ -48,61 +48,61 @@
             <div class="w-[600px] h-full flex flex-col gap-6 justify-center items-center px-10">
                 <ul class="w-[600px] h-fit pt-[30px]">
                     <li class="p-[16px]">
-                        <label for="first" class="faq-details">How do i request for my barangay documents?</label>
+                        <label for="first" class="faq-content">How do i request for my barangay documents?</label>
                         <input type="radio" name="accordion" id="first" class="hidden" checked >
                             <p class="faq-summary">You can request barangay documents by visiting the Barangay Hall or through our online portal. Fill out the request form, provide valid identification, and indicate the document type you need.</p>
                     </li>
                     <hr class="text-[#E4E4E7]">
                     <li class="p-[16px]">
-                        <label for="second" class="faq-details">What are the requirements to request for my documents?</label>
+                        <label for="second" class="faq-content">What are the requirements to request for my documents?</label>
                         <input type="radio" name="accordion" id="second" class="hidden">
                         <p class="faq-summary">You’ll need a valid government-issued ID, proof of residency, and in some cases, supporting documents depending on the type of clearance or certificate you’re requesting.</p>
                     </li>
                     <hr class="text-[#E4E4E7]">
                     <li class="p-[16px]">
-                        <label for="third" class="faq-details">What are the types of documents i can request for?</label>
+                        <label for="third" class="faq-content">What are the types of documents i can request for?</label>
                         <input type="radio" name="accordion" id="third" class="hidden">
                         <p class="faq-summary">The types of documents that you can request are: Barangay Clearance, Business Clearance, Cedula, Oath Taking Certificate and Certificate of Residence, Indigency or Good Moral Character.</p>
                     </li>
                     <hr class="text-[#E4E4E7]">
                     <li class="p-[16px]">
-                        <label for="fourth" class="faq-details">Do i need to pay for a fee to deliver my documents?</label>
+                        <label for="fourth" class="faq-content">Do i need to pay for a fee to deliver my documents?</label>
                         <input type="radio" name="accordion" id="fourth" class="hidden">
                         <p class="faq-summary">Yes, minimal processing or delivery fees may apply depending on your document type and delivery option.</p>
                     </li>
                     <hr class="text-[#E4E4E7]">
                     <li class="p-[16px]">
-                        <label for="fifth" class="faq-details">Does BIRIMS support delivery services?</label>
+                        <label for="fifth" class="faq-content">Does BIRIMS support delivery services?</label>
                         <input type="radio" name="accordion" id="fifth" class="hidden">
                         <p class="faq-summary">Yes. We offer door-to-door document delivery through our barangay’s partnered courier service for added convenience.</p>
                     </li>
                     <hr class="text-[#E4E4E7]">
                     <li class="p-[16px]">
-                        <label for="fifth" class="faq-details">Can I authorize someone else to claim my requested document?</label>
+                        <label for="fifth" class="faq-content">Can I authorize someone else to claim my requested document?</label>
                         <input type="radio" name="accordion" id="fifth" class="hidden">
                         <p class="faq-summary">Yes, you can authorize another person by providing a signed authorization letter, a copy of your valid ID, and a copy of the representative’s valid ID.</p>
                     </li>
                     <hr class="text-[#E4E4E7]">
                     <li class="p-[16px]">
-                        <label for="fifth" class="faq-details">What should I do if I entered incorrect information in my request form?</label>
+                        <label for="fifth" class="faq-content">What should I do if I entered incorrect information in my request form?</label>
                         <input type="radio" name="accordion" id="fifth" class="hidden">
                         <p class="faq-summary">Contact the barangay staff immediately through the Contact Us page or visit the barangay office to request correction before the document is processed.</p>
                     </li>
                     <hr class="text-[#E4E4E7]">
                     <li class="p-[16px]">
-                        <label for="fifth" class="faq-details">What types of incidents can I report?</label>
+                        <label for="fifth" class="faq-content">What types of incidents can I report?</label>
                         <input type="radio" name="accordion" id="fifth" class="hidden">
                         <p class="faq-summary">You can report incidents such as fire, theft, accidents, domestic disputes, lost items, or any emergency situations within the barangay.</p>
                     </li>
                     <hr class="text-[#E4E4E7]">
                     <li class="p-[16px]">
-                        <label for="fifth" class="faq-details">How secure is my information in BIRIMS?</label>
+                        <label for="fifth" class="faq-content">How secure is my information in BIRIMS?</label>
                         <input type="radio" name="accordion" id="fifth" class="hidden">
                         <p class="faq-summary">All data is encrypted and stored securely following data privacy regulations to ensure the confidentiality of residents’ information.</p>
                     </li>
                     <hr class="text-[#E4E4E7]">
                     <li class="p-[16px]">
-                        <label for="fifth" class="faq-details">Is BIRIMS accessible on mobile phones?</label>
+                        <label for="fifth" class="faq-content">Is BIRIMS accessible on mobile phones?</label>
                         <input type="radio" name="accordion" id="fifth" class="hidden">
                         <p class="faq-summary">Yes. BIRIMS is designed to be mobile-responsive, so you can access it conveniently through any smartphone browser.</p>
                     </li>
