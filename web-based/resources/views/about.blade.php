@@ -48,14 +48,53 @@
             </div>
         </section>
         <section id="our-story" class="h-screen w-full bg-white flex flex-col">
-            <h1 style="font-family: 'IBM Plex Serif';" class="font-medium text-[50px] text-center pt-[50px]">Our Story</h1>
-            <div class="flex px-[100px] items-center pb-[100px] gap-[50px]" style="height: calc(100% - 80px);">
-                <p class="w-[500px] text-[var(--darkgray)]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                <img src="assets/img/san-bartolome-pic.png" alt="San Bartolome Image"/>
+            <h1 style="font-family: 'IBM Plex Serif';" class="font-medium text-[50px] text-center pt-[40px]">Our Story</h1>
+            <div class="flex px-[80px] items-center pb-[100px] gap-[40px]" style="height: calc(100% - 80px);">
+                <p class="w-[600px] text-[var(--darkgray)]">Barangay San Bartolome, Quezon City, has long faced challenges in managing resident records, incident reports, and manual request forms. Most processes were done on paper, making it time-consuming for both residents and barangay staff to access and organize important information. Through a series of observations and interviews with barangay officials and residents, our team discovered the need for a more efficient and accessible way to handle these records. The Barangay Integrated Record and Incident Management System (BIRIMS) was developed — a digital platform designed to simplify record management, improve data accuracy, and speed up the delivery of public services. BIRIMS aims to bridge the gap between technology and community service, helping San Bartolome embrace a smarter and more transparent system for the benefit of every resident.</p>
+                <img src="assets/img/san-bartolome-pic.png" width="600" alt="San Bartolome Image"/>
             </div>
         </section>
-        <section class="w-full h-screen">
-
+        <section class="w-full min-h-screen pb-[30px]">
+            <div class="pt-[50px] flex flex-col items-center ">
+                <h1 style="font-family: 'IBM Plex Serif';" class="font-medium text-[50px]">Our Mission</h1>
+                <p class="text-[var(--darkgray)]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+            </div>
+            <div class="flex justify-center items-start gap-[30px] pt-[50px]" style="height: calc(100vh - 150px);">
+                <div class="w-[350px] flex flex-col items-center gap-[10px]">
+                    <img src="assets/svg/about/rocket.svg" width="150">
+                    <h3 style="font-family: 'IBM Plex Serif';" class="text-[25px] font-semibold">Our <span class="text-[var(--orange)]">MISSION</span></h3>
+                    <p class="font-medium text-[16px] text-[var(--darkgray)] text-center">To provide an efficient and reliable digital platform that simplifies barangay record management, incident reporting, and documentation.</p>
+                </div>
+                <hr class="rotate-180 border h-[360px] border-[var(--darkgray)] "/>
+                <div class="w-[350px] flex flex-col items-center gap-[10px]">
+                    <img src="assets/svg/about/rocket.svg" width="150">
+                    <h3 style="font-family: 'IBM Plex Serif';" class="text-[25px] font-semibold">Our <span class="text-[var(--orange)]">VISION</span></h3>
+                    <p class="font-medium text-[16px] text-[var(--darkgray)] text-center">To build a transparent and technology-driven community where data management and public service work hand in hand.</p>
+                </div>
+                <hr class="rotate-180 border h-[360px] border-[var(--darkgray)] "/>
+                <div class="w-[350px] flex flex-col items-center gap-[10px]">
+                    <img src="assets/svg/about/rocket.svg" width="150">
+                    <h3 style="font-family: 'IBM Plex Serif';" class="text-[25px] font-semibold">Our <span class="text-[var(--orange)]">VALUES</span></h3>
+                    <ul class="text-[var(--darkgray)] font-medium text-[16px] text-center">
+                        <li><span class="text-[var(--iconorange)]">Transparency</span> - open and honest service.</li>
+                        <li><span class="text-[var(--iconorange)]">Efficiency</span> - saves time and effort.</li>
+                        <li><span class="text-[var(--iconorange)]">Integrity</span> - accuracy and accountability.</li>
+                        <li><span class="text-[var(--iconorange)]">Community Empowerment</span> - strengthen the bond between technology and local governance.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="w-full h-screen bg-white flex flex-col">
+            <div class="flex justify-around pt-[50px]">
+                <div class="flex flex-col w-[600px] ">
+                    <h1 style="font-family: 'IBM Plex Serif';" class="font-medium text-[50px]">San Bartolome Vicinity</h1>
+                    <p style="font-family: 'IBM Plex Serif';" class="font-medium text-[20px]"> Hwy, Novaliches, Quezon City, Metro Manila</p>
+                </div>
+                <p class="w-[500px] text-[var(--darkgray)] text-[16px] font-medium">
+                   Located along Quirino Highway, Novaliches, Quezon City, Barangay San Bartolome is one of the most active and progressive barangays in Metro Manila. The area serves as a vital community hub, surrounded by schools, residential areas, and local businesses.
+                </p>
+            </div>
+            <iframe class="mt-[20px]" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.2102367772827!2d121.03219277408235!3d14.70069967462017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b0d8b7291c03%3A0xfebb36d4bd498470!2sSan%20Bartolome%20Barangay%20Hall!5e0!3m2!1sen!2sph!4v1761190349134!5m2!1sen!2sph" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
     </main>
 
