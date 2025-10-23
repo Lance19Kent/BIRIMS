@@ -34,12 +34,12 @@
     </div>
     <div class="w-[580px] flex justify-end gap-[70px]">
         <div class="flex flex-col gap-[5px]">
-            <h2 class="font-medium text-[18px]">Documents</h2>
+            <h2 class="font-medium text-[18px]">Services</h2>
             <ul class="flex flex-col gap-[5px]">
-                <li><a href="#" class="footer-nav">Clearance</a></li>
-                <li><a href="#" class="footer-nav">Residency</a></li>
-                <li><a href="#" class="footer-nav">Indigency</a></li>
-                <li><a href="#" class="footer-nav">Business</a></li>
+                <li><a href="#" class="footer-nav">Blotter</a></li>
+                <li><a href="#" class="footer-nav">Documents</a></li> 
+                <li><a href="#" class="footer-nav">Appointment</a></li>
+                <li><a href="#" class="footer-nav">Announcement</a></li>
             </ul>
         </div>
         <div class="flex flex-col gap-[5px]">
@@ -54,9 +54,9 @@
         <div class="flex flex-col gap-[5px]">
             <h2 class="font-medium text-[18px]">Resources</h2>
             <ul class="flex flex-col gap-[5px]">
-                <li><a href="#" class="footer-nav">Pricing</a></li>
-                <li><a href="{{url('faq')}}" class="footer-nav">FAQs</a></li>
-                <li><a href="#" class="footer-nav">Support</a></li>
+                <li><a href="#" class="footer-nav">FAQs</a></li>
+                <li><a href="{{url('faq')}}" class="footer-nav">Support</a></li>
+                <li><a href="#" class="footer-nav">Terms</a></li>
                 <li><a href="#" class="footer-nav">Privacy Policy</a></li>
             </ul>
         </div>
