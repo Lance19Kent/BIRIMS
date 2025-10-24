@@ -44,7 +44,24 @@
             <h1 style="font-family: 'IBM Plex Serif';" class="pt-[80px] relative z-10 text-[50px] font-medium">Terms and Conditions</h1>
             <p class="relative z-10 text-[var(--darkgray)]">Last Updated: October 24 2025</p>
         </div>
-       
+        <div class="mt-[80px] flex justify-center">
+            <div class="w-[350px] h-[390px] border border-[#71717A] flex flex-col">
+                <h1 style="font-family: 'IBM Plex Serif';" class="font-medium text-[18px] p-[10px]">On this page</h1>
+                <a href="#" class="font-medium text-[18px] text-[var(--darkgray)] py-[10px] pl-[10px] duration-150 ease-out hover:bg-[var(--orangehover100)] hover:text-[var(--gray100)]">1. Acceptance of Terms</a>
+                <a href="#" class="font-medium text-[18px] text-[var(--darkgray)] py-[10px] pl-[10px]  duration-150 ease-out hover:bg-[var(--orangehover100)] hover:text-[var(--gray100)]">2. User Accounts and Registrations</a>
+                <a href="#" class="font-medium text-[18px] text-[var(--darkgray)] py-[10px] pl-[10px] duration-150 ease-out hover:bg-[var(--orangehover100)] hover:text-[var(--gray100)]">3. Use of Services</a>
+                <a href="#" class="font-medium text-[18px] text-[var(--darkgray)] py-[10px] pl-[10px] duration-150 ease-out hover:bg-[var(--orangehover100)] hover:text-[var(--gray100)]">4. Incident Reporting</a>
+                <a href="#" class="font-medium text-[18px] text-[var(--darkgray)] py-[10px] pl-[10px] duration-150 ease-out hover:bg-[var(--orangehover100)] hover:text-[var(--gray100)]">5. Data Privacy and Security</a>
+                <a href="#" class="font-medium text-[18px] text-[var(--darkgray)] py-[10px] pl-[10px] duration-150 ease-out hover:bg-[var(--orangehover100)] hover:text-[var(--gray100)]">6. Users Conduct</a>
+                <a href="#" class="font-medium text-[18px] text-[var(--darkgray)] py-[10px] pl-[10px] duration-150 ease-out hover:bg-[var(--orangehover100)] hover:text-[var(--gray100)]">7. Contact Information</a>
+            </div>
+            <div class="w-[600px] h-[500px] bg-amber-300">
+                <div>
+                    <h6>1. Acceptance of Terms</h6>
+                    <p></p>
+                </div>
+            </div>
+        </div>
     </main>
     <!-- Footer Section -->
      @include('landingpages.partials.footer')

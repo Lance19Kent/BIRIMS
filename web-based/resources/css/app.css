@@ -8,7 +8,8 @@
     /* Component Colors */
     --orange:#EA580C;
     --gray:#F4F4F5;  
-
+    --gray100: #F4F4F5;
+    --orangehover100:#FDBA74;
     /* Font Color */
     --lightorange:#FDBA74;
     --darkgray:#A1A1AA;
