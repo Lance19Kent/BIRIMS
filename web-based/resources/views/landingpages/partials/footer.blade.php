@@ -56,7 +56,7 @@
             <ul class="flex flex-col gap-[5px]">
                 <li><a href="{{url('faq')}}" class="footer-nav">FAQs</a></li>
                 <li><a href="{{url('terms')}}" class="footer-nav">Terms</a></li>
-                <li><a href="#" class="footer-nav">Privacy Policy</a></li>
+                <li><a href="{{url('privacy')}}" class="footer-nav">Privacy Policy</a></li>
             </ul>
         </div>
     </div>
