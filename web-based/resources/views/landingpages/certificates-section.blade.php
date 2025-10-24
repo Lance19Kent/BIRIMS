@@ -10,7 +10,7 @@
                 <div class=" px-[20px] flex flex-col gap-[15px] mt-4">
                     <h1 class="font-semibold text-[18px]">Barangay Certificate of Residency</h1>
                     <p class="font-normal text-[14px] text-[#52525B]">Confirms that you are a resident of Barangay San Bartolome, Quezon City for a specific period.</p>
-                    <a href="#" class="certificates-btn">Get Certificate</a>
+                    <a href="{{url('login')}}" class="certificates-btn">Get Certificate</a>
                 </div>
             </div>
             <div class="certificates">
@@ -18,7 +18,7 @@
                 <div class=" px-[20px] flex flex-col gap-[15px] mt-4">
                     <h1 class="font-semibold text-[18px]">Barangay Certificate of Indigency </h1>
                     <p class="font-normal text-[14px] text-[#52525B]">Issued to residents who need proof of low income for financial assistance or other government aid.</p>
-                    <a href="#" class="certificates-btn">Get Certificate</a>
+                    <a href="{{url('login')}}" class="certificates-btn">Get Certificate</a>
                 </div>
             </div>
             <div class="certificates">
@@ -26,7 +26,7 @@
                 <div class=" px-[20px] flex flex-col gap-[15px] mt-4">
                     <h1 class="font-semibold text-[18px]">Barangay Certificate of No Objection</h1>
                     <p class="font-normal text-[14px] text-[#52525B]">Official consent from the barangay for activities such as job application, permits, or other valid requests.</p>
-                    <a href="#" class="certificates-btn">Get Certificate</a>
+                    <a href="{{url('login')}}" class="certificates-btn">Get Certificate</a>
                 </div>
             </div>
         </div>
@@ -37,7 +37,7 @@
                 <div class=" px-[20px] flex flex-col gap-[15px] mt-4">
                     <h1 class="font-semibold text-[18px]">Barangay Certificate for Business</h1>
                     <p class="font-normal text-[14px] text-[#52525B]">Issued to confirm that a business is operating within the Barangay and complies with local regulations.</p>
-                    <a href="#" class="certificates-btn">Get Certificate</a>
+                    <a href="{{url('login')}}" class="certificates-btn">Get Certificate</a>
                 </div>
             </div>
         <div class="certificates">
@@ -45,7 +45,7 @@
                 <div class=" px-[20px] flex flex-col gap-[15px] mt-4">
                     <h1 class="font-semibold text-[18px]">Barangay Certificate of Oath Taking </h1>
                     <p class="font-normal text-[14px] text-[#52525B]">A document required to newly elected or appointed barangay officials, certifying their eligibility.</p>
-                    <a href="#" class="certificates-btn">Get Certificate</a>
+                    <a href="{{url('login')}}" class="certificates-btn">Get Certificate</a>
                 </div>
             </div>
         <div class="certificates">
@@ -53,7 +53,7 @@
                 <div class=" px-[20px] flex flex-col gap-[15px] mt-4">
                     <h1 class="font-semibold text-[18px]">Barangay Certificate of Community Tax (Sedula)</h1>
                     <p class="font-normal text-[14px] text-[#52525B]">Official proof for individual that has paid the community tax - commonly used for various legal transactions.</p>
-                    <a href="#" class="certificates-btn">Get Certificate</a>
+                    <a href="{{url('login')}}" class="certificates-btn">Get Certificate</a>
                 </div>
             </div>
     </div>

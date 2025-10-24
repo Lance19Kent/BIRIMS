@@ -36,10 +36,10 @@
         <div class="flex flex-col gap-[5px]">
             <h2 class="font-medium text-[18px]">Services</h2>
             <ul class="flex flex-col gap-[5px]">
-                <li><a href="#" class="footer-nav">Blotter</a></li>
-                <li><a href="#" class="footer-nav">Documents</a></li> 
-                <li><a href="#" class="footer-nav">Appointment</a></li>
-                <li><a href="#" class="footer-nav">Announcement</a></li>
+                <li><a href="{{url('login')}}" class="footer-nav">Blotter</a></li>
+                <li><a href="{{url('login')}}" class="footer-nav">Documents</a></li> 
+                <li><a href="{{url('login')}}" class="footer-nav">Appointment</a></li>
+                <li><a href="{{url('login')}}" class="footer-nav">Announcement</a></li>
             </ul>
         </div>
         <div class="flex flex-col gap-[5px]">

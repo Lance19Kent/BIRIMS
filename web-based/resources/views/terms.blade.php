@@ -58,8 +58,7 @@
             <div class="w-[600px] h-[500px] bg-amber-300">
                 <div>
                     <h6>1. Acceptance of Terms</h6>
-                    <p>\
-                        
+                    <p>
                     </p>
                 </div>
             </div>
