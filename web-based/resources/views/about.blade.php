@@ -43,7 +43,7 @@
             </svg>
             <div class="h-fit w-[450px] flex flex-col justify-center text-center">
                 <h1 class="text-[64px] font-medium" style="font-family: 'IBM Plex Serif';">About Us</h1>
-                <p class="text-[var(--darkgray)] mt-[10px]">BIRIMS is the unified digital platform for our barangay to manage resident records, business permits, and incident reporting — helping our community stay safe, informed, and connected.</p>
+                <p class="text-[var(--darkgray)] mt-[10px] text-[18px]">BIRIMS is the unified digital platform for our barangay to manage resident records, business permits, and incident reporting — helping our community stay safe, informed, and connected.</p>
                 <a href="#our-story" class="py-[10px] bg-[var(--orange)] w-[140px] text-white border border-[var(--orange)] self-center mt-[20px] duration-150 ease-out hover:bg-[var(--gray)] hover:text-[var(--orange)] rounded-[4px] text-[20px]">See More</a>
             </div>
         </section>

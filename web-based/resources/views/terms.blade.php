@@ -24,7 +24,7 @@
     <!-- Navbar Section -->
 
     <main class="w-full min-h-screen flex-1 bg-[var(--gray)] relative pb-[40px]">
-        <svg viewBox="0 0 185 185" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute bottom-0 right-0 w-[250px]">
+        <svg viewBox="0 0 185 185" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute bottom-0 right-0 w-[230px]">
         <g clip-path="url(#clip0_58_1146)">
             <path d="M185 65.366H65.3661V185H185V65.366Z" fill="#FDBA74"/>
             <path d="M125.184 5.55005H5.55005V125.184H125.184V5.55005Z" stroke="#111111" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
@@ -44,8 +44,8 @@
             <h1 style="font-family: 'IBM Plex Serif';" class="pt-[80px] relative z-10 text-[50px] font-medium">Terms and Conditions</h1>
             <p class="relative z-10 text-[var(--darkgray)]">Last Updated: October 24 2025</p>
         </div>
-        <div class="mt-[80px] flex justify-center gap-[50px]">
-            <div class="w-[350px] h-fit border border-[#71717A] flex flex-col">
+        <div class="mt-[50px] flex justify-between gap-[50px] pr-[230px] pl-[250px]">
+            <div class="w-[350px] h-fit border border-[#71717A] flex flex-col ">
                 <h1 style="font-family: 'IBM Plex Serif';" class="font-medium text-[18px] p-[10px]">On this page</h1>
                 <a href="#" class="font-medium text-[18px] text-[var(--darkgray)] py-[10px] pl-[10px] duration-150 ease-out hover:bg-[var(--orangehover100)] hover:text-[var(--gray100)]">1. Acceptance of Terms</a>
                 <a href="#" class="font-medium text-[18px] text-[var(--darkgray)] py-[10px] pl-[10px]  duration-150 ease-out hover:bg-[var(--orangehover100)] hover:text-[var(--gray100)]">2. User Accounts and Registrations</a>
@@ -55,11 +55,34 @@
                 <a href="#" class="font-medium text-[18px] text-[var(--darkgray)] py-[10px] pl-[10px] duration-150 ease-out hover:bg-[var(--orangehover100)] hover:text-[var(--gray100)]">6. Users Conduct</a>
                 <a href="#" class="font-medium text-[18px] text-[var(--darkgray)] py-[10px] pl-[10px] duration-150 ease-out hover:bg-[var(--orangehover100)] hover:text-[var(--gray100)]">7. Contact Information</a>
             </div>
-            <div class="w-[600px] h-[500px] bg-amber-300">
+            <div class="w-[600px] h-fit flex flex-col gap-[10px]">
                 <div>
-                    <h6>1. Acceptance of Terms</h6>
-                    <p>
-                    </p>
+                    <h6 class="font-medium text-[18px]">1. Acceptance of Terms</h6>
+                    <p class="font-medium text-[18px] text-[var(--darkgray)] px-[15px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type </p>
+                </div>
+                <div>
+                    <h6 class="font-medium text-[18px]">2. User Accounts and Registrations</h6>
+                    <p class="font-medium text-[18px] text-[var(--darkgray)] px-[15px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type </p>
+                </div>
+                <div>
+                    <h6 class="font-medium text-[18px]">3. Use of Services</h6>
+                    <p class="font-medium text-[18px] text-[var(--darkgray)] px-[15px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type </p>
+                </div>
+                <div>
+                    <h6 class="font-medium text-[18px]">4. Incident Reporting</h6>
+                    <p class="font-medium text-[18px] text-[var(--darkgray)] px-[15px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type </p>
+                </div>
+                <div>
+                    <h6 class="font-medium text-[18px]">5. Data Privacy and Security</h6>
+                    <p class="font-medium text-[18px] text-[var(--darkgray)] px-[15px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type </p>
+                </div>
+                <div>
+                    <h6 class="font-medium text-[18px]">6. Users Conduct</h6>
+                    <p class="font-medium text-[18px] text-[var(--darkgray)] px-[15px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type </p>
+                </div>
+                <div>
+                    <h6 class="font-medium text-[18px]">7. Contact Information</h6>
+                    <p class="font-medium text-[18px] text-[var(--darkgray)] px-[15px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type </p>
                 </div>
             </div>
         </div>
