@@ -49,7 +49,7 @@
         </section>
         <section id="our-story" class="h-screen w-full bg-white flex flex-col">
             <h1 style="font-family: 'IBM Plex Serif';" class="font-medium text-[50px] text-center pt-[40px]">Our Story</h1>
-            <div class="flex px-[80px] items-center pb-[100px] gap-[40px]" style="height: calc(100% - 80px);">
+            <div class="flex px-[80px] items-center justify-center pb-[100px] gap-[40px]" style="height: calc(100% - 80px);">
                 <p class="w-[600px] text-[var(--darkgray)]">Barangay San Bartolome, Quezon City, has long faced challenges in managing resident records, incident reports, and manual request forms. Most processes were done on paper, making it time-consuming for both residents and barangay staff to access and organize important information. Through a series of observations and interviews with barangay officials and residents, our team discovered the need for a more efficient and accessible way to handle these records. The Barangay Integrated Record and Incident Management System (BIRIMS) was developed — a digital platform designed to simplify record management, improve data accuracy, and speed up the delivery of public services. BIRIMS aims to bridge the gap between technology and community service, helping San Bartolome embrace a smarter and more transparent system for the benefit of every resident.</p>
                 <img src="assets/img/san-bartolome-pic.png" width="600" alt="San Bartolome Image"/>
             </div>
@@ -67,13 +67,13 @@
                 </div>
                 <hr class="rotate-180 border h-[360px] border-[var(--darkgray)] "/>
                 <div class="w-[350px] flex flex-col items-center gap-[10px]">
-                    <img src="assets/svg/about/rocket.svg" width="150">
+                    <img src="assets/svg/about/vision.svg" width="150">
                     <h3 style="font-family: 'IBM Plex Serif';" class="text-[25px] font-semibold">Our <span class="text-[var(--orange)]">VISION</span></h3>
                     <p class="font-medium text-[16px] text-[var(--darkgray)] text-center">To build a transparent and technology-driven community where data management and public service work hand in hand.</p>
                 </div>
                 <hr class="rotate-180 border h-[360px] border-[var(--darkgray)] "/>
                 <div class="w-[350px] flex flex-col items-center gap-[10px]">
-                    <img src="assets/svg/about/rocket.svg" width="150">
+                    <img src="assets/svg/about/heart.svg" width="150">
                     <h3 style="font-family: 'IBM Plex Serif';" class="text-[25px] font-semibold">Our <span class="text-[var(--orange)]">VALUES</span></h3>
                     <ul class="text-[var(--darkgray)] font-medium text-[16px] text-center">
                         <li><span class="text-[var(--iconorange)]">Transparency</span> - open and honest service.</li>
