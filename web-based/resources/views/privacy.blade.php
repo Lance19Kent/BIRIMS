@@ -42,7 +42,7 @@
         </svg>
         <div class="flex flex-col items-center pt-[35px]">
             <h1 style="font-family: 'IBM Plex Serif';" class="pt-[80px] relative z-10 text-[50px] font-medium">Privacy and Policy</h1>
-            <p class="relative z-10 text-[var(--darkgray)]">Last Updated: October 24 2025</p>
+            <p class="relative z-10 text-[var(--darkgray)] text-[18px]">Last Updated: October 24 2025</p>
         </div>
         <div class="mt-[50px] flex justify-between gap-[50px] pr-[230px] pl-[250px]">
             <div class="w-[410px] h-fit border border-[#71717A] flex flex-col ">
@@ -57,12 +57,17 @@
             </div>
             <div class="w-[600px] h-fit flex flex-col gap-[10px]">
                 <div>
-                    <h6 class="font-medium text-[18px]">1. Acceptance of Terms</h6>
-                    <p class="font-medium text-[18px] text-[var(--darkgray)] px-[15px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type </p>
+                    <h6 class="font-medium text-[18px]">1. Introduction</h6>
+                    <p class="font-medium text-[18px] text-[var(--darkgray)] px-[15px] leading-8">At BIRIMS (Barangay Integrated Record and Incident Management System), we value your privacy and are committed to protecting the personal information you share with us.
+                    This Privacy Policy explains how we collect, use, and safeguard your data when you use our system and related services. </p>
                 </div>
                 <div>
-                    <h6 class="font-medium text-[18px]">2. User Accounts and Registrations</h6>
-                    <p class="font-medium text-[18px] text-[var(--darkgray)] px-[15px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type </p>
+                    <h6 class="font-medium text-[18px]">2. Information We Collect</h6>
+                    <p class="font-medium text-[18px] text-[var(--darkgray)] px-[15px] leading-8">We may collect the following information to ensure accurate record management and efficient service delivery:
+                        <ul class="list-disc">
+                            <li>Personal details such as name, address, contact number, and resident ID.</li>
+                        </ul>
+                    </p>
                 </div>
                 <div>
                     <h6 class="font-medium text-[18px]">3. Use of Services</h6>
