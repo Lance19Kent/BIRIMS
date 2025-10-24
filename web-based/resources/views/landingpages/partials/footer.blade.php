@@ -57,6 +57,7 @@
                 <li><a href="{{url('faq')}}" class="footer-nav">FAQs</a></li>
                 <li><a href="{{url('terms')}}" class="footer-nav">Terms</a></li>
                 <li><a href="{{url('privacy')}}" class="footer-nav">Privacy Policy</a></li>
+                <li><a href="{{url('signup')}}" class="footer-nav">Sign Up</a></li>
             </ul>
         </div>
     </div>
