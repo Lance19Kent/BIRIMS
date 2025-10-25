@@ -45,7 +45,7 @@
             <p class="relative z-10 text-[var(--darkgray)] text-[18px]">Last Updated: October 24 2025</p>
         </div>
         <div class="mt-[50px] flex justify-between gap-[50px] pr-[230px] pl-[250px]">
-            <div class="w-[410px] h-fit border border-[#71717A] flex flex-col rounded-[4px] sticky top-[120px]">
+            <div class="w-[410px] h-fit border border-[#71717A] flex flex-col rounded-[4px] sticky top-[150px]">
                 <h1 style="font-family: 'IBM Plex Serif';" class="font-medium text-[18px] p-[10px]">On this page</h1>
                 <a href="#introduction" class="font-medium text-[18px] text-[var(--darkgray)] py-[10px] pl-[10px] duration-150 ease-out hover:bg-[var(--iconorange)] hover:text-[var(--gray100)]">1. Acceptance of Terms</a>
                 <a href="#information-we-collect" class="font-medium text-[18px] text-[var(--darkgray)] py-[10px] pl-[10px]  duration-150 ease-out hover:bg-[var(--iconorange)] hover:text-[var(--gray100)]">2. Information We Collect</a>
