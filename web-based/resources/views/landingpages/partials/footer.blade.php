@@ -44,18 +44,18 @@
         <div class="flex flex-col gap-[5px]">
             <h2 class="font-medium text-[18px]">Navigation</h2>
             <ul class="flex flex-col gap-[5px]">
-                <li><a href="#" class="footer-nav">Home</a></li>
-                <li><a href="{{url('about')}}" class="footer-nav">About</a></li>
-                <li><a href="{{url('contact')}}" class="footer-nav">Contact</a></li>
+                <li><a href="{{url('/')}}" class="footer-nav {{request()-> is('/') ? 'active-footer' : ''}}">Home</a></li>
+                <li><a href="{{url('about')}}" class="footer-nav {{request()-> is('about') ? 'active-footer' : ''}}">About</a></li>
+                <li><a href="{{url('contact')}}" class="footer-nav {{request()-> is('contact') ? 'active-footer' : ''}}">Contact</a></li>
                 <li><a href="{{url('login')}}" class="footer-nav">Sign In</a></li>
             </ul>
         </div>
         <div class="flex flex-col gap-[5px]">
             <h2 class="font-medium text-[18px]">Resources</h2>
             <ul class="flex flex-col gap-[5px]">
-                <li><a href="{{url('faq')}}" class="footer-nav">FAQs</a></li>
-                <li><a href="{{url('terms')}}" class="footer-nav">Terms</a></li>
-                <li><a href="{{url('privacy')}}" class="footer-nav">Privacy Policy</a></li>
+                <li><a href="{{url('faq')}}" class="footer-nav {{request()-> is('faq') ? 'active-footer' : ''}}">FAQs</a></li>
+                <li><a href="{{url('terms')}}" class="footer-nav {{request()-> is('terms') ? 'active-footer' : ''}}">Terms</a></li>
+                <li><a href="{{url('privacy')}}" class="footer-nav {{request()-> is('privacy') ? 'active-footer' : ''}}">Privacy Policy</a></li>
                 <li><a href="{{url('signup')}}" class="footer-nav">Sign Up</a></li>
             </ul>
         </div>
