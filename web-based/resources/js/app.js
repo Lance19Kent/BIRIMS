@@ -74,4 +74,6 @@ document.addEventListener("DOMContentLoaded",function(){
         })
     }
 
+    // terms and privacy policy section active links
+    
 });
