@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-pt-[80px]">
+<html lang="en" class="scroll-pt-[80px] scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -45,49 +45,104 @@
             <p class="relative z-10 text-[var(--darkgray)] text-[18px]">Last Updated: October 24 2025</p>
         </div>
         <div class="mt-[50px] flex justify-between gap-[50px] pr-[230px] pl-[250px]">
-            <div class="w-[410px] h-fit border border-[#71717A] flex flex-col ">
+            <div class="w-[410px] h-fit border border-[#71717A] flex flex-col rounded-[4px]">
                 <h1 style="font-family: 'IBM Plex Serif';" class="font-medium text-[18px] p-[10px]">On this page</h1>
-                <a href="#" class="font-medium text-[18px] text-[var(--darkgray)] py-[10px] pl-[10px] duration-150 ease-out hover:bg-[var(--orangehover100)] hover:text-[var(--gray100)]">1. Acceptance of Terms</a>
-                <a href="#" class="font-medium text-[18px] text-[var(--darkgray)] py-[10px] pl-[10px]  duration-150 ease-out hover:bg-[var(--orangehover100)] hover:text-[var(--gray100)]">2. User Accounts and Registrations</a>
-                <a href="#" class="font-medium text-[18px] text-[var(--darkgray)] py-[10px] pl-[10px] duration-150 ease-out hover:bg-[var(--orangehover100)] hover:text-[var(--gray100)]">3. Use of Services</a>
-                <a href="#" class="font-medium text-[18px] text-[var(--darkgray)] py-[10px] pl-[10px] duration-150 ease-out hover:bg-[var(--orangehover100)] hover:text-[var(--gray100)]">4. Incident Reporting</a>
-                <a href="#" class="font-medium text-[18px] text-[var(--darkgray)] py-[10px] pl-[10px] duration-150 ease-out hover:bg-[var(--orangehover100)] hover:text-[var(--gray100)]">5. Data Privacy and Security</a>
-                <a href="#" class="font-medium text-[18px] text-[var(--darkgray)] py-[10px] pl-[10px] duration-150 ease-out hover:bg-[var(--orangehover100)] hover:text-[var(--gray100)]">6. Users Conduct</a>
-                <a href="#" class="font-medium text-[18px] text-[var(--darkgray)] py-[10px] pl-[10px] duration-150 ease-out hover:bg-[var(--orangehover100)] hover:text-[var(--gray100)]">7. Contact Information</a>
+                <a href="#introduction" class="font-medium text-[18px] text-[var(--darkgray)] py-[10px] pl-[10px] duration-150 ease-out hover:bg-[var(--iconorange)] hover:text-[var(--gray100)]">1. Acceptance of Terms</a>
+                <a href="#information-we-collect" class="font-medium text-[18px] text-[var(--darkgray)] py-[10px] pl-[10px]  duration-150 ease-out hover:bg-[var(--iconorange)] hover:text-[var(--gray100)]">2. Information We Collect</a>
+                <a href="#use-of-services" class="font-medium text-[18px] text-[var(--darkgray)] py-[10px] pl-[10px] duration-150 ease-out hover:bg-[var(--iconorange)] hover:text-[var(--gray100)]">3. Use of Services</a>
+                <a href="#data-privacy-and-protection" class="font-medium text-[18px] text-[var(--darkgray)] py-[10px] pl-[10px] duration-150 ease-out hover:bg-[var(--iconorange)] hover:text-[var(--gray100)]">4. Data Privacy and Protection</a>
+                <a href="#data-sharing-and-disclosure" class="font-medium text-[18px] text-[var(--darkgray)] py-[10px] pl-[10px] duration-150 ease-out hover:bg-[var(--iconorange)] hover:text-[var(--gray100)]">5. Data Sharing and Disclosure</a>
+                <a href="#user-rights" class="font-medium text-[18px] text-[var(--darkgray)] py-[10px] pl-[10px] duration-150 ease-out hover:bg-[var(--iconorange)] hover:text-[var(--gray100)]">6. User Rights</a>
+                <a href="#updates-to-this-policy" class="font-medium text-[18px] text-[var(--darkgray)] py-[10px] pl-[10px] duration-150 ease-out hover:bg-[var(--iconorange)] hover:text-[var(--gray100)]">7. Updates to This Policy</a>
+                <a href="#contact-us" class="font-medium text-[18px] text-[var(--darkgray)] py-[10px] pl-[10px] duration-150 ease-out hover:bg-[var(--iconorange)] hover:text-[var(--gray100)]">8. Contact Us</a>
+
             </div>
             <div class="w-[600px] h-fit flex flex-col gap-[10px]">
-                <div>
+                <div id="introduction">
                     <h6 class="font-medium text-[18px]">1. Introduction</h6>
-                    <p class="font-medium text-[18px] text-[var(--darkgray)] px-[15px] leading-8">At BIRIMS (Barangay Integrated Record and Incident Management System), we value your privacy and are committed to protecting the personal information you share with us.
+                    <p class="font-medium text-[18px] text-[var(--darkgray)] px-[15px] leading-8 mt-[6px]">At BIRIMS (Barangay Integrated Record and Incident Management System), we value your privacy and are committed to protecting the personal information you share with us.
                     This Privacy Policy explains how we collect, use, and safeguard your data when you use our system and related services. </p>
                 </div>
-                <div>
+                <div id="information-we-collect">
                     <h6 class="font-medium text-[18px]">2. Information We Collect</h6>
-                    <p class="font-medium text-[18px] text-[var(--darkgray)] px-[15px] leading-8">We may collect the following information to ensure accurate record management and efficient service delivery:
-                        <ul class="list-disc">
-                            <li>Personal details such as name, address, contact number, and resident ID.</li>
+                    <p class="font-medium text-[18px] text-[var(--darkgray)] px-[15px] leading-8 mt-[6px]">We may collect the following information to ensure accurate record management and efficient service delivery:
+                        <ul class="list-disc flex flex-col gap-[5px] ml-[35px]">
+                            <li class="text-[var(--darkgray)] font-medium" >Personal details such as name, address, contact number, and resident ID.</li>
+                            <li class="text-[var(--darkgray)] font-medium" >Incident and report information submitted through the system.</li>
+                            <li class="text-[var(--darkgray)] font-medium" >Login credentials (username and password).</li>
+                            <li class="text-[var(--darkgray)] font-medium" >Technical information such as IP address, browser type, and access time for security monitoring.</li>
                         </ul>
                     </p>
                 </div>
-                <div>
+                <div id="use-of-services">
                     <h6 class="font-medium text-[18px]">3. Use of Services</h6>
-                    <p class="font-medium text-[18px] text-[var(--darkgray)] px-[15px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type </p>
+                    <p class="font-medium text-[18px] text-[var(--darkgray)] px-[15px] leading-8 mt-[6px]">The information collected is used solely for the following purposes: 
+                        <ul class="list-disc flex flex-col gap-[5px] ml-[35px]">
+                            <li class="text-[var(--darkgray)] font-medium" >To manage barangay records and incident reports.</li>
+                            <li class="text-[var(--darkgray)] font-medium" >To verify user identity and maintain account security.</li>
+                            <li class="text-[var(--darkgray)] font-medium" >To improve the functionality and user experience of BIRIMS.</li>
+                            <li class="text-[var(--darkgray)] font-medium" >To generate reports for barangay administrative purposes.</li>
+                        </ul>
+                    </p>
                 </div>
-                <div>
-                    <h6 class="font-medium text-[18px]">4. Incident Reporting</h6>
-                    <p class="font-medium text-[18px] text-[var(--darkgray)] px-[15px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type </p>
+                <div id="data-privacy-and-protection">
+                    <h6 class="font-medium text-[18px]">4. Data Privacy and Protection</h6>
+                    <p class="font-medium text-[18px] text-[var(--darkgray)] px-[15px]">We implement appropriate security measures to protect your personal data from unauthorized access, disclosure, or misuse. All collected information is stored securely and can only be accessed by authorized barangay officials or system administrators.</p>
                 </div>
-                <div>
-                    <h6 class="font-medium text-[18px]">5. Data Privacy and Security</h6>
-                    <p class="font-medium text-[18px] text-[var(--darkgray)] px-[15px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type </p>
+                <div id="data-sharing-and-disclosure">
+                    <h6 class="font-medium text-[18px] ">5. Data Sharing and Disclosure</h6>
+                    <p class="font-medium text-[18px] text-[var(--darkgray)] px-[15px] leading-8 mt-[6px]">BIRIMS does not sell, trade, or rent user information.
+                    Data may only be shared under the following conditions:
+                    <ul class="list-disc flex flex-col gap-[5px] ml-[35px]">
+                        <li class="text-[var(--darkgray)] font-medium">When required by law or official government requests.</li>
+                        <li class="text-[var(--darkgray)] font-medium">With authorized barangay personnel who need access for record management.</li>
+                        <li class="text-[var(--darkgray)] font-medium">With user consent for specific community-related purposes.</li>
+                    </ul>
+                    </p>
                 </div>
-                <div>
-                    <h6 class="font-medium text-[18px]">6. Users Conduct</h6>
-                    <p class="font-medium text-[18px] text-[var(--darkgray)] px-[15px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type </p>
+                <div id="user-rights">
+                    <h6 class="font-medium text-[18px]">6. User Rights</h6>
+                    <p class="font-medium text-[18px] text-[var(--darkgray)] px-[15px] leading-8 mt-[6px]">You have the right to:
+                    <ul class="list-disc flex flex-col gap-[5px] ml-[35px]">
+                        <li class="text-[var(--darkgray)] font-medium">Access and review your personal information.</li>
+                        <li class="text-[var(--darkgray)] font-medium">Request correction of inaccurate or outdated data.</li>
+                        <li class="text-[var(--darkgray)] font-medium">Request deletion of your personal records, subject to barangay data retention policies.</li>
+                    </ul>
+                    </p>
                 </div>
-                <div>
-                    <h6 class="font-medium text-[18px]">7. Contact Information</h6>
-                    <p class="font-medium text-[18px] text-[var(--darkgray)] px-[15px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type </p>
+                <div id="updates-to-this-policy">
+                    <h6 class="font-medium text-[18px]">7. Updates to This Policy</h6>
+                    <p class="font-medium text-[18px] text-[var(--darkgray)] px-[15px] leading-8 mt-[6px]">We may update this Privacy Policy from time to time. All changes will be reflected on this page with the updated date above.</p>
+                </div>
+                <div id="contact-us">
+                    <h6 class="font-medium text-[18px]">8. Contact Us</h6>
+                    <p class="font-medium text-[18px] text-[var(--darkgray)] px-[15px] leading-8 mt-[6px]">If you have questions or concerns about this Privacy Policy, you may contact:
+                        <a href="https://maps.app.goo.gl/t9oBHUwfVVHSXJFs9" target="_blank" class="flex gap-[10px] text-[16px] text-[var(--darkgray)] font-medium mt-[10px] stroke-[var(--darkgray)] duration-150 ease-out hover:text-[var(--orange)] hover:underline hover:stroke-[var(--orange)]">                
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                            </svg>
+                            <span>Barangay San Bartolome, Quezon City, Metro Manila</span>
+                        </a>
+                        <a href="https://www.facebook.com/brgysanbartolome2014" target="_blank" class="flex items-center gap-[10px] text-[16px] text-[var(--darkgray)] font-medium duration-150 ease-out hover:text-[var(--orange)] hover:underline fill-[var(--darkgray)] hover:fill-[var(--orange)]">                
+                            <svg class="size-5" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
+                                <path d="m1416.013 791.915-30.91 225.617h-371.252v789.66H788.234v-789.66H449.808V791.915h338.426V585.137c0-286.871 176.207-472.329 449.09-472.329 116.87 0 189.744 6.205 231.822 11.845l-3.272 213.66-173.5.338c-4.737-.451-117.771-9.25-199.332 65.655-52.568 48.169-79.191 117.433-79.191 205.65v181.96h402.162Zm-247.276-304.018c44.446-41.401 113.71-36.889 118.787-36.663l289.467-.113 6.204-417.504-43.544-10.717C1511.675 16.02 1426.053 0 1237.324 0 901.268 0 675.425 235.206 675.425 585.137v93.97H337v451.234h338.425V1920h451.234v-789.66h356.7l61.932-451.233H1126.66v-69.152c0-54.937 14.214-96 42.078-122.058Z" fill-rule="evenodd"/>
+                            </svg>
+                            <span>www.facebook.com/brgysanbartolome2014</span>
+                        </a>
+                        <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank" class="flex gap-[10px] text-[16px] items-center text-[var(--darkgray)] font-medium stroke-[var(--darkgray)] duration-150 ease-out hover:text-[var(--orange)] hover:stroke-[var(--orange)] hover:underline">                
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="size-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                            </svg>
+                            <span>birim.sanbartolome@gmail.com</span>
+                        </a>
+                        <a href="#" class="flex gap-[10px] text-[16px] items-center text-[var(--darkgray)] font-medium stroke-[var(--darkgray)] duration-150 ease-out hover:text-[var(--orange)] hover:stroke-[var(--orange)] hover:underline">                
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                            </svg>
+                            <span>(02) 8123-4567</span>
+                        </a>
+                    </p>
                 </div>
             </div>
         </div>
