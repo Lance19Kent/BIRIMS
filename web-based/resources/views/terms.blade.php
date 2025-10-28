@@ -47,40 +47,40 @@
         <div class="mt-[50px] flex justify-between gap-[50px] pr-[230px] pl-[250px]">
             <div class="w-[410px] h-fit border border-[#71717A] flex flex-col sticky top-[170px] ">
                 <h1 style="font-family: 'IBM Plex Serif';" class="font-medium text-[18px] p-[10px]">On this page</h1>
-                <a href="#acceptance-of-terms" class="font-medium text-[18px] text-[var(--darkgray)] py-[10px] pl-[10px] duration-150 ease-out hover:bg-[var(--iconorange)] hover:text-[var(--gray100)]">1. Acceptance of Terms</a>
-                <a href="#user-accounts-and-registrations" class="font-medium text-[18px] text-[var(--darkgray)] py-[10px] pl-[10px]  duration-150 ease-out hover:bg-[var(--iconorange)] hover:text-[var(--gray100)]">2. User Accounts and Registrations</a>
-                <a href="#use-of-services" class="font-medium text-[18px] text-[var(--darkgray)] py-[10px] pl-[10px] duration-150 ease-out hover:bg-[var(--iconorange)] hover:text-[var(--gray100)]">3. Use of Services</a>
-                <a href="#incident-reporting" class="font-medium text-[18px] text-[var(--darkgray)] py-[10px] pl-[10px] duration-150 ease-out hover:bg-[var(--iconorange)] hover:text-[var(--gray100)]">4. Incident Reporting</a>
-                <a href="#data-privacy-and-security" class="font-medium text-[18px] text-[var(--darkgray)] py-[10px] pl-[10px] duration-150 ease-out hover:bg-[var(--iconorange)] hover:text-[var(--gray100)]">5. Data Privacy and Security</a>
-                <a href="#users-conduct" class="font-medium text-[18px] text-[var(--darkgray)] py-[10px] pl-[10px] duration-150 ease-out hover:bg-[var(--iconorange)] hover:text-[var(--gray100)]">6. Users Conduct</a>
-                <a href="#contact-information" class="font-medium text-[18px] text-[var(--darkgray)] py-[10px] pl-[10px] duration-150 ease-out hover:bg-[var(--iconorange)] hover:text-[var(--gray100)]">7. Contact Information</a>
+                <a href="#acceptance-of-terms" class="font-medium text-[18px] text-[var(--darkgray)] py-[10px] pl-[10px] duration-150 ease-out hover:bg-[var(--iconorange)] hover:text-[var(--gray100)] active-privacy-nav privacy-nav-links">1. Acceptance of Terms</a>
+                <a href="#user-accounts-and-registrations" class="font-medium text-[18px] text-[var(--darkgray)] py-[10px] pl-[10px]  duration-150 ease-out hover:bg-[var(--iconorange)] hover:text-[var(--gray100)] privacy-nav-links">2. User Accounts and Registrations</a>
+                <a href="#use-of-services" class="font-medium text-[18px] text-[var(--darkgray)] py-[10px] pl-[10px] duration-150 ease-out hover:bg-[var(--iconorange)] hover:text-[var(--gray100)] privacy-nav-links">3. Use of Services</a>
+                <a href="#incident-reporting" class="font-medium text-[18px] text-[var(--darkgray)] py-[10px] pl-[10px] duration-150 ease-out hover:bg-[var(--iconorange)] hover:text-[var(--gray100)] privacy-nav-links">4. Incident Reporting</a>
+                <a href="#data-privacy-and-security" class="font-medium text-[18px] text-[var(--darkgray)] py-[10px] pl-[10px] duration-150 ease-out hover:bg-[var(--iconorange)] hover:text-[var(--gray100)] privacy-nav-links">5. Data Privacy and Security</a>
+                <a href="#users-conduct" class="font-medium text-[18px] text-[var(--darkgray)] py-[10px] pl-[10px] duration-150 ease-out hover:bg-[var(--iconorange)] hover:text-[var(--gray100)] privacy-nav-links">6. Users Conduct</a>
+                <a href="#contact-information" class="font-medium text-[18px] text-[var(--darkgray)] py-[10px] pl-[10px] duration-150 ease-out hover:bg-[var(--iconorange)] hover:text-[var(--gray100)] privacy-nav-links">7. Contact Information</a>
             </div>
             <div class="w-[600px] h-fit flex flex-col gap-[10px]">
-                <section id="acceptance-of-terms">
+                <section id="acceptance-of-terms" class="section">
                     <h6 class="font-medium text-[18px]">1. Acceptance of Terms</h6>
                     <p class="font-medium text-[18px] text-[var(--darkgray)] px-[15px]">By accessing and using the Barangay Integrated Record and Incident Management System (BIRIMS), you agree to comply with and be bound by these Terms and Conditions. If you do not agree, please discontinue using the system. The Barangay of San Bartolome, Quezon City reserves the right to modify or update these terms at any time without prior notice.</p>
                 </section>
-                <section id="user-accounts-and-registrations">
+                <section id="user-accounts-and-registrations" class="section">
                     <h6 class="font-medium text-[18px]">2. User Accounts and Registrations</h6>
                     <p class="font-medium text-[18px] text-[var(--darkgray)] px-[15px]">Users must register using accurate and complete information. Each account is personal and should not be shared with others. You are responsible for maintaining the confidentiality of your account credentials and all activities under your account. Any unauthorized access or misuse should be reported immediately to the barangay administration.</p>
                 </section>
-                <section id="use-of-services">
+                <section id="use-of-services" class="section">
                     <h6 class="font-medium text-[18px]">3. Use of Services</h6>
                     <p class="font-medium text-[18px] text-[var(--darkgray)] px-[15px]">BIRIMS is designed to streamline barangay operations, including resident record management, document requests, and incident reporting. The system should only be used for official and lawful purposes. Misuse, tampering, or unauthorized access to data is strictly prohibited and may result in account suspension or legal action.</p>
                 </section>
-                <section id="incident-reporting">
+                <section id="incident-reporting" class="section">
                     <h6 class="font-medium text-[18px]">4. Incident Reporting</h6>
                     <p class="font-medium text-[18px] text-[var(--darkgray)] px-[15px]">Residents may submit incident reports such as complaints, accidents, or community concerns through the platform. All reports must be factual and submitted in good faith. False, misleading, or malicious reports will not be tolerated and may result in account restrictions or penalties under barangay ordinances.</p>
                 </section>
-                <section id="data-privacy-and-security">
+                <section id="data-privacy-and-security" class="section">
                     <h6 class="font-medium text-[18px]">5. Data Privacy and Security</h6>
                     <p class="font-medium text-[18px] text-[var(--darkgray)] px-[15px]">BIRIMS values your privacy and ensures that all collected personal information is handled in accordance with the Data Privacy Act of 2012 (Republic Act No. 10173). Data is used solely for barangay administrative purposes and is protected from unauthorized access, disclosure, or alteration through secure protocols and restricted system access.</p>
                 </section>
-                <section id="users-conduct">
+                <section id="users-conduct" class="section">
                     <h6 class="font-medium text-[18px]">6. Users Conduct</h6>
                     <p class="font-medium text-[18px] text-[var(--darkgray)] px-[15px]">All users are expected to behave responsibly and respectfully when using the system. Any form of cyberbullying, harassment, or spreading false information is prohibited. The barangay reserves the right to review, suspend, or remove users who violate these guidelines.</p>
                 </section>
-                <section id="contact-information">
+                <section id="contact-information" class="section">
                     <h6 class="font-medium text-[18px]">7. Contact Information</h6>
                    <p class="font-medium text-[18px] text-[var(--darkgray)] px-[15px] leading-8 mt-[6px]">If you have questions or concerns about this Privacy Policy, you may contact:
                         <a href="https://maps.app.goo.gl/t9oBHUwfVVHSXJFs9" target="_blank" class="flex gap-[10px] text-[16px] text-[var(--darkgray)] font-medium mt-[10px] stroke-[var(--darkgray)] duration-150 ease-out hover:text-[var(--orange)] hover:underline hover:stroke-[var(--orange)]">                
