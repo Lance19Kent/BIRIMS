@@ -75,5 +75,25 @@ document.addEventListener("DOMContentLoaded",function(){
     }
 
     // terms and privacy policy section active links
-    
+    let sections = document.querySelectorAll('.section');
+    let navLinks = document.querySelectorAll('.privacy-nav-links');
+
+    if(sections && navLinks){
+        window.onscroll = () =>{
+            sections.forEach(sec =>{
+                let top = window.scrollY;
+                let offset = sec.offsetTop - 200;
+                let height = sec.offsetHeight;
+                let id = sec.getAttribute('id');
+
+                if(top >= offset && top < offset + height){
+                    navLinks.forEach(links =>{
+                        links.classList.remove('active-privacy-nav');
+                        document.querySelector('.privacy-nav-links[href*= '+ id + ']').classList.add('active-privacy-nav');
+                        console.log(id);
+                    });
+                };
+            });
+        };
+    }
 });

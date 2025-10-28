@@ -47,23 +47,23 @@
         <div class="mt-[50px] flex justify-between gap-[50px] pr-[230px] pl-[250px]">
             <div class="w-[410px] h-fit border border-[#71717A] flex flex-col rounded-[4px] sticky top-[150px]">
                 <h1 style="font-family: 'IBM Plex Serif';" class="font-medium text-[18px] p-[10px]">On this page</h1>
-                <a href="#introduction" class="font-medium text-[18px] text-[var(--darkgray)] py-[10px] pl-[10px] duration-150 ease-out hover:bg-[var(--iconorange)] hover:text-[var(--gray100)]">1. Acceptance of Terms</a>
-                <a href="#information-we-collect" class="font-medium text-[18px] text-[var(--darkgray)] py-[10px] pl-[10px]  duration-150 ease-out hover:bg-[var(--iconorange)] hover:text-[var(--gray100)]">2. Information We Collect</a>
-                <a href="#use-of-services" class="font-medium text-[18px] text-[var(--darkgray)] py-[10px] pl-[10px] duration-150 ease-out hover:bg-[var(--iconorange)] hover:text-[var(--gray100)]">3. Use of Services</a>
-                <a href="#data-privacy-and-protection" class="font-medium text-[18px] text-[var(--darkgray)] py-[10px] pl-[10px] duration-150 ease-out hover:bg-[var(--iconorange)] hover:text-[var(--gray100)]">4. Data Privacy and Protection</a>
-                <a href="#data-sharing-and-disclosure" class="font-medium text-[18px] text-[var(--darkgray)] py-[10px] pl-[10px] duration-150 ease-out hover:bg-[var(--iconorange)] hover:text-[var(--gray100)]">5. Data Sharing and Disclosure</a>
-                <a href="#user-rights" class="font-medium text-[18px] text-[var(--darkgray)] py-[10px] pl-[10px] duration-150 ease-out hover:bg-[var(--iconorange)] hover:text-[var(--gray100)]">6. User Rights</a>
-                <a href="#updates-to-this-policy" class="font-medium text-[18px] text-[var(--darkgray)] py-[10px] pl-[10px] duration-150 ease-out hover:bg-[var(--iconorange)] hover:text-[var(--gray100)]">7. Updates to This Policy</a>
-                <a href="#contact-us" class="font-medium text-[18px] text-[var(--darkgray)] py-[10px] pl-[10px] duration-150 ease-out hover:bg-[var(--iconorange)] hover:text-[var(--gray100)]">8. Contact Us</a>
+                <a href="#introduction" class="font-medium text-[18px] text-[var(--darkgray)] py-[10px] pl-[10px] duration-150 ease-out hover:bg-[var(--iconorange)] hover:text-[var(--gray100)] privacy-nav-links">1. Acceptance of Terms</a>
+                <a href="#information-we-collect" class="privacy-nav-links font-medium text-[18px] text-[var(--darkgray)] py-[10px] pl-[10px]  duration-150 ease-out hover:bg-[var(--iconorange)] hover:text-[var(--gray100)]">2. Information We Collect</a>
+                <a href="#use-of-services" class="privacy-nav-links font-medium text-[18px] text-[var(--darkgray)] py-[10px] pl-[10px] duration-150 ease-out hover:bg-[var(--iconorange)] hover:text-[var(--gray100)]">3. Use of Services</a>
+                <a href="#data-privacy-and-protection" class="privacy-nav-links font-medium text-[18px] text-[var(--darkgray)] py-[10px] pl-[10px] duration-150 ease-out hover:bg-[var(--iconorange)] hover:text-[var(--gray100)]">4. Data Privacy and Protection</a>
+                <a href="#data-sharing-and-disclosure" class="privacy-nav-links font-medium text-[18px] text-[var(--darkgray)] py-[10px] pl-[10px] duration-150 ease-out hover:bg-[var(--iconorange)] hover:text-[var(--gray100)]">5. Data Sharing and Disclosure</a>
+                <a href="#user-rights" class="privacy-nav-links font-medium text-[18px] text-[var(--darkgray)] py-[10px] pl-[10px] duration-150 ease-out hover:bg-[var(--iconorange)] hover:text-[var(--gray100)]">6. User Rights</a>
+                <a href="#updates-to-this-policy" class="privacy-nav-links font-medium text-[18px] text-[var(--darkgray)] py-[10px] pl-[10px] duration-150 ease-out hover:bg-[var(--iconorange)] hover:text-[var(--gray100)]">7. Updates to This Policy</a>
+                <a href="#contact-us" class="privacy-nav-links font-medium text-[18px] text-[var(--darkgray)] py-[10px] pl-[10px] duration-150 ease-out hover:bg-[var(--iconorange)] hover:text-[var(--gray100)]">8. Contact Us</a>
 
             </div>
             <div class="w-[600px] h-fit flex flex-col gap-[10px]">
-                <div id="introduction">
+                <div id="introduction" class="section">
                     <h6 class="font-medium text-[18px]">1. Introduction</h6>
                     <p class="font-medium text-[18px] text-[var(--darkgray)] px-[15px] leading-8 mt-[6px]">At BIRIMS (Barangay Integrated Record and Incident Management System), we value your privacy and are committed to protecting the personal information you share with us.
                     This Privacy Policy explains how we collect, use, and safeguard your data when you use our system and related services. </p>
                 </div>
-                <div id="information-we-collect">
+                <div id="information-we-collect" class="section">
                     <h6 class="font-medium text-[18px]">2. Information We Collect</h6>
                     <p class="font-medium text-[18px] text-[var(--darkgray)] px-[15px] leading-8 mt-[6px]">We may collect the following information to ensure accurate record management and efficient service delivery:
                         <ul class="list-disc flex flex-col gap-[5px] ml-[35px]">
@@ -74,7 +74,7 @@
                         </ul>
                     </p>
                 </div>
-                <div id="use-of-services">
+                <div id="use-of-services" class="section">
                     <h6 class="font-medium text-[18px]">3. Use of Services</h6>
                     <p class="font-medium text-[18px] text-[var(--darkgray)] px-[15px] leading-8 mt-[6px]">The information collected is used solely for the following purposes: 
                         <ul class="list-disc flex flex-col gap-[5px] ml-[35px]">
@@ -85,11 +85,11 @@
                         </ul>
                     </p>
                 </div>
-                <div id="data-privacy-and-protection">
+                <div id="data-privacy-and-protection" class="section">
                     <h6 class="font-medium text-[18px]">4. Data Privacy and Protection</h6>
                     <p class="font-medium text-[18px] text-[var(--darkgray)] px-[15px]">We implement appropriate security measures to protect your personal data from unauthorized access, disclosure, or misuse. All collected information is stored securely and can only be accessed by authorized barangay officials or system administrators.</p>
                 </div>
-                <div id="data-sharing-and-disclosure">
+                <div id="data-sharing-and-disclosure" class="section">
                     <h6 class="font-medium text-[18px] ">5. Data Sharing and Disclosure</h6>
                     <p class="font-medium text-[18px] text-[var(--darkgray)] px-[15px] leading-8 mt-[6px]">BIRIMS does not sell, trade, or rent user information.
                     Data may only be shared under the following conditions:
@@ -100,7 +100,7 @@
                     </ul>
                     </p>
                 </div>
-                <div id="user-rights">
+                <div id="user-rights" class="section">
                     <h6 class="font-medium text-[18px]">6. User Rights</h6>
                     <p class="font-medium text-[18px] text-[var(--darkgray)] px-[15px] leading-8 mt-[6px]">You have the right to:
                     <ul class="list-disc flex flex-col gap-[5px] ml-[35px]">
@@ -110,11 +110,11 @@
                     </ul>
                     </p>
                 </div>
-                <div id="updates-to-this-policy">
+                <div id="updates-to-this-policy" class="section">
                     <h6 class="font-medium text-[18px]">7. Updates to This Policy</h6>
                     <p class="font-medium text-[18px] text-[var(--darkgray)] px-[15px] leading-8 mt-[6px]">We may update this Privacy Policy from time to time. All changes will be reflected on this page with the updated date above.</p>
                 </div>
-                <div id="contact-us">
+                <div id="contact-us" class="section">
                     <h6 class="font-medium text-[18px]">8. Contact Us</h6>
                     <p class="font-medium text-[18px] text-[var(--darkgray)] px-[15px] leading-8 mt-[6px]">If you have questions or concerns about this Privacy Policy, you may contact:
                         <a href="https://maps.app.goo.gl/t9oBHUwfVVHSXJFs9" target="_blank" class="flex gap-[10px] text-[16px] text-[var(--darkgray)] font-medium mt-[10px] stroke-[var(--darkgray)] duration-150 ease-out hover:text-[var(--orange)] hover:underline hover:stroke-[var(--orange)]">                

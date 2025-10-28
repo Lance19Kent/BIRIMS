@@ -62,3 +62,7 @@ input[type="radio"]:checked + .content{
     color:var(--orange);
     text-decoration: underline;
 }
+.active-privacy-nav{
+    background-color:var(--iconorange);
+    color:var(--gray100);
+}
