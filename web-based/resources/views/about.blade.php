@@ -57,7 +57,7 @@
         <section class="w-full min-h-screen pb-[30px]">
             <div class="pt-[50px] flex flex-col items-center ">
                 <h1 style="font-family: 'IBM Plex Serif';" class="font-medium text-[50px]">Our Mission</h1>
-                <p class="text-[var(--darkgray)]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+                <p class="text-[var(--darkgray)]">Our System provides assitance to the residents of San Bartolome, Quezon City with having a Mission, Vision and Values inside our organization.</p>
             </div>
             <div class="flex justify-center items-start gap-[30px] pt-[50px]" style="height: calc(100vh - 150px);">
                 <div class="w-[350px] flex flex-col items-center gap-[10px]">
