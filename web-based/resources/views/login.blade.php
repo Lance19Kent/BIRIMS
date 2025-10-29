@@ -57,7 +57,7 @@
                     </svg>
                 </span>
                 <div class="flex gap-[8px]">
-                    <input type="checkbox" class="cursor-pointer accent-[var(--orange)]"><label class="text-[13px] font-semibold">I agree to the <a href="#" class="text-[var(--orange)] duration-150 ease-in hover:underline ">Terms and Conditions</a> and <a href="#" class="text-[var(--orange)] duration-150 ease-in hover:underline">Privacy Policy</a></label>
+                    <input type="checkbox" class="cursor-pointer accent-[var(--orange)]"><label class="text-[13px] font-semibold">I agree to the <a href="{{url('terms')}}" target="_blank" class="text-[var(--orange)] duration-150 ease-in hover:underline ">Terms and Conditions</a> and <a href="{{url('privacy')}}" target="_blank" class="text-[var(--orange)] duration-150 ease-in hover:underline">Privacy Policy</a></label>
                 </div>
                 <div class="flex flex-col gap-4">
                         <a href="{{url('login')}}" class="bg-[var(--orange)] w-full border border-[var(--orange)] rounded-[4px] text-white text-[18px] text-center py-[8px] ease-out duration-150 hover:bg-white hover:text-[var(--orange)]">Sign Up</a>
