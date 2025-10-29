@@ -95,5 +95,26 @@ document.addEventListener("DOMContentLoaded",function(){
                 };
             });
         };
-    }
+    };
+
 });
+
+document.addEventListener("DOMContentLoaded" , function()
+{
+       // Script for Signup Multi-Page Inputs
+    const page1 = document.getElementById('page1');
+    const page2 = document.getElementById('page2');
+    const nextBtn = document.getElementById('nextBtn');
+    const backBtn = document.getElementById('backBtn');
+
+
+        nextBtn.addEventListener("click", () =>{
+            page1.classList.add("hidden");
+            page2.classList.remove("hidden");
+        });
+        backBtn.addEventListener("click", () =>{
+            page2.classList.add("hidden");
+            page1.classList.remove("hidden");
+        });
+    
+})

@@ -14,10 +14,6 @@ Route::get('/signup', function () {
     return view('signup');
 });
 
-Route::get('/signup2', function () {
-    return view('signup2');
-});
-
 Route::get('/contact', function () {
     return view('contact');
 });
