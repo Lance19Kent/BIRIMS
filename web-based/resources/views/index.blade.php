@@ -22,7 +22,7 @@
 <body class="min-h-screen max-w-full bg-[#F4F4F5]">
 
     <!-- Navbar Section -->
-    @include('landingpages.partials.navbar')
+    @include('partials.navbar')
     <!-- Navbar Section -->
 
     <main class="min-h-screen max-w-full bg-[#F4F4F5] flex-1 flex flex-col">
@@ -242,7 +242,7 @@
     </main>
 
     <!-- Footer Section -->
-    @include('landingpages.partials.footer')
+    @include('partials.footer')
     <!-- Footer Section -->
 
 </body>
