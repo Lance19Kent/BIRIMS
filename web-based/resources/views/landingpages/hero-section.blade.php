@@ -1,6 +1,6 @@
-<section class="h-screen max-w-full flex justify-between items-center-safe px-30 pt-[60px]">
+<section class="h-screen max-w-full flex md:flex-row justify-between items-center-safe px-30 pt-[60px] flex-col">
     <div class="w-[550px] flex flex-col gap-[20px]">
-        <h1 class="text-[50px] font-medium leading-[65px]" style="font-family: 'IBM Plex Serif', serif;">Barangay Integrated Record and Incident Management System</h1>
+        <h1 class="md:text-[50px] font-medium leading-[65px] text-[32px]" style="font-family: 'IBM Plex Serif', serif;">Barangay Integrated Record and Incident Management System</h1>
         <p class="text-[18px] font-medium text-[#A1A1AA] leading-[27px]">A digital platform designed to simplify and secure the management of barangay resident records, incidents, clearances, and certifications. </p>
         <a href="#step-section" class="w-[190px] flex items-center pt-[10px] pb-[10px] pl-[20px] pr-[20px] text-white border border-[var(--gray)] fill-white bg-[#EA580C] rounded-[4px] justify-center gap-2 duration-150 ease-in hover:bg-[var(--gray)] hover:text-[#EA580C] hover:fill-[#EA580C] hover:border-[var(--orange)]">
             <p class="text-[20px] font-medium">Get Started</p>

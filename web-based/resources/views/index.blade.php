@@ -19,13 +19,13 @@
     @vite('resources/css/app.css')
     @vite('resources/js/app.js')
 </head>
-<body class="min-h-screen w-full bg-[#F4F4F5]">
+<body class="min-h-screen max-w-full bg-[#F4F4F5]">
 
     <!-- Navbar Section -->
     @include('landingpages.partials.navbar')
     <!-- Navbar Section -->
 
-    <main class="min-h-screen w-full bg-[#F4F4F5] flex-1 flex flex-col">
+    <main class="min-h-screen max-w-full bg-[#F4F4F5] flex-1 flex flex-col">
         <!-- Hero Section -->
         @include('landingpages.hero-section')
         <!-- Hero Section -->

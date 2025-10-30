@@ -1,9 +1,9 @@
-<header class="h-20 w-full bg-white flex pl-10 fixed z-100">
+<header class="md:h-20 w-full bg-white flex pl-10 fixed z-100 h-15">
     <div class="h-[100%] w-[189px] flex items-center gap-2.5">
-        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" class="md:w-[50px] w-[35px]">
             <circle cx="25" cy="25" r="25" fill="#EA580C"/>
         </svg>
-        <h1 class="font-medium font text-[30px] text-[#EA580C]">BIRIMS</h1>
+        <h1 class="font-medium font text-[24px] md:text-[30px] text-[#EA580C]">BIRIMS</h1>
     </div>
     <div class="h-[100%] w-full flex justify-end items-center pr-10">
         <ul class="flex gap-[40px]">
