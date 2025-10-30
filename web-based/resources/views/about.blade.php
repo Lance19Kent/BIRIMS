@@ -20,7 +20,7 @@
 
 <body class="h-full w-full">
      <!-- Navbar Section -->
-    @include('landingpages.partials.navbar')
+    @include('partials.navbar')
     <!-- Navbar Section -->
 
     <main class="flex-1 min-h-screen bg-[var(--gray)] flex flex-col items-center justify-center">
@@ -99,7 +99,7 @@
     </main>
 
     <!-- Footer Section -->
-     @include('landingpages.partials.footer')
+     @include('partials.footer')
     <!-- Footer Section -->
 </body>
 </html>
