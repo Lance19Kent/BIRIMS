@@ -20,7 +20,7 @@
 
 <body class="w-full h-full">
      <!-- Navbar Section -->
-    @include('landingpages.partials.navbar')
+    @include('partials.navbar')
     <!-- Navbar Section -->
 
     <main class="w-full min-h-screen flex-1 bg-[var(--gray)] relative pb-[40px]">
@@ -148,7 +148,7 @@
         </div>
     </main>
     <!-- Footer Section -->
-     @include('landingpages.partials.footer')
+     @include('partials.footer')
     <!-- Footer Section -->
 </body>
 </html>
