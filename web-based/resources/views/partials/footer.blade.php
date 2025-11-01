@@ -1,10 +1,10 @@
 <footer class="md:h-[230px] h-[200px] w-full flex-col md:flex-row flex justify-between items-center px-20 pt-[30px] md:py-0 text-center md:text-left">
     <div class="pb-[10px] md:pb-0">
         <div class="flex items-center gap-2.5 mb-4 justify-center md:justify-start">
-            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" class="md:h-[50px] h-[40px]">
                 <circle cx="25" cy="25" r="25" fill="#EA580C"/>
             </svg>
-            <h1 class="font-medium font text-[30px] text-[#EA580C]">BIRIMS</h1>
+            <h1 class="font-medium font md:text-[30px] text-[24px] text-[#EA580C]">BIRIMS</h1>
         </div>
         <div class="flex flex-col gap-[10px]">
             <div class="flex stroke-[var(--darkgray)] items-center gap-[10px] justify-center md:justify-start">
@@ -33,7 +33,7 @@
     </div>
     <div class="flex flex-col md:flex-row justify-end md:gap-[70px] gap-[20px] pb-[20px] md:pb-0">
         <div class="flex flex-col gap-[5px]">
-            <h2 class="font-medium text-[18px]">Services</h2>
+            <h2 class="font-medium md:text-[18px] text-[16px]">Services</h2>
             <ul class="flex flex-col gap-[5px]">
                 <li><a href="{{url('login')}}" class="footer-nav">Blotter</a></li>
                 <li><a href="{{url('login')}}" class="footer-nav">Documents</a></li> 
@@ -42,7 +42,7 @@
             </ul>
         </div>
         <div class="flex flex-col gap-[5px]">
-            <h2 class="font-medium text-[18px]">Navigation</h2>
+            <h2 class="font-mediummd:text-[18px] text-[16px]">Navigation</h2>
             <ul class="flex flex-col gap-[5px]">
                 <li><a href="{{url('/')}}" class="footer-nav {{request()-> is('/') ? 'active-footer' : ''}}">Home</a></li>
                 <li><a href="{{url('about')}}" class="footer-nav {{request()-> is('about') ? 'active-footer' : ''}}">About</a></li>
@@ -51,7 +51,7 @@
             </ul>
         </div>
         <div class="flex flex-col gap-[5px]">
-            <h2 class="font-medium text-[18px]">Resources</h2>
+            <h2 class="font-medium md:text-[18px] text-[16px]">Resources</h2>
             <ul class="flex flex-col gap-[5px]">
                 <li><a href="{{url('faq')}}" class="footer-nav {{request()-> is('faq') ? 'active-footer' : ''}}">FAQs</a></li>
                 <li><a href="{{url('terms')}}" class="footer-nav {{request()-> is('terms') ? 'active-footer' : ''}}">Terms</a></li>

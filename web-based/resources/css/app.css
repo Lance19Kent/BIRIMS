@@ -15,6 +15,8 @@
     --darkgray:#A1A1AA;
 
     --iconorange:#FD7E1E;
+
+    --mobile-text-size:14px;
 }
 
 *{
@@ -29,19 +31,19 @@
         @apply w-full h-[45px] border-[1px] border-[#FDBA74] rounded-[4px] flex justify-center items-center font-medium text-[16px] text-[#FDBA74] duration-150 ease-in hover:text-white hover:bg-[var(--lightorange)]
     }
     .footer-nav{
-        @apply text-[#A1A1AA] text-[16px] font-medium hover:underline duration-150 ease-in hover:text-[var(--orange)]
+        @apply text-[#A1A1AA] md:text-[16px] text-[14px] font-medium hover:underline duration-150 ease-in hover:text-[var(--orange)]
     }
     .header-nav{
         @apply duration-300 ease-out text-[#A1A1AA] hover:text-[var(--orange)]
     }
     .faq-details{
-        @apply text-[18px] font-medium block pl-[10px] cursor-pointer
+        @apply text-[18px] font-medium block pl-[10px] cursor-pointer 
     }
     .faq-content{
-        @apply text-[18px] font-medium block pl-[10px]
+        @apply md:text-[18px] font-medium block pl-[10px] text-[16px]
     }
     .faq-summary{
-        @apply text-[var(--darkgray)] px-[10px] pt-[10px]
+        @apply text-[var(--darkgray)] px-[10px] pt-[10px] md:text-[16px] text-[14px]
         }
 }
 
