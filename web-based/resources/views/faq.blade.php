@@ -45,8 +45,8 @@
             <p class="relative z-10 text-[var(--darkgray)]">We're here to help with any questions you have about requests, reports, and supported features. </p>
         </div>
         <section class="h-full w-full flex justify-center pb-[20px]" id="contact-us">
-            <div class="w-[600px] h-full flex flex-col gap-6 justify-center items-center px-10">
-                <ul class="w-[600px] h-fit pt-[30px]">
+            <div class="w-full max-w-[600px] h-full flex flex-col gap-6 justify-center items-center md:px-10 sm:px-6 px-4">
+                <ul class="w-full h-fit pt-[30px]">
                     <li class="p-[16px]">
                         <label for="first" class="faq-content">How do i request for my barangay documents?</label>
                         <input type="radio" name="accordion" id="first" class="hidden" checked >
