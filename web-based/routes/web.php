@@ -33,3 +33,10 @@ Route::get('/terms', function () {
 Route::get('/privacy', function () {
     return view('privacy');
 });
+
+use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Auth\RegisterController;
+
+Route::post('/login', [LoginController::class, 'login'])->name('login.post');
+Route::post('/signup', [RegisterController::class, 'register'])->name('register.post');
+Route::post('/logout', [LoginController::class, 'logout'])->name('logout');

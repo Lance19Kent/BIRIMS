@@ -7,31 +7,37 @@ document.addEventListener("DOMContentLoaded",function(){
     let confirmPasswordField = document.querySelector("#confirmPasswordInput");
     let showPassword = document.querySelector("#showPasswordIcon");
     let hidePassword = document.querySelector("#hidePasswordIcon");
+    let showConfirmPassword = document.querySelector("#showConfirmPasswordIcon");
+    let hideConfirmPassword = document.querySelector("#hideConfirmPasswordIcon");
 
+    // Password field toggle
     if(passwordField && showPassword && hidePassword){
-        showPassword.addEventListener("click", () =>{
-        passwordField.type = "text";
-        hidePassword.classList.remove("hidden");
-        showPassword.classList.add("hidden");
-    });
-
-    hidePassword.addEventListener("click", () =>{
-        passwordField.type = "password";
-        showPassword.classList.remove("hidden");
-        hidePassword.classList.add("hidden");
-    });
-    }else if(confirmPasswordField && showPassword && hidePassword){
-        showPassword.addEventListener("click",() =>{
-            confirmPasswordField.type ="text";
+        showPassword.addEventListener("click", () => {
+            passwordField.type = "text";
             hidePassword.classList.remove("hidden");
             showPassword.classList.add("hidden");
         });
 
-        hidePassword.addEventListener("click",() =>{
-            confirmPasswordField.type = "password";
+        hidePassword.addEventListener("click", () => {
+            passwordField.type = "password";
             showPassword.classList.remove("hidden");
             hidePassword.classList.add("hidden");
-        })
+        });
+    }
+
+    // Confirm password field toggle
+    if(confirmPasswordField && showConfirmPassword && hideConfirmPassword){
+        showConfirmPassword.addEventListener("click", () => {
+            confirmPasswordField.type = "text";
+            hideConfirmPassword.classList.remove("hidden");
+            showConfirmPassword.classList.add("hidden");
+        });
+
+        hideConfirmPassword.addEventListener("click", () => {
+            confirmPasswordField.type = "password";
+            showConfirmPassword.classList.remove("hidden");
+            hideConfirmPassword.classList.add("hidden");
+        });
     }
 
     // JS for Gender Customization
@@ -112,7 +118,4 @@ document.addEventListener("DOMContentLoaded",function(){
             page1.classList.remove("hidden");
         });
     }
-   
-
-
 });
