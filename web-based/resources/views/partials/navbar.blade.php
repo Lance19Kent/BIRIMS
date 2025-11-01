@@ -6,7 +6,7 @@
         <h1 class="font-medium font text-[24px] md:text-[30px] text-[#EA580C]">BIRIMS</h1>
     </div>
     <div class="h-[100%] w-full flex justify-end items-center pr-10">
-        <ul class="hidden md:flex gap-6 lg:gap-[40px]">
+        <ul class="hidden md:flex gap-6 lg:gap-[40px]" id="menu">
             <!-- The request()->is() function checks if the current URL matches and adds active automatically.
                     So when you move between pages, the correct menu stays highlighted -->
             <li><a href="{{url('/')}}" class="header-nav {{request()-> is('/') ? 'active' : ''}}">Home</a></li>

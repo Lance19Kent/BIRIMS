@@ -96,19 +96,14 @@ document.addEventListener("DOMContentLoaded",function(){
             });
         };
     };
-
-});
-
-document.addEventListener("DOMContentLoaded" , function()
-{
        // Script for Signup Multi-Page Inputs
     const page1 = document.getElementById('page1');
     const page2 = document.getElementById('page2');
     const nextBtn = document.getElementById('nextBtn');
     const backBtn = document.getElementById('backBtn');
 
-
-        nextBtn.addEventListener("click", () =>{
+    if(page1 && page2 && nextBtn && backBtn){
+     nextBtn.addEventListener("click", () =>{
             page1.classList.add("hidden");
             page2.classList.remove("hidden");
         });
@@ -116,5 +111,8 @@ document.addEventListener("DOMContentLoaded" , function()
             page2.classList.add("hidden");
             page1.classList.remove("hidden");
         });
-    
-})
+    }
+   
+
+
+});

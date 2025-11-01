@@ -41,8 +41,8 @@
             <path d="M213.161 207.781C225.123 207.781 234.821 198.142 234.821 186.252C234.821 174.362 225.123 164.723 213.161 164.723C201.199 164.723 191.501 174.362 191.501 186.252C191.501 198.142 201.199 207.781 213.161 207.781Z" fill="#FB923C"/>
         </svg>
         <div class="flex flex-col items-center pt-[35px] gap-[10px] md:gap-0">
-            <h1 style="font-family: 'IBM Plex Serif';" class="md:pt-[80px] pt-[60px] relative z-10 md:text-[50px] text-center md:text-left text-[32px] font-medium">Frequently Asked Questions</h1>
-            <p class="relative z-10 text-[var(--darkgray)] text-center px-[30px] md:px-0 md:text-[16px] text-[14px]">We're here to help with any questions you have about requests, reports, and supported features. </p>
+            <h1 style="font-family: 'IBM Plex Serif';" class="md:pt-[80px] pt-[60px] relative z-10 md:text-[50px] text-center md:text-left text-[32px] font-medium px-[30px] md:px-0">Frequently Asked Questions</h1>
+            <p class="relative z-10 text-[var(--darkgray)] text-center px-10 md:px-0 md:text-[16px] text-[14px]">We're here to help with any questions you have about requests, reports, and supported features. </p>
         </div>
         <section class="h-full w-full flex justify-center pb-[20px]" id="contact-us">
             <div class="w-full max-w-[600px] h-full flex flex-col gap-6 justify-center items-center md:px-10 sm:px-6 px-4">
