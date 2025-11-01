@@ -8,11 +8,11 @@
         </div>
         <div class="flex flex-col gap-[10px]">
             <div class="flex stroke-[var(--darkgray)] items-center gap-[10px] justify-center md:justify-start">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="size-6">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="size-8 md:size-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
                     <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
                 </svg>
-                <p class="font-medium text-[#A1A1AA] text-[12px]">P22M+7WC, Quirino Hwy, Novaliches, Quezon City, Metro Manila, Philippines</p>
+                <p class="font-medium text-[#A1A1AA] text-[12px]">Quirino Hwy, Novaliches, Quezon City, Metro Manila, Philippines</p>
             </div>
             <div class="flex stroke-[var(--darkgray)] items-center gap-[10px] justify-center md:justify-start">
                 <svg fill="var(--darkgray)" class="size-5" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
