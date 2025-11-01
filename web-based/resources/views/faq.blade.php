@@ -24,7 +24,7 @@
     <!-- Navbar Section -->
 
     <main class="w-full min-h-screen flex-1 bg-[var(--gray)] relative md:pb-[40px] pb-[120px]">
-        <svg viewBox="0 0 185 185" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute bottom-0 right-0 md:w-[250px] w-[150px]">
+        <svg viewBox="0 0 185 185" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute bottom-0 right-0 md:w-[250px] w-[130px]">
         <g clip-path="url(#clip0_58_1146)">
             <path d="M185 65.366H65.3661V185H185V65.366Z" fill="#FDBA74"/>
             <path d="M125.184 5.55005H5.55005V125.184H125.184V5.55005Z" stroke="#111111" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
@@ -35,14 +35,14 @@
             </clipPath>
         </defs>
         </svg>
-        <svg viewBox="0 0 328 316" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute md:top-20 z-0 top-10 md:h-[360px] h-[240px]">
+        <svg viewBox="0 0 328 316" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute md:top-20 z-0 top-10 md:h-[360px] h-[200px]">
             <path d="M0 265.498V0H160.263V106.199C160.263 127.118 156.118 147.833 148.064 167.16C140.01 186.487 128.205 204.048 113.323 218.84C83.2681 248.715 42.5045 265.498 0 265.498H0Z" fill="#EA580C"/>
             <path d="M213.161 100.775C225.123 100.775 234.821 91.136 234.821 79.2458C234.821 67.3555 225.123 57.7166 213.161 57.7166C201.199 57.7166 191.501 67.3555 191.501 79.2458C191.501 91.136 201.199 100.775 213.161 100.775Z" fill="#FFEDD5"/>
             <path d="M213.161 207.781C225.123 207.781 234.821 198.142 234.821 186.252C234.821 174.362 225.123 164.723 213.161 164.723C201.199 164.723 191.501 174.362 191.501 186.252C191.501 198.142 201.199 207.781 213.161 207.781Z" fill="#FB923C"/>
         </svg>
         <div class="flex flex-col items-center pt-[35px] gap-[10px] md:gap-0">
             <h1 style="font-family: 'IBM Plex Serif';" class="md:pt-[80px] pt-[60px] relative z-10 md:text-[50px] text-center md:text-left text-[32px] font-medium">Frequently Asked Questions</h1>
-            <p class="relative z-10 text-[var(--darkgray)] text-center px-[30px] md:px-0">We're here to help with any questions you have about requests, reports, and supported features. </p>
+            <p class="relative z-10 text-[var(--darkgray)] text-center px-[30px] md:px-0 md:text-[16px] text-[14px]">We're here to help with any questions you have about requests, reports, and supported features. </p>
         </div>
         <section class="h-full w-full flex justify-center pb-[20px]" id="contact-us">
             <div class="w-full max-w-[600px] h-full flex flex-col gap-6 justify-center items-center md:px-10 sm:px-6 px-4">
