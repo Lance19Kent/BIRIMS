@@ -47,14 +47,14 @@
                 <a href="#our-story" class="py-[8px] bg-[var(--orange)] w-[140px] text-white border border-[var(--orange)] self-center mt-[20px] duration-150 ease-out hover:bg-[var(--gray)] hover:text-[var(--orange)] rounded-[4px] text-[20px]">See More</a>
             </div>
         </section>
-        <section id="our-story" class="h-screen w-full bg-white flex flex-col">
+        <!-- <section id="our-story" class="h-screen w-full bg-white flex flex-col">
             <h1 style="font-family: 'IBM Plex Serif';" class="font-medium text-[50px] text-center pt-[40px]">Our Story</h1>
             <div class="flex px-[80px] items-center justify-center pb-[100px] gap-[40px]" style="height: calc(100% - 80px);">
                 <p class="w-[600px] text-[var(--darkgray)]">Barangay San Bartolome, Quezon City, has long faced challenges in managing resident records, incident reports, and manual request forms. Most processes were done on paper, making it time-consuming for both residents and barangay staff to access and organize important information. Through a series of observations and interviews with barangay officials and residents, our team discovered the need for a more efficient and accessible way to handle these records. The Barangay Integrated Record and Incident Management System (BIRIMS) was developed — a digital platform designed to simplify record management, improve data accuracy, and speed up the delivery of public services. BIRIMS aims to bridge the gap between technology and community service, helping San Bartolome embrace a smarter and more transparent system for the benefit of every resident.</p>
                 <img src="assets/img/san-bartolome-pic.png" width="600" alt="San Bartolome Image"/>
             </div>
-        </section>
-        <section class="w-full min-h-screen pb-[30px]">
+        </section> -->
+        <!-- <section class="w-full min-h-screen pb-[30px]">
             <div class="pt-[50px] flex flex-col items-center ">
                 <h1 style="font-family: 'IBM Plex Serif';" class="font-medium text-[50px]">Our Mission</h1>
                 <p class="text-[var(--darkgray)]">Our System provides assitance to the residents of San Bartolome, Quezon City with having a Mission, Vision and Values inside our organization.</p>
@@ -83,8 +83,8 @@
                     </ul>
                 </div>
             </div>
-        </section>
-        <section class="w-full h-screen bg-white flex flex-col">
+        </section> -->
+        <!-- <section class="w-full h-screen bg-white flex flex-col">
             <div class="flex justify-around pt-[50px]">
                 <div class="flex flex-col w-[600px] ">
                     <h1 style="font-family: 'IBM Plex Serif';" class="font-medium text-[50px]">San Bartolome Vicinity</h1>
@@ -95,7 +95,7 @@
                 </p>
             </div>
             <iframe class="mt-[20px]" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.2102367772827!2d121.03219277408235!3d14.70069967462017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b0d8b7291c03%3A0xfebb36d4bd498470!2sSan%20Bartolome%20Barangay%20Hall!5e0!3m2!1sen!2sph!4v1761190349134!5m2!1sen!2sph" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
+        </section> -->
     </main>
 
     <!-- Footer Section -->
