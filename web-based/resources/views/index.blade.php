@@ -82,7 +82,7 @@
         <!-- Steps Section -->
 
         <!-- Barangay Certificates Section -->
-        <section class="min-h-screen w-full flex flex-col items-center justify-center gap-[50px] md:px-0 px-[40px] py-8 pb-[80px] pt-[50px]" id="cards-certificates">
+        <section class="min-h-screen w-full flex flex-col items-center justify-center gap-[50px] md:px-0 px-[40px] py-8 pb-[80px] pt-[30px]" id="cards-certificates">
             <div class="flex flex-col gap-2 items-center justify-center">
                 <h1 style="font-family: 'IBM Plex Serif', serif;" class="font-medium md:text-[50px] text-[32px] text-center">Request Your Barangay Certificates Online</h1>
                 <p class="font-medium md:text-[16px] text-[14px] text-[#A1A1AA] md:pl-[200px] md:pr-[200px] text-center">Easily apply for your barangay documents - no more long lines! Choose the certificate you need and submit your request in minutes.</p>
@@ -146,7 +146,7 @@
         <!-- Barangay Certificates Section -->
 
         <!-- Blotter Section -->
-        <section class="min-h-screen w-full bg-white flex md:flex-row flex-col-reverse items-center md:justify-center justify-end pt-[50px] md:pt-0 md:px-[150px] md:pb-[60px] px-[40px] md:gap-0 gap-[50px]" id="blotter">
+        <section class="min-h-screen w-full bg-white flex md:flex-row flex-col-reverse items-center md:justify-center justify-end pt-[30px] md:pt-0 md:px-[150px] md:pb-[60px] px-[40px] md:gap-0 gap-[50px]" id="blotter">
             <img src="{{asset('assets/svg/blotter-svg.svg')}}"  class="md:w-[510px] w-[250px]" alt="Blotter">
             <div class="flex flex-col gap-6 md:pl-20 max-w-[550px] w-full items-center md:items-start">
                 <h1 style="font-family: var(--font-ibm-plex-serif);" class="font-medium md:text-[50px] text-[32px] md:leading-[65px] text-center md:text-left">Need To File For a Blotter</h1>
@@ -162,20 +162,22 @@
         <!-- Blotter Section -->
 
         <!-- FAQ Section -->  
-        <!-- <section class="h-screen w-full flex items-center justify-center pb-[80px]" id="contact-us">
-            <div class="w-[600px] h-full flex flex-col gap-6 justify-center items-start px-20">
-                <h1 class="font-medium text-[50px] leading-[65px]" style="font-family: var(--font-ibm-plex-serif);">Frequently Asked Questions</h1>
-                <p class="font-medium text-[18px] text-[#A1A1AA]">If you have any question or concern, you can contact us in <a href="" class="text-[var(--orange)] duration-150 ease-in hover:underline">birims.sanbartolome@gmail.com</a> and we will quickly response at you! You can also contact us in different platforms just by clicking Contact Us below.</p>
-                <a href="{{url('contact')}}" class="w-[190px] flex items-center pt-[10px] pb-[10px] pl-[20px] pr-[20px] bg-[#EA580C] rounded-[4px] justify-center gap-2 text-white fill-white border duration-150 ease-in border-white hover:bg-[var(--gray)] hover:text-[var(--orange)] hover:fill-[var(--orange)] hover:border-[var(--orange)]">
-                    <p class="text-[18px] font-medium">Contact Us</p>
+        <section class="md:h-screen min-h-screen w-full flex md:flex-row pt-[30px] md:pt-0 flex-col items-center justify-center pb-[80px] md:gap-0 gap-[30px] px-[40px] md:px-0" id="contact-us">
+            <div class="w-full md:max-w-[600px] flex flex-col md:gap-6 gap-3 justify-center items-start md:px-20">
+                <h1 class="font-medium md:text-[50px] text-[32px] md:leading-[65px] text-center md:text-left" style="font-family: var(--font-ibm-plex-serif);">Frequently Asked Questions</h1>
+                <p class="font-medium md:text-[18px] text-[16px] text-center md:text-left text-[#A1A1AA]">If you have any question or concern, you can contact us in <a href="" class="text-[var(--orange)] duration-150 ease-in hover:underline">birims.sanbartolome@gmail.com</a> and we will quickly response at you! You can also contact us in different platforms just by clicking Contact Us below.</p>
+                <div class="w-full flex justify-center md:justify-start">
+                    <a href="{{url('contact')}}" class="max-w-[190px] flex items-center pt-[10px] pb-[10px] pl-[20px] pr-[20px] bg-[#EA580C] rounded-[4px] justify-center gap-2 text-white fill-white border duration-150 ease-in border-white hover:bg-[var(--gray)] hover:text-[var(--orange)] hover:fill-[var(--orange)] hover:border-[var(--orange)]">
+                    <p class="md:text-[18px] text-[16px] font-medium">Contact Us</p>
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px">
                         <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/>
                     </svg>
                 </a>
+                </div>
             </div>
-            <div class="w-[600px] h-full flex flex-col gap-6 justify-center items-center px-10">
-                <ul class="w-[600px] h-full mt-[100px]">
-                    <li class="p-[16px]">
+            <div class="w-full md:max-w-[600px] flex flex-col gap-6 justify-center items-center md:px-10">
+                <ul class="w-full max-w-[600px] h-full md:mt-[100px]">
+                    <li class="md:p-[16px] py-[16px]">
                         <label for="first" class="faq-details">How do i request for my barangay documents?</label>
                         <input type="radio" name="accordion" id="first" class="hidden" checked class="bg-amber-300">
                         <div class="content">
@@ -183,7 +185,7 @@
                         </div>
                     </li>
                     <hr class="text-[#E4E4E7]">
-                    <li class="p-[16px]">
+                    <li class="md:p-[16px] py-[16px]">
                         <label for="second" class="faq-details">What are the requirements to request for my documents?</label>
                         <input type="radio" name="accordion" id="second" class="hidden">
                         <div class="content">
@@ -191,7 +193,7 @@
                         </div>
                     </li>
                     <hr class="text-[#E4E4E7]">
-                    <li class="p-[16px]">
+                    <li class="md:p-[16px] py-[16px]">
                         <label for="third" class="faq-details">What are the types of documents i can request for?</label>
                         <input type="radio" name="accordion" id="third" class="hidden">
                         <div class="content">
@@ -199,7 +201,7 @@
                         </div>
                     </li>
                     <hr class="text-[#E4E4E7]">
-                    <li class="p-[16px]">
+                    <li class="md:p-[16px] py-[16px]">
                         <label for="fourth" class="faq-details">Do i need to pay for a fee to deliver my documents?</label>
                         <input type="radio" name="accordion" id="fourth" class="hidden">
                         <div class="content">
@@ -207,7 +209,7 @@
                         </div>
                     </li>
                     <hr class="text-[#E4E4E7]">
-                    <li class="p-[16px]">
+                    <li class="md:p-[16px] py-[16px]">
                         <label for="fifth" class="faq-details">Does (company name) support delivery services?</label>
                         <input type="radio" name="accordion" id="fifth" class="hidden">
                         <div class="content">
@@ -217,7 +219,7 @@
                     <hr class="text-[#E4E4E7]">
                 </ul>
             </div>
-        </section> -->
+        </section>
         <!-- FAQ Section -->
 
         <!-- Create Account Section -->

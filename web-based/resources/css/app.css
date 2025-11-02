@@ -37,7 +37,7 @@
         @apply duration-300 ease-out text-[#A1A1AA] hover:text-[var(--orange)]
     }
     .faq-details{
-        @apply text-[18px] font-medium block pl-[10px] cursor-pointer 
+        @apply md:text-[18px] text-[16px] font-medium block pl-[10px] cursor-pointer 
     }
     .faq-content{
         @apply md:text-[18px] font-medium block pl-[10px] text-[16px]
