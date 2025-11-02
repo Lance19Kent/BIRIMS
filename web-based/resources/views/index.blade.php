@@ -223,24 +223,35 @@
         <!-- FAQ Section -->
 
         <!-- Create Account Section -->
-        <!-- <section class="w-full bg-white relative" style="height: calc(100vh - 80px);" id="create-account">
-            <div class="w-[155px] h-[234px] bg-[#EA580C] absolute rounded-br-[500px]"></div>
-            <div class="w-[30px] h-[30px] bg-[#FFEDD5] rounded-full translate-x-[200px] translate-y-[50px] absolute"></div>
-            <div class="w-[30px] h-[30px] bg-[#FB923C] rounded-full translate-x-[170px] translate-y-[100px] absolute"></div>
-
-            <div class="w-full h-full flex flex-col gap-[20px] justify-center items-center px-[150px] text-center">
-                <div class="flex flex-col ">
-                    <h1 class="z-10 relative text-[54px] font-medium" style="font-family: --font-ibm-plex-serif;">Create Your Account Now</h1>
-                    <hr class="z-0 translate-y-[48px] absolute w-[568px] border-5 border-[#EA580C]">
+        <section class="min-h-screen md:h-full w-full bg-white relative px-[40px] pb-[100px]" style="height: calc(100vh - 80px);" id="create-account">
+            <svg viewBox="0 0 328 316" fill="none" xmlns="http://www.w3.org/2000/svg" class="left-0 absolute md:top-0 z-0 top-0 md:h-[300px] h-[200px]">
+                <path d="M0 265.498V0H160.263V106.199C160.263 127.118 156.118 147.833 148.064 167.16C140.01 186.487 128.205 204.048 113.323 218.84C83.2681 248.715 42.5045 265.498 0 265.498H0Z" fill="#EA580C"/>
+                <path d="M213.161 100.775C225.123 100.775 234.821 91.136 234.821 79.2458C234.821 67.3555 225.123 57.7166 213.161 57.7166C201.199 57.7166 191.501 67.3555 191.501 79.2458C191.501 91.136 201.199 100.775 213.161 100.775Z" fill="#FFEDD5"/>
+                <path d="M213.161 207.781C225.123 207.781 234.821 198.142 234.821 186.252C234.821 174.362 225.123 164.723 213.161 164.723C201.199 164.723 191.501 174.362 191.501 186.252C191.501 198.142 201.199 207.781 213.161 207.781Z" fill="#FB923C"/>
+            </svg>
+            <svg viewBox="0 0 185 185" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute bottom-0 right-0 md:w-[230px] w-[150px] z-[0]">
+            <g clip-path="url(#clip0_58_1146)">
+                <path d="M185 65.366H65.3661V185H185V65.366Z" fill="#FDBA74"/>
+                <path d="M125.184 5.55005H5.55005V125.184H125.184V5.55005Z" stroke="#111111" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            <defs>
+                <clipPath id="clip0_58_1146">
+                    <rect width="185" height="185" fill="white"/>
+                </clipPath>
+            </defs>
+            </svg>
+            <div class="w-full h-full flex flex-col gap-[10px] justify-center items-center md:px-[150px] text-center">
+                <div class="w-full flex flex-col items-center">
+                    <h1 class="w-fit z-10 relative md:text-[54px] text-[40px] font-medium" style="font-family: --font-ibm-plex-serif;">Create Your Account Now</h1>
+                    <hr class="hidden md:block z-0 translate-y-[48px] absolute w-full md:max-w-[568px] border-5 border-[#EA580C]">
                 </div>            
-                <p class="text-[18px] text-[#A1A1AA] font-medium">So what are you waiting for? Request now your first online barangay document by signing in or creating your account!</p>
-                <div class="flex gap-12 mt-4">
-                    <a href="{{ url('signup')}}" class="text-[18px] text-white font-medium px-[20px] py-[10px] bg-[#EA580C] rounded-[4px] duration-150 ease-in border border-[#EA580C] hover:bg-white hover:text-[var(--orange)]">Create Account</a>
-                    <a href="{{ url('login')}}" class="text-[18px] text-[#EA580C] font-medium px-[20px] py-[10px] bg-white rounded-[4px] border duration-150 ease-in border-[#e6c6b5] hover:bg-[var(--orange)] hover:text-white">Sign in To Account</a>
+                <p class="md:text-[18px] text-[14px] text-[#A1A1AA] font-medium">So what are you waiting for? Request now your first online barangay document by signing in or creating your account!</p>
+                <div class="flex md:gap-12 gap-6 mt-4 md:flex-row flex-col">
+                    <a href="{{ url('signup')}}" class="md:text-[18px] text-[16px] text-white font-medium px-[20px] py-[10px] bg-[#EA580C] rounded-[4px] duration-150 ease-in border border-[#EA580C] hover:bg-white hover:text-[var(--orange)]">Create Account</a>
+                    <a href="{{ url('login')}}" class="md:text-[18px] text-[16px] text-[#EA580C] font-medium px-[20px] py-[10px] bg-white rounded-[4px] border duration-150 ease-in border-[#e6c6b5] hover:bg-[var(--orange)] hover:text-white">Sign in To Account</a>
                 </div>
             </div>
-            <img src="assets/svg/create-account.svg" class="absolute bottom-0 right-0 w-[200px]">
-        </section> -->
+        </section>
         <!-- Create Account Section -->
          
     </main>
