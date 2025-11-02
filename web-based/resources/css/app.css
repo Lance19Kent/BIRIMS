@@ -45,6 +45,8 @@
     .faq-summary{
         @apply text-[var(--darkgray)] px-[10px] pt-[10px] md:text-[16px] text-[14px]
         }
+
+    
 }
 
 /* CSS for FAQ Don't Touch! */
@@ -67,4 +69,14 @@ input[type="radio"]:checked + .content{
 .active-privacy-nav{
     background-color:var(--iconorange);
     color:var(--gray100);
+}
+
+.bg-img{
+    background-image: url('/public/assets/svg/login-svg-mobile.svg');
+}
+
+@media (min-width: 768px){
+    .bg-img{
+        background-image: none;
+    }
 }
