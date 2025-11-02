@@ -244,6 +244,8 @@
                 <div class="w-full flex flex-col items-center">
                     <h1 class="w-fit z-10 relative md:text-[54px] text-[40px] font-medium" style="font-family: --font-ibm-plex-serif;">Create Your Account Now</h1>
                     <hr class="hidden md:block z-0 translate-y-[48px] absolute w-full md:max-w-[568px] border-5 border-[#EA580C]">
+                     <hr class=" md:hidden block z-0 translate-y-[40px] absolute w-[200px] border-3 border-[#EA580C]">
+                      <hr class="md:hidden block z-0 translate-y-[100px] absolute w-[220px] border-3 border-[#EA580C]">
                 </div>            
                 <p class="md:text-[18px] text-[14px] text-[#A1A1AA] font-medium">So what are you waiting for? Request now your first online barangay document by signing in or creating your account!</p>
                 <div class="flex md:gap-12 gap-6 mt-4 md:flex-row flex-col">
