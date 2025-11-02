@@ -47,7 +47,7 @@
                 </a>
             </div>
         </div>
-        <form class="w-full max-w-[400px] h-fit flex flex-col gap-[30px] md:pb-0 pb-[50px] px-[30px] md:px-0 ">
+        <form class="w-full max-w-[400px] h-full justify-center flex flex-col gap-[30px] md:pb-20 pb-[50px] px-[30px] md:px-0 ">
             <div class="leading-10">
                 <h4 class="font-medium md:text-[18px] text-[16px] text-[var(--darkgray)]">Welcome to BIRIMS</h4>
                 <h6 class="md:text-[50px] text-[46px] font-medium" style="font-family: 'IBM Plex Serif, serif;'">Sign In</h6>
