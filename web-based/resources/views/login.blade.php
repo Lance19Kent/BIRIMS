@@ -14,7 +14,7 @@
     @vite('resources/js/app.js')
 </head>
 <body class="h-screen max-h-screen w-full relative">
-    <img src="{{asset('assets/svg/login-svg.svg')}}" class="absolute h-full z-0 md:block hidden md:w-[470px] lg:w-[530px]">
+    <img src="{{asset('assets/svg/login-svg.svg')}}" class="absolute h-full z-0 md:block hidden md:w-[470px] lg:w-fit">
 
     <header class="h-[60px] w-full z-10 relative flex items-center pl-5 gap-2 md:fill-white md:text-white md:bg-transparent bg-white fill-[var(--orange)] text-[var(--orange)]">
         <svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">

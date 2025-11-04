@@ -14,7 +14,7 @@
     @vite('resources/js/app.js')
 </head>
 <body class="h-screen max-h-screen w-full relative">
-    <img src="{{asset('assets/svg/login-svg.svg')}}" class="absolute h-full z-0 md:block hidden">
+    <img src="{{asset('assets/svg/login-svg.svg')}}"  class="absolute h-full z-0 md:block hidden md:w-[470px] lg:w-fit">
 
     <header class="h-[60px] w-full z-10 relative flex items-center pl-5 gap-2 md:fill-white md:text-white md:bg-transparent bg-white fill-[var(--orange)] text-[var(--orange)]">
         <svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
@@ -22,7 +22,7 @@
         </svg> 
         <a href="{{url('/')}}" class="font-medium md:text-[20px] text-[26px]">BIRIMS</a>
     </header>
-    <main class="flex-1 w-full z-30 md:pl-5 md:flex-row flex-col flex items-center md:gap-0 gap-[30px] md:justify-between md:pr-[270px]" style="height: calc(100vh - 60px); ">
+    <main class="flex-1 w-full relative z-30 md:pl-5 md:flex-row flex-col flex items-center md:gap-0 gap-[30px] md:justify-between" style="height: calc(100vh - 60px); ">
 
         <!-- Left Side Content -->
         <div class="w-full md:max-w-[350px] h-full relative flex flex-col md:justify-between gap-[10px] md:pt-0 pt-[30px] bg-img">
@@ -51,10 +51,12 @@
         </div>
         <!--/ Left Side Content -->
 
-        <form class="w-full max-w-[400px] h-full flex justify-center flex-col gap-[30px] md:pb-20 pb-[50px]">
+    
+        <div class="w-full flex justify-center">
+            <form class="w-full max-w-[400px] h-full flex justify-center flex-col gap-[30px] md:pb-10 pb-[50px]">
             
             <!-- Personal Information Section -->
-            <div id="page1" class="md:px-0 px-[30px]">
+            <div id="page1" class="md:px-0 px-[30px] relative z-[31]">
                 <div class="leading-10 pb-[20px]">
                     <h4 class="font-medium md:text-[18px] text-[16px] text-[var(--darkgray)]">Welcome to BIRIMS</h4>
                     <h6 class="md:text-[50px] text-[46px] font-medium" style="font-family: 'IBM Plex Serif, serif;'">Create Account</h6>
@@ -187,6 +189,7 @@
             </div>
             <!--/ Account Credentials Section -->
         </form>
+        </div>
     </main>
 </body>
 </html>
