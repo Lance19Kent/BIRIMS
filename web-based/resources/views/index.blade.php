@@ -28,7 +28,7 @@
     <main class="min-h-screen w-full bg-[#F4F4F5] flex-1 flex flex-col">
 
         <!-- Hero Section -->
-        <section class="min-h-screen w-full flex md:flex-row justify-between items-center md:px-30 px-[40px] md:pt-[60px] flex-col pt-[90px] text-center md:text-left md:gap-0 gap-[30px] pb-[60px] md:pb-0">
+        <section class="min-h-screen w-full flex md:flex-row justify-between items-center lg:px-[30px] md:px-[20px] px-[40px] md:pt-[60px] flex-col pt-[90px] text-center md:text-left md:gap-0 gap-[30px] pb-[60px] md:pb-0">
             <div class="w-full md:max-w-[550px] flex flex-col gap-[20px] items-center md:items-start">
                 <h1 class="md:text-[50px] font-medium md:leading-[65px] text-[32px]" style="font-family: 'IBM Plex Serif', serif;">Barangay Integrated Record and Incident Management System</h1>
                 <p class="md:text-[18px] text-[16px] font-medium text-[#A1A1AA] leading-[27px]">A digital platform designed to simplify and secure the management of barangay resident records, incidents, clearances, and certifications. </p>
@@ -82,13 +82,13 @@
         <!-- Steps Section -->
 
         <!-- Barangay Certificates Section -->
-        <section class="min-h-screen w-full flex flex-col items-center justify-center gap-[50px] md:px-0 px-[40px] py-8 pb-[80px] pt-[30px]" id="cards-certificates">
+        <section class="min-h-screen w-full flex flex-col items-center justify-center gap-[50px] md:px-0 px-[40px] py-8 pb-[80px] md:pt-[60px] lg:pt-[30px] pt-[30px]" id="cards-certificates">
             <div class="flex flex-col gap-2 items-center justify-center">
                 <h1 style="font-family: 'IBM Plex Serif', serif;" class="font-medium md:text-[50px] text-[32px] text-center">Request Your Barangay Certificates Online</h1>
                 <p class="font-medium md:text-[16px] text-[14px] text-[#A1A1AA] md:pl-[200px] md:pr-[200px] text-center">Easily apply for your barangay documents - no more long lines! Choose the certificate you need and submit your request in minutes.</p>
             </div>
             <div class="flex md:gap-[100px] flex-col justify-between w-full">
-                <div class="flex md:flex-row flex-col md:gap-0 gap-[50px] justify-between items-center w-full md:px-[100px]">
+                <div class="flex md:flex-row flex-col lg:gap-0 md:gap-3.5 gap-[50px] justify-between items-center w-full lg:px-[100px]">
                     <div class="certificates">
                         <img src="{{asset('assets/svg/certificates/residency.svg')}}" alt="Barangay Certificate of Residency Photo">
                         <div class=" px-[20px] flex flex-col gap-[15px] mt-4">

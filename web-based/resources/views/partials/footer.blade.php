@@ -1,4 +1,4 @@
-<footer class="md:h-[230px] h-[200px] w-full flex-col md:flex-row flex justify-between items-center px-20 pt-[30px] md:py-0 text-center md:text-left">
+<footer class="md:max-h-[230px] h-[200px] w-full flex-col md:flex-row flex justify-between items-center lg:px-20 md:px-[20px] pt-[30px] md:py-0 text-center md:text-left">
     <div class="pb-[10px] md:pb-0">
         <div class="flex items-center gap-2.5 mb-4 justify-center md:justify-start">
             <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" class="md:h-[50px] h-[40px]">
@@ -27,11 +27,8 @@
                 <p class="font-medium text-[#A1A1AA] text-[12px]">birim.sanbartolome@gmail.com</p>
             </div>
         </div>
-
-        <p class="font-medium text-[#A1A1AA] text-[12px]"></p>
-
     </div>
-    <div class="flex flex-col md:flex-row justify-end md:gap-[70px] gap-[20px] pb-[20px] md:pb-0">
+    <div class="flex flex-col md:flex-row justify-end lg:gap-[70px] md:gap-[30px] gap-[20px] pb-[20px] md:pb-0">
         <div class="flex flex-col gap-[5px]">
             <h2 class="font-medium md:text-[18px] text-[16px]">Services</h2>
             <ul class="flex flex-col gap-[5px]">
