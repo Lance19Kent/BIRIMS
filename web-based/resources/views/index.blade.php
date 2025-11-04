@@ -28,7 +28,7 @@
     <main class="min-h-screen w-full bg-[#F4F4F5] flex-1 flex flex-col">
 
         <!-- Hero Section -->
-        <section class="min-h-screen w-full flex md:flex-row justify-between items-center lg:px-[30px] md:px-[20px] px-[40px] md:pt-[60px] flex-col pt-[90px] text-center md:text-left md:gap-0 gap-[30px] pb-[60px] md:pb-0">
+        <section class="min-h-screen w-full flex md:flex-row justify-between items-center lg:px-[120px] md:px-[40px] px-[40px] md:pt-[60px] flex-col pt-[90px] text-center md:text-left md:gap-0 gap-[30px] pb-[60px] md:pb-0">
             <div class="w-full md:max-w-[550px] flex flex-col gap-[20px] items-center md:items-start">
                 <h1 class="md:text-[50px] font-medium md:leading-[65px] text-[32px]" style="font-family: 'IBM Plex Serif', serif;">Barangay Integrated Record and Incident Management System</h1>
                 <p class="md:text-[18px] text-[16px] font-medium text-[#A1A1AA] leading-[27px]">A digital platform designed to simplify and secure the management of barangay resident records, incidents, clearances, and certifications. </p>
@@ -82,7 +82,7 @@
         <!-- Steps Section -->
 
         <!-- Barangay Certificates Section -->
-        <section class="min-h-screen w-full flex flex-col items-center justify-center gap-[50px] lg:px-[40px] md:px-[20px] px-[40px] py-8 pb-[80px] md:pt-[60px] lg:pt-[30px] pt-[30px]" id="cards-certificates">
+        <section class="min-h-screen w-full flex flex-col items-center justify-center gap-[50px] lg:px-[40px] md:px-[40px] px-[40px] py-8 pb-[80px] md:pt-[60px] lg:pt-[30px] pt-[30px]" id="cards-certificates">
             <div class="flex flex-col gap-2 items-center justify-center">
                 <h1 style="font-family: 'IBM Plex Serif', serif;" class="font-medium md:text-[50px] text-[32px] text-center">Request Your Barangay Certificates Online</h1>
                 <p class="font-medium md:text-[16px] text-[14px] text-[#A1A1AA] md:pl-[200px] md:pr-[200px] text-center 
@@ -147,11 +147,15 @@
         <!-- Barangay Certificates Section -->
 
         <!-- Blotter Section -->
-        <section class="min-h-screen w-full bg-white flex md:flex-row flex-col-reverse items-center md:justify-center justify-end pt-[30px] md:pt-0 md:px-[150px] md:pb-[60px] px-[40px] md:gap-0 gap-[50px]" id="blotter">
-            <img src="{{asset('assets/svg/blotter-svg.svg')}}"  class="md:w-[510px] w-[250px]" alt="Blotter">
-            <div class="flex flex-col gap-6 md:pl-20 max-w-[550px] w-full items-center md:items-start">
-                <h1 style="font-family: var(--font-ibm-plex-serif);" class="font-medium md:text-[50px] text-[32px] md:leading-[65px] text-center md:text-left">Need To File For a Blotter</h1>
-                <p class="font-medium md:text-[18px] text-[16px] text-[#A1A1AA] text-center md:text-left">Report incidents, disputes, or complaints directly to Barangay San Bartolome. Submit your blotter details online and let our team assist you promptly. </p>
+        <section class="md:min-h-screen h-fit pb-[60px] lg:pb-0 w-full bg-white flex lg:flex-row flex-col-reverse lg:items-center lg:justify-center md:justify-center justify-end pt-[30px] md:pt-0 lg:px-[150px] md:pb-[40px] 
+        px-[40px] lg:gap-0 md:gap-[70px] gap-[50px]" id="blotter">
+        <div class="w-full flex justify-center">
+            <img src="{{asset('assets/svg/blotter-svg.svg')}}"  class="lg:w-[510px] md:w-[400px] w-[350px]" alt="Blotter">
+
+        </div>
+            <div class="flex flex-col gap-6 lg:pl-20 lg:max-w-[550px] w-full items-center lg:items-start">
+                <h1 style="font-family: var(--font-ibm-plex-serif);" class="font-medium md:text-[50px] text-[32px] md:leading-[65px] text-center lg:text-left ">Need To File For a Blotter</h1>
+                <p class="font-medium md:text-[18px] text-[16px] text-[#A1A1AA] text-center lg:text-left">Report incidents, disputes, or complaints directly to Barangay San Bartolome. Submit your blotter details online and let our team assist you promptly. </p>
                 <a href="#" class="md:max-w-[190px] max-w-[170px] w-full flex items-center pt-[10px] pb-[10px] pl-[20px] pr-[20px] bg-[#EA580C] text-white fill-white rounded-[4px] justify-center gap-2 border duration-150 ease-in border-white hover:fill-[var(--orange)] hover:bg-white hover:border-[var(--orange)] hover:text-[var(--orange)]">
                     <p class="md:text-[18px] text-[16px] font-medium">Report Now</p>
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px">
