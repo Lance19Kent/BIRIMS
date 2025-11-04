@@ -51,7 +51,7 @@
             <h1 style="font-family: 'IBM Plex Serif';" class="font-medium md:text-[50px] text-[32px] text-center pt-[40px]">Our Story</h1>
             <div class="flex px-[40px] items-center justify-center md:pb-[80px] pb-[60px] gap-[30px] flex-col-reverse md:flex-row" style="height: calc(100% - 80px);">
                 <p class="w-full md:max-w-[600px] text-[var(--darkgray)] text-[14px] md:text-[16px]">Barangay San Bartolome, Quezon City, has long faced challenges in managing resident records, incident reports, and manual request forms. Most processes were done on paper, making it time-consuming for both residents and barangay staff to access and organize important information. Through a series of observations and interviews with barangay officials and residents, our team discovered the need for a more efficient and accessible way to handle these records. The Barangay Integrated Record and Incident Management System (BIRIMS) was developed — a digital platform designed to simplify record management, improve data accuracy, and speed up the delivery of public services. BIRIMS aims to bridge the gap between technology and community service, helping San Bartolome embrace a smarter and more transparent system for the benefit of every resident.</p>
-                <img src="assets/img/san-bartolome-pic.png" class="md:w-[600px] w-[500px]" alt="San Bartolome Image"/>
+                <img src="assets/img/san-bartolome-pic.png" class="lg:w-[600px] md:w-[350px] w-[500px]" alt="San Bartolome Image"/>
             </div>
         </section>
         <section class="w-full min-h-screen md:pb-[30px] pb-[60px] px-[40px] md:px-0">

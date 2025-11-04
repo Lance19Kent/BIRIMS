@@ -1,5 +1,5 @@
 <footer class="md:max-h-[230px] h-[200px] w-full flex-col md:flex-row flex justify-between items-center px-[20px] lg:px-20 md:px-[20px] pt-[30px] md:py-0 text-center md:text-left">
-    <div class="pb-[10px] md:pb-0 w-full">
+    <div class="pb-[10px] md:pb-0 w-full md:block md:truncate">
         <div class="flex items-center gap-2.5 mb-4 justify-center md:justify-start">
             <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" class="md:h-[50px] h-[40px]">
                 <circle cx="25" cy="25" r="25" fill="#EA580C"/>
