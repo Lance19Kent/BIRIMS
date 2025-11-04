@@ -167,10 +167,12 @@
         <!-- Blotter Section -->
 
         <!-- FAQ Section -->  
-        <section class="md:h-screen min-h-screen w-full flex md:flex-row pt-[30px] md:pt-0 flex-col items-center justify-center pb-[80px] md:gap-0 gap-[30px] px-[40px] md:px-0" id="contact-us">
-            <div class="w-full md:max-w-[600px] flex flex-col md:gap-6 gap-3 justify-center items-start md:px-20">
+        <section class="lg:h-screen min-h-screen w-full flex md:flex-row pt-[30px] md:pt-0 flex-col items-center justify-center pb-[80px] md:gap-0 gap-[30px] px-[40px] lg:px-0" id="contact-us">
+            <div class="w-full lg:max-w-[600px] flex flex-col md:gap-6 gap-3 justify-center items-center lg:items-start lg:px-20">
                 <h1 class="font-medium md:text-[50px] text-[32px] md:leading-[65px] text-center md:text-left" style="font-family: var(--font-ibm-plex-serif);">Frequently Asked Questions</h1>
-                <p class="font-medium md:text-[18px] text-[16px] text-center md:text-left text-[#A1A1AA]">If you have any question or concern, you can contact us in <a href="" class="text-[var(--orange)] duration-150 ease-in hover:underline">birims.sanbartolome@gmail.com</a> and we will quickly response at you! You can also contact us in different platforms just by clicking Contact Us below.</p>
+                <div class="w-full ">
+                <p class="font-medium md:text-[18px] text-[16px] text-center md:text-left text-[#A1A1AA] ">If you have any question or concern, you can contact us in <a href="" class="w-full text-[var(--orange)] duration-150 ease-in hover:underline md:text-[18px] text-[16px] block truncate">birims.sanbartolome@gmail.com</a> and we will quickly response at you! You can also contact us in different platforms just by clicking Contact Us below.</p>
+                </div>
                 <div class="w-full flex justify-center md:justify-start">
                     <a href="{{url('contact')}}" class="max-w-[190px] flex items-center pt-[10px] pb-[10px] pl-[20px] pr-[20px] bg-[#EA580C] rounded-[4px] justify-center gap-2 text-white fill-white border duration-150 ease-in border-white hover:bg-[var(--gray)] hover:text-[var(--orange)] hover:fill-[var(--orange)] hover:border-[var(--orange)]">
                     <p class="md:text-[18px] text-[16px] font-medium">Contact Us</p>
@@ -180,8 +182,8 @@
                 </a>
                 </div>
             </div>
-            <div class="w-full md:max-w-[600px] flex flex-col gap-6 justify-center items-center md:px-10">
-                <ul class="w-full max-w-[600px] h-full md:mt-[100px]">
+            <div class="w-full lg:max-w-[600px] flex flex-col gap-6 justify-center items-center lg:px-10">
+                <ul class="w-full lg:max-w-[600px] h-full md:mt-[100px]">
                     <li class="md:p-[16px] py-[16px]">
                         <label for="first" class="faq-details">How do i request for my barangay documents?</label>
                         <input type="radio" name="accordion" id="first" class="hidden" checked class="bg-amber-300">
