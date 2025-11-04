@@ -44,8 +44,8 @@
             <h1 style="font-family: 'IBM Plex Serif';" class="pt-[80px] relative z-10 md:text-[50px] text-[32px] font-medium">Contact us right now!</h1>
             <p class="relative z-10 text-[var(--darkgray)] md:text-[16px] text-[14px]">We are committed to processing the information in order to contact you and talk about your project. </p>
         </div>
-        <div class="flex justify-center md:flex-row flex-col pt-[40px] items-center pb-[20px] relative z-[10]">
-            <div class="flex justify-center pb-[80px]">
+        <div class="w-full flex justify-center md:flex-row flex-col pt-[40px] items-center pb-[20px] relative z-[10]">
+            <div class="flex justify-center pb-[80px] ">
                 <div class="w-full md:max-w-[500px] max-w-[280px] md:max-h-[300px] flex flex-col gap-[30px] md:pl-[50px] md:pr-[60px]">
                     <div class="flex gap-[20px]">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="var(--iconorange)" class="size-6">
@@ -75,11 +75,11 @@
                 </div>
             </div>
             
-            <div class="w-full md:max-w-[500px] max-w-[280px] md:pr-[55px]">
-                <form class="flex flex-col gap-[25px]">
-                    <span class="flex flex-col relative leading-3">                
-                        <label class="font-semibold text-[13px]">Name</label>
-                            <input type="text" placeholder="Ex. Juan Dela Cruz" class="peer text-[13px] w-full duration-150 ease-out h-[45px] border-b focus:outline-none focus:border-b focus:border-[var(--orange)] placeholder:pl-[25px] placeholder-shown:placeholder:opacity-100 focus:placeholder-shown:placeholder:opacity-0 placeholder:text-[var(--darkgray)] placeholder:text-[14px] relative">
+            <div class="w-full lg:max-w-[500px] md:pr-[55px] px-[40px]">
+                <form class="w-full flex flex-col gap-[25px]">
+                    <span class="w-full flex flex-col relative leading-3">                
+                        <label for="name" class="font-semibold text-[13px]">Name</label>
+                            <input type="text" id="name" placeholder="Ex. Juan Dela Cruz" class="peer text-[13px] w-full duration-150 ease-out h-[45px] border-b focus:outline-none focus:border-b focus:border-[var(--orange)] placeholder:pl-[25px] placeholder-shown:placeholder:opacity-100 focus:placeholder-shown:placeholder:opacity-0 placeholder:text-[var(--darkgray)] placeholder:text-[14px] relative">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="var(--darkgray)" class="size-5 absolute top-[22px] opacity-0 peer-placeholder-shown:opacity-100 peer-focus:opacity-0">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
                             </svg>

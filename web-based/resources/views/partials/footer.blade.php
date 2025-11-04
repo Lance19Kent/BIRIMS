@@ -28,7 +28,7 @@
             </div>
         </div>
     </div>
-    <div class="flex flex-col md:flex-row justify-end lg:gap-[70px] md:gap-[30px] gap-[20px] pb-[20px] md:pb-0">
+    <div class="w-full flex flex-col md:flex-row justify-end lg:gap-[70px] md:gap-[30px] gap-[20px] pb-[20px] md:pb-0">
         <div class="flex flex-col gap-[5px]">
             <h2 class="font-medium md:text-[18px] text-[16px]">Services</h2>
             <ul class="flex flex-col gap-[5px]">
