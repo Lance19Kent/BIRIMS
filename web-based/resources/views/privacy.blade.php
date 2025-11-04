@@ -45,8 +45,8 @@
             <p class="relative z-10 text-[var(--darkgray)] md:text-[16px] text-[14px]">Last Updated: October 24 2025</p>
         </div>
         <div class="w-full mt-[50px] relative z-10 flex flex-col justify-center md:flex-row gap-[50px] px-[40px]">
-           <div class="md:w-[350px] sm-w-full flex ">
-             <div class="w-full md:max-w-[410px] bg-[var(--gray)] h-fit border border-[#71717A] flex flex-col rounded-[4px] sticky top-[150px]">
+           <div class="lg:w-[350px] md:w-[600px] sm-w-full flex ">
+             <div class="w-full  bg-[var(--gray)] h-fit border border-[#71717A] flex flex-col rounded-[4px] sticky top-[150px]">
                 <h1 style="font-family: 'IBM Plex Serif';" class="font-medium text-[16px] md:text-[18px] p-[10px] text-center md:text-left ">On this page</h1>
                 <a href="#introduction" class="font-medium text-center md:text-left text-[16px] md:text-[18px] text-[var(--darkgray)] py-[10px] pl-[10px] duration-150 ease-out hover:bg-[var(--iconorange)] hover:text-[var(--gray100)] privacy-nav-links active-privacy-nav">1. Introduction</a>
                 <a href="#information-we-collect" class="privacy-nav-links font-medium text-[16px] md:text-[18px] text-[var(--darkgray)] py-[10px] pl-[10px]  duration-150 ease-out hover:bg-[var(--iconorange)] hover:text-[var(--gray100)] text-center md:text-left ">2. Information We Collect</a>
