@@ -46,36 +46,36 @@
         <!-- Hero Section -->
 
         <!-- Steps Section -->
-        <section class="min-h-screen w-full bg-white flex flex-col items-center justify-center gap-[30px] md:pb-[30px] pb-[50px] px-[40px] md:px-0 text-center md:pt-0 pt-[30px]" id="step-section">
+        <section class="min-h-screen w-full bg-white flex flex-col items-center justify-center gap-[30px] lg:pb-[30px] pb-[50px] px-[40px] lg:px-0 text-center lg:pt-0 pt-[30px]" id="step-section">
             <div class="flex flex-col gap-2 justify-center items-center">
                 <h1 style="font-family: 'IBM Plex Serif', serif;" class="md:text-[50px] text-[32px] font-medium">Get Your Documents In Just 3 Easy Steps!</h1>
                 <p class="font-medium md:text-[18px] text-[16px] text-[#A1A1AA]">Access barangay clearances, residency, indigency, and business permits online - fast, convenient, and secure.</p>
             </div>
-            <div class="w-full md:px-35 flex md:flex-row flex-col items-center justify-between gap-[50px] md:gap-0">
+            <div class="w-full lg:px-35 flex md:flex-row flex-col items-center justify-between gap-[50px] lg:gap-0">
                 <div class="flex w-fit flex-col justify-center items-center ">
                     <img src="{{asset('assets/svg/fill-up.svg')}}" alt="Fill-up Form Photo" class="md:w-[200px] w-[150px]">
                     <h2 class="font-semibold md:text-[16px] text-[14px] mt-4 mb-2">Fill Up The Form</h2>
-                    <p class="font-medium md:text-[16px] text-[14px] text-[#A1A1AA] w-[200px] text-center">Complete the digital application form after you logged in - anytime, anywhere.</p>
+                    <p class="font-medium md:text-[16px] text-[14px] text-[#A1A1AA] w-full max-w-[200px] text-center">Complete the digital application form after you logged in - anytime, anywhere.</p>
                 </div>
                 <div class="flex flex-col justify-center items-center rotate-90 md:rotate-0">
-                    <svg class="md:h-[4px] h-[1.5px]" viewBox="0 0 193 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="lg:h-[4px] md:h-[2px] h-[1.5px]" viewBox="0 0 193 4" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <line x1="0.994792" y1="2.48402" x2="192.995" y2="1.48402" stroke="#EA580C" stroke-width="2" stroke-dasharray="2 2"/>
                     </svg>
                 </div>
                 <div class="flex flex-col justify-center items-center">
                     <img src="{{asset('assets/svg/payment.svg')}}" alt="Payment Photo" class="md:w-[200px] w-[150px]">
                     <h2 class="font-semibold md:text-[16px] text-[14px] mt-4 mb-2">Payment</h2>
-                    <p class="font-medium md:text-[16px] text-[14px] text-[#A1A1AA] w-[200px] text-center">Pay securely online or at the barangay office. Your request will be processed once payment is confirmed.</p>
+                    <p class="font-medium md:text-[16px] text-[14px] text-[#A1A1AA] w-full max-w-[200px] text-center">Pay securely online or at the barangay office. Your request will be processed once payment is confirmed.</p>
                 </div>
                 <div class="flex flex-col justify-center items-center rotate-90 md:rotate-0">
-                    <svg class="md:h-[4px] h-[1.5px]" viewBox="0 0 193 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="lg:h-[4px] md:h-[2px] h-[1.5px]" viewBox="0 0 193 4" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <line x1="0.994792" y1="2.48402" x2="192.995" y2="1.48402" stroke="#EA580C" stroke-width="2" stroke-dasharray="2 2"/>
                     </svg>
                 </div>
                 <div class="flex flex-col justify-center items-center">
                     <img src="{{asset('assets/svg/delivery.svg')}}" alt="Delivery Photo" class="md:w-[200px] w-[150px]">
                     <h2 class="font-semibold md:text-[16px] text-[14px] mt-4 mb-2">Delivery</h2>
-                    <p class="font-medium md:text-[16px] text-[14px] text-[#A1A1AA] w-[200px] text-center">Get notified once your document is ready for pickup or deliver - simple, fast and reliable,</p>
+                    <p class="font-medium md:text-[16px] text-[14px] text-[#A1A1AA] w-full max-w-[200px]  text-center">Get notified once your document is ready for pickup or deliver - simple, fast and reliable,</p>
                 </div>
             </div>
         </section>
