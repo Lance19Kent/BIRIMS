@@ -82,13 +82,14 @@
         <!-- Steps Section -->
 
         <!-- Barangay Certificates Section -->
-        <section class="min-h-screen w-full flex flex-col items-center justify-center gap-[50px] md:px-0 px-[40px] py-8 pb-[80px] md:pt-[60px] lg:pt-[30px] pt-[30px]" id="cards-certificates">
+        <section class="min-h-screen w-full flex flex-col items-center justify-center gap-[50px] lg:px-[40px] md:px-[20px] px-[40px] py-8 pb-[80px] md:pt-[60px] lg:pt-[30px] pt-[30px]" id="cards-certificates">
             <div class="flex flex-col gap-2 items-center justify-center">
                 <h1 style="font-family: 'IBM Plex Serif', serif;" class="font-medium md:text-[50px] text-[32px] text-center">Request Your Barangay Certificates Online</h1>
-                <p class="font-medium md:text-[16px] text-[14px] text-[#A1A1AA] md:pl-[200px] md:pr-[200px] text-center">Easily apply for your barangay documents - no more long lines! Choose the certificate you need and submit your request in minutes.</p>
+                <p class="font-medium md:text-[16px] text-[14px] text-[#A1A1AA] md:pl-[200px] md:pr-[200px] text-center 
+                  ">Easily apply for your barangay documents - no more long lines! Choose the certificate you need and submit your request in minutes.</p>
             </div>
             <div class="flex md:gap-[100px] flex-col justify-between w-full">
-                <div class="flex md:flex-row flex-col lg:gap-0 md:gap-3.5 gap-[50px] justify-between items-center w-full lg:px-[100px]">
+                <div class="flex md:flex-row flex-col lg:gap-3.5 md:gap-3.5 gap-[50px] justify-between items-center w-full lg:px-[100px]">
                     <div class="certificates">
                         <img src="{{asset('assets/svg/certificates/residency.svg')}}" alt="Barangay Certificate of Residency Photo">
                         <div class=" px-[20px] flex flex-col gap-[15px] mt-4">
@@ -115,7 +116,7 @@
                     </div>
                 </div>
             </div>
-            <div class="flex md:flex-row flex-col md:gap-0 gap-[50px] justify-between items-center w-full md:px-[100px]">
+            <div class="flex md:flex-row flex-col lg:gap-3.5 md:gap-3.5 gap-[50px] justify-between items-center w-full lg:px-[100px]">
                 <div class="certificates">
                         <img src="{{asset('assets/svg/certificates/business.svg')}}" alt="Barangay Certificate for Business Photo">
                         <div class=" px-[20px] flex flex-col gap-[15px] mt-4">
@@ -136,7 +137,7 @@
                         <img src="{{asset('assets/svg/certificates/sedula.svg')}}" alt="Barangay Certificate of Sedula Photo">
                         <div class=" px-[20px] flex flex-col gap-[15px] mt-4">
                             <h1 class="font-semibold md:text-[18px] text-[16px]">Barangay Certificate of Community Tax (Sedula)</h1>
-                            <p class="font-normal md:text-[14px] text-[12px] text-[#52525B]">Official proof for individual that has paid the community tax - commonly used for various legal transactions.</p>
+                            <p class="font-normal md:text-[14px] text-[12px] text-[#52525B] ">Official proof for individual that has paid the community tax - commonly used for various legal transactions.</p>
                             <a href="{{url('login')}}" class="certificates-btn">Get Certificate</a>
                         </div>
                     </div>

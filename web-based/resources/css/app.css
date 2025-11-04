@@ -25,7 +25,7 @@
 
 @layer utilities{
     .certificates{
-         @apply pb-[20px] w-full lg:max-w-[300px] md:max-w-[250px] max-w-[250px] bg-white rounded-[8px] shadow-[10px_10px_0_#FDBA74] duration-150 ease-in hover:translate-y-[-20px] hover:shadow-[10px_10px_10px_#FDBA74] cursor-pointer;
+         @apply pb-[20px] w-full lg:w-[300px] md:w-[250px] max-w-[250px] bg-white rounded-[8px] shadow-[10px_10px_0_#FDBA74] duration-150 ease-in hover:translate-y-[-20px] hover:shadow-[10px_10px_10px_#FDBA74] cursor-pointer;
     }
     .certificates-btn{
         @apply w-full h-[45px] border-[1px] border-[#FDBA74] rounded-[4px] flex justify-center items-center font-medium md:text-[16px] text-[14px] text-[#FDBA74] duration-150 ease-in hover:text-white hover:bg-[var(--lightorange)]
@@ -45,8 +45,6 @@
     .faq-summary{
         @apply text-[var(--darkgray)] px-[10px] pt-[10px] md:text-[16px] text-[14px]
         }
-
-    
 }
 
 /* CSS for FAQ Don't Touch! */
