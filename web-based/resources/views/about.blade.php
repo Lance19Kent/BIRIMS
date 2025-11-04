@@ -24,6 +24,8 @@
     <!-- Navbar Section -->
 
     <main class="flex-1 min-h-screen bg-[var(--gray)] flex flex-col items-center justify-center">
+
+        <!-- Hero Section -->
         <section class="w-full h-screen relative flex justify-center items-center">
             <svg viewBox="0 0 185 185" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute bottom-0 right-0 md:w-[230px] w-[150px] z-[0]">
             <g clip-path="url(#clip0_58_1146)">
@@ -47,6 +49,9 @@
                 <a href="#our-story" class="py-[8px] bg-[var(--orange)] w-[140px] text-white border border-[var(--orange)] self-center mt-[20px] duration-150 ease-out hover:bg-[var(--gray)] hover:text-[var(--orange)] rounded-[4px] md:text-[20px] text-[18px]">See More</a>
             </div>
         </section>
+        <!--/ Hero Section  -->
+
+        <!-- Our Story Section -->
         <section id="our-story" class="md:h-screen min-h-screen w-full bg-white flex flex-col md:gap-0 gap-[20px]">
             <h1 style="font-family: 'IBM Plex Serif';" class="font-medium md:text-[50px] text-[32px] text-center pt-[40px]">Our Story</h1>
             <div class="flex px-[40px] items-center justify-center md:pb-[80px] pb-[60px] gap-[30px] flex-col-reverse md:flex-row" style="height: calc(100% - 80px);">
@@ -54,7 +59,10 @@
                 <img src="assets/img/san-bartolome-pic.png" class="lg:w-[600px] md:w-[350px] w-[500px]" alt="San Bartolome Image"/>
             </div>
         </section>
-        <section class="w-full min-h-screen md:pb-[30px] pb-[60px] px-[40px] md:px-0">
+        <!--/ Our Story Section -->
+
+        <!-- Our Mission Section -->
+        <section class="w-full min-h-screen md:pb-[30px] pb-[60px] px-[40px] lg:px-0">
             <div class="pt-[40px] md:pt-[60px] flex flex-col items-center gap-[10px] text-center">
                 <h1 style="font-family: 'IBM Plex Serif';" class="font-medium md:text-[50px] text-[40px]">Our Mission</h1>
                 <p class="text-[var(--darkgray)] md:text-[16px] text-[14px]">Our System provides assitance to the residents of San Bartolome, Quezon City with having a Mission, Vision and Values inside our organization.</p>
@@ -85,8 +93,11 @@
                 </div>
             </div>
         </section>
-        <section class="w-full min-h-screen bg-white flex flex-col">
-            <div class="flex justify-around pt-[40px] flex-col md:flex-row md:px-0 px-[40px] text-center md:text-left gap-[20px]">
+        <!--/ Our Mission Section -->
+
+        <!-- Our Vicinity Section -->
+        <section class="w-full min-h-screen bg-white flex flex-col ">
+            <div class="flex justify-around pt-[40px] md:px-[40px] flex-col md:flex-row px-[40px] items-center lg:items-start text-center md:text-left gap-[20px]">
                 <div class="flex flex-col w-full md:max-w-[600px] gap-[10px] md:gap-0">
                     <h1 style="font-family: 'IBM Plex Serif';" class="font-medium md:text-[50px] text-[32px]">San Bartolome Vicinity</h1>
                     <p style="font-family: 'IBM Plex Serif';" class="font-medium md:text-[20px] text-[18px]"> Hwy, Novaliches, Quezon City, Metro Manila</p>
@@ -97,6 +108,7 @@
             </div>
             <iframe class="mt-[20px]" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.2102367772827!2d121.03219277408235!3d14.70069967462017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b0d8b7291c03%3A0xfebb36d4bd498470!2sSan%20Bartolome%20Barangay%20Hall!5e0!3m2!1sen!2sph!4v1761190349134!5m2!1sen!2sph" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
+        <!-- Our Vicinity Section -->
     </main>
 
     <!-- Footer Section -->
