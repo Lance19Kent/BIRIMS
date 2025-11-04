@@ -14,7 +14,7 @@
     @vite('resources/js/app.js')
 </head>
 <body class="h-screen max-h-screen w-full relative">
-    <img src="{{asset('assets/svg/login-svg.svg')}}" class="absolute h-full z-0 md:block hidden">
+    <img src="{{asset('assets/svg/login-svg.svg')}}" class="absolute h-full z-0 md:block hidden md:w-[470px] lg:w-[530px]">
 
     <header class="h-[60px] w-full z-10 relative flex items-center pl-5 gap-2 md:fill-white md:text-white md:bg-transparent bg-white fill-[var(--orange)] text-[var(--orange)]">
         <svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
@@ -22,8 +22,10 @@
         </svg> 
         <a href="{{url('/')}}" class="font-medium md:text-[20px] text-[26px]">BIRIMS</a>
     </header>
-    <main class="flex-1 w-full z-30 md:pl-5 md:flex-row flex-col flex items-center md:gap-0 gap-[30px] md:justify-between md:pr-[270px]" style="height: calc(100vh - 60px); ">
-        <div class="w-full md:max-w-[350px] h-full relative flex flex-col md:justify-between gap-[10px] md:pt-0 pt-[30px] bg-img">
+    <main class="flex-1 w-full relative z-30 md:pl-5 md:flex-row flex-col flex items-center md:gap-0 gap-[30px] md:justify-between" style="height: calc(100vh - 60px); ">
+
+        <!-- Left Side Content -->
+        <div class="w-full lg:max-w-[350px] h-full relative flex flex-col md:justify-between gap-[10px] md:pt-0 pt-[30px] bg-img">
             <div class="w-full h-full flex flex-col justify-center gap-[10px] px-[30px] md:px-0 ">
                 <h1 class="font-medium md:text-[40px] text-[32px] text-white z-[1]">Hey There, Welcome!</h1>
                 <p class="text-white font-medium md:text-[15px] text-[12px] z-[1]">Access your account and manage everything with ease! Let’s get things done together and make today productive. </p>
@@ -47,45 +49,51 @@
                 </a>
             </div>
         </div>
-        <form class="w-full max-w-[400px] h-full justify-center flex flex-col gap-[30px] md:pb-20 pb-[50px] px-[30px] md:px-0 ">
-            <div class="leading-10">
-                <h4 class="font-medium md:text-[18px] text-[16px] text-[var(--darkgray)]">Welcome to BIRIMS</h4>
-                <h6 class="md:text-[50px] text-[46px] font-medium" style="font-family: 'IBM Plex Serif, serif;'">Sign In</h6>
-            </div>
-            <div class="flex flex-col gap-[25px]">
-                <span class="flex flex-col relative leading-3">                
-                    <label class="font-semibold md:text-[13px] text-[12px]">Email</label>
-                        <input type="text" placeholder="example@chakraui" class="peer md:text-[13px] text-[12px] w-full duration-150 ease-out h-[45px] border-b focus:outline-none focus:border-b focus:border-[var(--orange)] placeholder:pl-[25px] placeholder-shown:placeholder:opacity-100 focus:placeholder-shown:placeholder:opacity-0 placeholder:text-[var(--darkgray)] placeholder:md:text-[14px] placeholder:text-[12px]">
-                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 absolute bottom-[12px] w-[20px] stroke-[var(--darkgray)] opacity-0 pointer-events-none peer-placeholder-shown:opacity-100 peer-focus:opacity-0">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
-                    </svg>
-                </span>
-                <span class="flex flex-col relative leading-3">
-                    <div class="flex justify-between">
-                        <label class="font-semibold md:text-[13px] text-[12px]">Password</label>
-                        <a href="#" class="font-semibold md:text-[13px] text-[12px] text-[var(--orange)] duration-150 ease-out hover:underline">Forgot Password?</a>
-                    </div>                
-                    <input type="password" placeholder="Password" class="peer w-full md:text-[13px] text-[12px] duration-150 ease-out h-[45px] border-b focus:outline-none focus:border-b focus:border-[var(--orange)] placeholder:pl-[25px] placeholder-shown:placeholder:opacity-100 focus:placeholder-shown:placeholder:opacity-0 placeholder:text-[var(--darkgray)] pr-[25px] placeholder:md:text-[14px] placeholder:text-[12px]" id="passwordInput">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-[20px] absolute bottom-[15px] opacity-0 peer-placeholder-shown:opacity-100 peer-focus:opacity-0 stroke-[var(--darkgray)]">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 absolute right-0 bottom-[11px] stroke-black w-[20px] cursor-pointer select-none peer-placeholder-shown:hidden" id="showPasswordIcon">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 absolute right-0 bottom-[11px] stroke-black w-[20px] peer-placeholder-shown:hidden cursor-pointer select-none hidden" id="hidePasswordIcon">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.98 8.223A10.477 10.477 0 0 0 1.934 12C3.226 16.338 7.244 19.5 12 19.5c.993 0 1.953-.138 2.863-.395M6.228 6.228A10.451 10.451 0 0 1 12 4.5c4.756 0 8.773 3.162 10.065 7.498a10.522 10.522 0 0 1-4.293 5.774M6.228 6.228 3 3m3.228 3.228 3.65 3.65m7.894 7.894L21 21m-3.228-3.228-3.65-3.65m0 0a3 3 0 1 0-4.243-4.243m4.242 4.242L9.88 9.88" />
-                    </svg>
-                </span>
-                <div class="flex gap-[8px]">
-                    <input type="checkbox" class="cursor-pointer accent-[var(--orange)]"><label class="md:text-[13px] text-[12px] font-semibold">I agree to the <a href="{{url('terms')}}" target="_blank" class="text-[var(--orange)] duration-150 ease-in hover:underline ">Terms and Conditions</a> and <a href="{{url('privacy')}}" target="_blank" class="text-[var(--orange)] duration-150 ease-in hover:underline">Privacy Policy</a></label>
+        <!--/ Left Side Content -->
+
+        <!-- Login Form  -->
+        <div class="w-full flex justify-center">
+            <form class="w-full max-w-[400px] h-full justify-center flex flex-col gap-[30px] md:pb-20 pb-[50px] px-[30px] md:px-0 ">
+                <div class="leading-10">
+                    <h4 class="font-medium md:text-[18px] text-[16px] text-[var(--darkgray)]">Welcome to BIRIMS</h4>
+                    <h6 class="md:text-[50px] text-[46px] font-medium" style="font-family: 'IBM Plex Serif, serif;'">Sign In</h6>
                 </div>
-                <div class="flex flex-col gap-4">
-                        <a href="{{url('login')}}" class="bg-[var(--orange)] w-full border border-[var(--orange)] rounded-[4px] text-white md:text-[18px] text-[16px] text-center py-[8px] ease-out duration-150 hover:bg-white hover:text-[var(--orange)]">Sign Up</a>
-                        <a href="{{url('signup')}}" class="bg-white block text-center w-full py-[8px] font-medium text-[var(--orange)] md:text-[18px] text-[16px] rounded-[4px] border border-[var(--orange)] duration-150 ease-out hover:bg-[var(--orange)] hover:text-white">Create Account</a>
-                </div>  
-            </div>
-        </form> 
+                <div class="flex flex-col gap-[25px]">
+                    <span class="flex flex-col relative leading-3">                
+                        <label class="font-semibold md:text-[13px] text-[12px]">Email</label>
+                            <input type="text" placeholder="example@chakraui" class="peer md:text-[13px] text-[12px] w-full duration-150 ease-out h-[45px] border-b focus:outline-none focus:border-b focus:border-[var(--orange)] placeholder:pl-[25px] placeholder-shown:placeholder:opacity-100 focus:placeholder-shown:placeholder:opacity-0 placeholder:text-[var(--darkgray)] placeholder:md:text-[14px] placeholder:text-[12px]">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 absolute bottom-[12px] w-[20px] stroke-[var(--darkgray)] opacity-0 pointer-events-none peer-placeholder-shown:opacity-100 peer-focus:opacity-0">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                        </svg>
+                    </span>
+                    <span class="flex flex-col relative leading-3">
+                        <div class="flex justify-between">
+                            <label class="font-semibold md:text-[13px] text-[12px]">Password</label>
+                            <a href="#" class="font-semibold md:text-[13px] text-[12px] text-[var(--orange)] duration-150 ease-out hover:underline">Forgot Password?</a>
+                        </div>                
+                        <input type="password" placeholder="Password" class="peer w-full md:text-[13px] text-[12px] duration-150 ease-out h-[45px] border-b focus:outline-none focus:border-b focus:border-[var(--orange)] placeholder:pl-[25px] placeholder-shown:placeholder:opacity-100 focus:placeholder-shown:placeholder:opacity-0 placeholder:text-[var(--darkgray)] pr-[25px] placeholder:md:text-[14px] placeholder:text-[12px]" id="passwordInput">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-[20px] absolute bottom-[15px] opacity-0 peer-placeholder-shown:opacity-100 peer-focus:opacity-0 stroke-[var(--darkgray)]">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 absolute right-0 bottom-[11px] stroke-black w-[20px] cursor-pointer select-none peer-placeholder-shown:hidden" id="showPasswordIcon">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 absolute right-0 bottom-[11px] stroke-black w-[20px] peer-placeholder-shown:hidden cursor-pointer select-none hidden" id="hidePasswordIcon">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.98 8.223A10.477 10.477 0 0 0 1.934 12C3.226 16.338 7.244 19.5 12 19.5c.993 0 1.953-.138 2.863-.395M6.228 6.228A10.451 10.451 0 0 1 12 4.5c4.756 0 8.773 3.162 10.065 7.498a10.522 10.522 0 0 1-4.293 5.774M6.228 6.228 3 3m3.228 3.228 3.65 3.65m7.894 7.894L21 21m-3.228-3.228-3.65-3.65m0 0a3 3 0 1 0-4.243-4.243m4.242 4.242L9.88 9.88" />
+                        </svg>
+                    </span>
+                    <div class="flex gap-[8px]">
+                        <input type="checkbox" class="cursor-pointer accent-[var(--orange)]"><label class="md:text-[13px] text-[12px] font-semibold">I agree to the <a href="{{url('terms')}}" target="_blank" class="text-[var(--orange)] duration-150 ease-in hover:underline ">Terms and Conditions</a> and <a href="{{url('privacy')}}" target="_blank" class="text-[var(--orange)] duration-150 ease-in hover:underline">Privacy Policy</a></label>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                            <a href="{{url('login')}}" class="bg-[var(--orange)] w-full border border-[var(--orange)] rounded-[4px] text-white md:text-[18px] text-[16px] text-center py-[8px] ease-out duration-150 hover:bg-white hover:text-[var(--orange)]">Sign Up</a>
+                            <a href="{{url('signup')}}" class="bg-white block text-center w-full py-[8px] font-medium text-[var(--orange)] md:text-[18px] text-[16px] rounded-[4px] border border-[var(--orange)] duration-150 ease-out hover:bg-[var(--orange)] hover:text-white">Create Account</a>
+                    </div>  
+                </div>
+            </form> 
+        </div>
+        <!--/ Login Form -->
     </main>
 </body>
 </html>
