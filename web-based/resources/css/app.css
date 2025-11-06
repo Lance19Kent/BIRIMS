@@ -25,10 +25,10 @@
 
 @layer utilities{
     .certificates{
-         @apply h-[400px] w-[300px] bg-white rounded-[8px] shadow-[10px_10px_0_#FDBA74] duration-150 ease-in hover:translate-y-[-20px] hover:shadow-[10px_10px_10px_#FDBA74] cursor-pointer;
+         @apply pb-[20px] w-full lg:w-[300px] md:w-[250px] max-w-[250px] bg-white rounded-[8px] shadow-[10px_10px_0_#FDBA74] duration-150 ease-in hover:translate-y-[-20px] hover:shadow-[10px_10px_10px_#FDBA74] cursor-pointer;
     }
     .certificates-btn{
-        @apply w-full h-[45px] border-[1px] border-[#FDBA74] rounded-[4px] flex justify-center items-center font-medium text-[16px] text-[#FDBA74] duration-150 ease-in hover:text-white hover:bg-[var(--lightorange)]
+        @apply w-full h-[45px] border-[1px] border-[#FDBA74] rounded-[4px] flex justify-center items-center font-medium md:text-[16px] text-[14px] text-[#FDBA74] duration-150 ease-in hover:text-white hover:bg-[var(--lightorange)]
     }
     .footer-nav{
         @apply text-[#A1A1AA] md:text-[16px] text-[14px] font-medium hover:underline duration-150 ease-in hover:text-[var(--orange)]
@@ -37,7 +37,7 @@
         @apply duration-300 ease-out text-[#A1A1AA] hover:text-[var(--orange)]
     }
     .faq-details{
-        @apply text-[18px] font-medium block pl-[10px] cursor-pointer 
+        @apply md:text-[18px] text-[16px] font-medium block pl-[10px] cursor-pointer 
     }
     .faq-content{
         @apply md:text-[18px] font-medium block pl-[10px] text-[16px]
@@ -67,4 +67,14 @@ input[type="radio"]:checked + .content{
 .active-privacy-nav{
     background-color:var(--iconorange);
     color:var(--gray100);
+}
+
+.bg-img{
+    background-image: url('/public/assets/svg/login-svg-mobile.svg');
+}
+
+@media (min-width: 768px){
+    .bg-img{
+        background-image: none;
+    }
 }

@@ -118,4 +118,20 @@ document.addEventListener("DOMContentLoaded",function(){
             page1.classList.remove("hidden");
         });
     }
+
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+
+    if(btn && menu){
+        if(!btn || !menu) return;
+            btn.addEventListener('click', function(){
+                // toggle off-canvas translation classes for mobile
+                menu.classList.toggle('-translate-x-full');
+                menu.classList.toggle('translate-x-0');
+                // optional: update aria-expanded
+                const expanded = btn.getAttribute('aria-expanded') === 'true';
+                btn.setAttribute('aria-expanded', String(!expanded));
+            });
+    };
+
 });
