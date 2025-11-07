@@ -87,8 +87,8 @@
                     <span class="flex flex-col relative leading-3">
                         <div class="flex justify-between">
                             <label class="font-semibold md:text-[13px] text-[12px]">Password</label>
-                            <a href="#" class="font-semibold md:text-[13px] text-[12px] text-[var(--orange)] duration-150 ease-out hover:underline">Forgot Password?</a>
-                        </div>                
+                            <a href="{{ route('password.request') }}" class="font-semibold md:text-[13px] text-[12px] text-[var(--orange)] duration-150 ease-out hover:underline">Forgot Password?</a>
+                        </div>
                         <input type="password" name="password" placeholder="Password" class="peer w-full md:text-[13px] text-[12px] duration-150 ease-out h-[45px] border-b focus:outline-none focus:border-b focus:border-[var(--orange)] placeholder:pl-[25px] placeholder-shown:placeholder:opacity-100 focus:placeholder-shown:placeholder:opacity-0 placeholder:text-[var(--darkgray)] pr-[25px] placeholder:md:text-[14px] placeholder:text-[12px]" id="passwordInput">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-[20px] absolute bottom-[15px] opacity-0 peer-placeholder-shown:opacity-100 peer-focus:opacity-0 stroke-[var(--darkgray)]">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" />
