@@ -94,7 +94,7 @@
             </div>
         </section>
         <!--/ Our Mission Section -->
-
+<!-- sadds -->
         <!-- Our Vicinity Section -->
         <section class="w-full min-h-screen bg-white flex flex-col ">
             <div class="flex justify-around pt-[40px] md:px-[40px] flex-col md:flex-row px-[40px] items-center lg:items-start text-center md:text-left gap-[20px]">
