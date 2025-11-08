@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded",function(){
         showPassword.classList.remove("hidden");
         hidePassword.classList.add("hidden");
     });
+    
     }else if(confirmPasswordField && showPassword && hidePassword){
         showPassword.addEventListener("click",() =>{
             confirmPasswordField.type ="text";
@@ -128,16 +129,13 @@ document.addEventListener("DOMContentLoaded",function(){
             });
     };
 
-});
-
-// Sidebar toggle functionality
-document.addEventListener('DOMContentLoaded', function() {
+    // Sidebar toggle functionality
     const sidebar = document.getElementById('sidebar');
     const toggleBtn = document.getElementById('sidebar-toggle');
     const toggleIcon = toggleBtn.querySelector('svg path');
     const mainContent = document.querySelector('main');
-    
-    let isCollapsed = false;
+    if(sidebar && toggleBtn && toggleIcon && mainContent){
+         let isCollapsed = false;
 
     toggleBtn.addEventListener('click', function() {
         isCollapsed = !isCollapsed;
@@ -191,15 +189,14 @@ document.addEventListener('DOMContentLoaded', function() {
             }, 200);
         }
     });
-});
+    }
 
-// mobile sidebar functionality
-document.addEventListener('DOMContentLoaded', function() {
-    const mobileSidebar = document.getElementById('mobileSidebar');
+        const mobileSidebar = document.getElementById('mobileSidebar');
     const openMenuBtn = document.getElementById('openMenuBtn');
     const closeMenuBtn = document.getElementById('closeMenuBtn');
 
-    openMenuBtn.addEventListener('click', function() {
+    if(mobileSidebar && openMenuBtn && closeMenuBtn){
+            openMenuBtn.addEventListener('click', function() {
          mobileSidebar.classList.remove('-translate-x-full');
          mobileSidebar.classList.add('translate-x-0');
     });
@@ -208,5 +205,6 @@ document.addEventListener('DOMContentLoaded', function() {
         mobileSidebar.classList.remove('translate-x-0');
         mobileSidebar.classList.add('-translate-x-full');
     })
+        }
 
 });
