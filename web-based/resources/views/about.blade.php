@@ -22,7 +22,7 @@
      <!-- Navbar Section -->
     @include('partials.navbar')
     <!-- Navbar Section -->
-
+<!-- Niiga -->
     <main class="flex-1 min-h-screen bg-[var(--gray)] flex flex-col items-center justify-center">
 
         <!-- Hero Section -->
