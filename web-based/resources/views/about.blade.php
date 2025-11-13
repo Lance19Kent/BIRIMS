@@ -22,7 +22,7 @@
      <!-- Navbar Section -->
     @include('partials.navbar')
     <!-- Navbar Section -->
-
+<!-- Niiga -->
     <main class="flex-1 min-h-screen bg-[var(--gray)] flex flex-col items-center justify-center">
 
         <!-- Hero Section -->
@@ -94,7 +94,7 @@
             </div>
         </section>
         <!--/ Our Mission Section -->
-
+<!-- sadds -->
         <!-- Our Vicinity Section -->
         <section class="w-full min-h-screen bg-white flex flex-col ">
             <div class="flex justify-around pt-[40px] md:px-[40px] flex-col md:flex-row px-[40px] items-center lg:items-start text-center md:text-left gap-[20px]">
