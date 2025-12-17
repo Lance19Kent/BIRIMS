@@ -10,18 +10,24 @@ class LoginController extends Controller
 {
     public function login(Request $request)
     {
-        $credentials = $request->validate([
-            'email' => 'required|email',
-            'password' => 'required',
+        // Validate form input INCLUDING the terms checkbox
+        $request->validate([
+            'email' => ['required', 'email'],
+            'password' => ['required'],
+            'agree' => ['accepted'], // <- MUST be checked
+        ], [
+            'agree.accepted' => 'You must agree to the Terms and Privacy Policy.',
         ]);
 
-        if (Auth::attempt($credentials)) {
+        // Authenticate user
+        if (Auth::attempt($request->only('email', 'password'))) {
             $request->session()->regenerate();
             return redirect()->intended('/home');
         }
 
+        // Authentication failed
         return back()->withErrors([
-            'email' => 'The provided credentials do not match our records.',
+            'email' => 'Incorrect email or password.',
         ])->onlyInput('email');
     }
 

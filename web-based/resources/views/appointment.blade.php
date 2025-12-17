@@ -32,7 +32,7 @@
           <div class="flex w-full items-start justify-between py-[25px] border-b-[1px] border-[#D4D4D8] px-[15px] sm:px-[0]">
               <div class="flex items-center gap-[10px] max-w-[579px]">
                   <div class="flex flex-col">
-                      <h1 class="font-serif font-medium sm:text-[35px] text-[25px]">Request Documents</h1>
+                      <h1 class="font-serif font-medium sm:text-[35px] text-[25px]">Appointment</h1>
                       <p class="sm:text-[16px] text-[14px] font-medium text-[#A1A1AA]">Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit, sed do eiusmod tempor incididunt ut
                            labore et dolore </p>
@@ -59,254 +59,143 @@
                       <div id="btnShowForm" class="py-[12px] text-[14px] font-medium text-[#EA580C] border-b-[#EA580C] px-[12px] w-fit border-b-[1px] hover:cursor-pointer">Book Appointment</div>
                       <div id="btnShowSched" class="py-[12px] text-[14px] font-medium text-[#D4D4D8] border-b-[#D4D4D8] px-[12px] w-fit border-b-[1px] hover:cursor-pointer">My Appointments</div>
                   </div>
+                  @if(session('success'))
+                    <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded">
+                    {{ session('success') }}
+                    </div>
+                  @endif
 
-                  <form id="schedForm" method="POST" class="flex flex-col gap-[30px] w-full mb-[30px]">
+                  @if($errors->any())
+                    <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded">
+                    <ul class="list-disc ml-5">
+                   @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                   @endforeach
+                    </ul>
+                    </div>
+                   @endif
+
+                  <form id="schedForm" method="POST" action="{{ route('appointment.store') }}" class="flex flex-col gap-[30px] w-full mb-[30px]">
+                    @csrf
                       <div class="flex items-start sm:items-center flex-col sm:flex-row gap-[10px] sm:gap-[100px]">
                           <label class="text-[18px] w-full max-w-[190px] font-medium whitespace-nowrap">Diagnostic Services:</label>
                           <div class="w-full flex px-[8px] py-[10px] rounded-[4px] border-[#A1A1AA] border-solid border-[1px]">
-                              <select class="w-full text-[18px] font-normal focus:outline-none" name="" id="">
-                                  <option value="">Blood Test</option>
+                              <select class="w-full text-[18px] font-normal focus:outline-none" name="diagnostic_service" id="diagnostic_service">
+                                    <option value="Blood Test">Blood Test</option>
+                                    <option value="X-Ray">X-Ray</option>
+                                    <option value="MRI Scan">MRI Scan</option>
+                                    <option value="CT Scan">CT Scan</option>
+                                    <option value="Ultrasound">Ultrasound</option>
                               </select>
                           </div>
                       </div>
                       <div class="flex items-start sm:items-center flex-col sm:flex-row gap-[10px] sm:gap-[100px]">
                           <label class="text-[18px] w-full max-w-[190px] font-medium whitespace-nowrap">Date:</label>
                           <div class="w-full flex px-[8px] py-[10px] rounded-[4px] border-[#A1A1AA] border-solid border-[1px]">
-                              <input type="date" class="w-full text-[18px] font-normal focus:outline-none" />
+                              <input name="appointment_date" type="date" class="w-full text-[18px] font-normal focus:outline-none" />
                           </div>
                       </div>
                       <div class="flex items-start sm:items-center flex-col sm:flex-row gap-[10px] sm:gap-[100px]">
                           <label class="text-[18px] w-full max-w-[190px] font-medium whitespace-nowrap">Time:</label>
                           <div class="w-full flex px-[8px] py-[10px] rounded-[4px] border-[#A1A1AA] border-solid border-[1px]">
-                              <select class="w-full text-[18px] font-normal focus:outline-none" name="" id="">
-                                  <option value="">2:30 PM</option>
+                              <select class="w-full text-[18px] font-normal focus:outline-none" name="appointment_time" id="appointment_time">
+                                    <option value="08:00">8:00 AM</option>
+                                    <option value="09:00">9:00 AM</option>
+                                    <option value="10:00">10:00 AM</option>
+                                    <option value="11:00">11:00 AM</option>
+                                    <option value="13:00">1:00 PM</option>
+                                    <option value="14:00">2:00 PM</option>
+                                    <option value="14:30">2:30 PM</option>
+                                    <option value="15:00">3:00 PM</option>
+                                    <option value="16:00">4:00 PM</option>
                               </select>
                           </div>
                       </div>
                       <div class="flex items-start sm:items-center flex-col sm:flex-row gap-[10px] sm:gap-[100px]">
                           <label class="text-[18px] w-full max-w-[190px] font-medium whitespace-nowrap">Symptoms:</label>
                           <div class="w-full flex px-[8px] py-[10px] border-b-[1px] border-b-[#A1A1AA]">
-                              <input type="text" class=" text-[18px] font-normal focus:outline-none w-full" placeholder="Describe your symptoms" />
+                              <input name="symptoms" type="text" class=" text-[18px] font-normal focus:outline-none w-full" placeholder="Describe your symptoms" />
                           </div>
                       </div>
                       <div class="flex items-start sm:items-center flex-col sm:flex-row gap-[10px] sm:gap-[100px]">
                           <label class="text-[18px] w-full max-w-[190px] font-medium whitespace-nowrap">Fisrt Name:</label>
                           <div class="w-full flex px-[8px] py-[10px] border-b-[1px] border-b-[#A1A1AA]">
-                              <input type="text" class=" text-[18px] font-normal focus:outline-none w-full" placeholder="Ex. Juan" />
+                              <input name="first_name" type="text" class=" text-[18px] font-normal focus:outline-none w-full" placeholder="Ex. Juan" />
                           </div>
                       </div>
                       <div class="flex items-start sm:items-center flex-col sm:flex-row gap-[10px] sm:gap-[100px]">
                           <label class="text-[18px] w-full max-w-[190px] font-medium whitespace-nowrap">Last Name:</label>
                           <div class="w-full flex px-[8px] py-[10px] border-b-[1px] border-b-[#A1A1AA]">
-                              <input type="text" class=" text-[18px] font-normal focus:outline-none w-full" placeholder="Ex. Dela Cruz" />
+                              <input name="last_name" type="text" class=" text-[18px] font-normal focus:outline-none w-full" placeholder="Ex. Dela Cruz" />
                           </div>
                       </div>
                       <div class="flex items-start sm:items-center flex-col sm:flex-row gap-[10px] sm:gap-[100px]">
                           <label class="text-[18px] w-full max-w-[190px] font-medium whitespace-nowrap">Middle Name:</label>
                           <div class="w-full flex px-[8px] py-[10px] border-b-[1px] border-b-[#A1A1AA]">
-                              <input type="text" class=" text-[18px] font-normal focus:outline-none w-full" placeholder="(Optional)" />
+                              <input name="middle_name" type="text" class=" text-[18px] font-normal focus:outline-none w-full" placeholder="(Optional)" />
                           </div>
                       </div>
                       <div class="flex items-start sm:items-center flex-col sm:flex-row gap-[10px] sm:gap-[100px]">
                           <label class="text-[18px] w-full max-w-[190px] font-medium whitespace-nowrap">Email:</label>
                           <div class="w-full flex px-[8px] py-[10px] border-b-[1px] border-b-[#A1A1AA]">
-                              <input type="email" class="w-full text-[18px] font-normal focus:outline-none" placeholder="sample@gmail.com" />
+                              <input name="email" type="email" class="w-full text-[18px] font-normal focus:outline-none" placeholder="sample@gmail.com" />
                           </div>
                       </div>
                       <div class="w-full flex items-center justify-end gap-[50px]">
-                          <button class="rounded-[4px] hover:bg-orange-100 hover:text-orange-700 hover:cursor-pointer transition-all duration-300 border-[#FDBA74] border-[1px] px-[20px] py-[8px] text-[20px] text-[#FDBA74] font-medium">Cancel</button>
+                          <a href="{{ url('/home') }}" class="rounded-[4px] hover:bg-orange-100 hover:text-orange-700 hover:cursor-pointer transition-all duration-300 border-[#FDBA74] border-[1px] px-[20px] py-[8px] text-[20px] text-[#FDBA74] font-medium">Cancel</a>
                           <button type="submit" class="rounded-[4px] hover:cursor-pointer hover:bg-orange-700 transition-all duration-300 bg-[#EA580C] px-[20px] py-[8px] text-[20px] text-[#ffffff] font-medium">Save</button>
                       </div>
                   </form>
 
                   <div id="notifSched" class="w-full hidden flex-col">
-                      <div class="group relative w-full justify-between flex items-center border-solid border-b-[1px] px-[0px] border-[#E4E4E7] py-[15px]">
-                          <div class="flex gap-[20px]">
-                              <div class="flex flex-col gap-[0px]">
-                                  <h1 class="font-medium text-[25px] font-serif">Blood Test Schedule</h1>
-                                  <p class="text-[18px] font-normal text-[#71717A]">Dr. Maria Santos (Hermathology) • 10 September 28, 2025 at 10:30 AM • Blood Test</p>
-                                  <small class="font-semibold text-[#D4D4D8] text-[12px]">05 May 2023</small>
-                              </div>
-                          </div>
-                          <div class="margin-left-auto flex">
-                              <div class="toggle-btn cursor-pointer flex items-center justify-center border-solid border-[1px] border-[#E4E4E7] h-[40px] w-[40px] rounded-[50%]">
-                                  <svg class="fill-[#A1A1AA]" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#EFEFEF">
-                                      <path d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z" />
-                                  </svg>
-                              </div>
-                              <!-- Action -->
-                              <div class="action-box absolute bottom-0 right-0 mb-[-40px] sm:mb-[-70px] z-[99] mr-[25px] sm:mr-[30px] hidden flex-col gap-[10px] rounded-[4px] border-[1px] bg-white border-[#D4D4D8] p-[15px]">
-                                  <div class="flex items-center gap-[8px]">
-                                      <svg class="fill-[#71717A] h-[30px] w-[30px]" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
-                                          <path d="m382-354 339-339q12-12 28-12t28 12q12 12 12 28.5T777-636L410-268q-12 12-28 12t-28-12L182-440q-12-12-11.5-28.5T183-497q12-12 28.5-12t28.5 12l142 143Z" />
-                                      </svg>
-                                      <div class="text-[#71717A] font-semibold text-[18px]">Mark as Read</div>
-                                  </div>
-                                  <div class="flex items-center gap-[8px]">
-                                      <svg class="fill-[#71717A] h-[30px] w-[30px]" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
-                                          <path d="M480-424 284-228q-11 11-28 11t-28-11q-11-11-11-28t11-28l196-196-196-196q-11-11-11-28t11-28q11-11 28-11t28 11l196 196 196-196q11-11 28-11t28 11q11 11 11 28t-11 28L536-480l196 196q11 11 11 28t-11 28q-11 11-28 11t-28-11L480-424Z" />
-                                      </svg>
-                                      <div class="text-[#71717A] font-semibold text-[18px]">Cancel Appointment</div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="group relative w-full justify-between flex items-center border-solid border-b-[1px] px-[0px] border-[#E4E4E7] py-[15px]">
-                          <div class="flex gap-[20px]">
-                              <div class="flex flex-col gap-[0px]">
-                                  <h1 class="font-medium text-[25px] font-serif">Blood Test Schedule</h1>
-                                  <p class="text-[18px] font-normal text-[#71717A]">Dr. Maria Santos (Hermathology) • 10 September 28, 2025 at 10:30 AM • Blood Test</p>
-                                  <small class="font-semibold text-[#D4D4D8] text-[12px]">05 May 2023</small>
-                              </div>
-                          </div>
-                          <div class="margin-left-auto flex">
-                              <div class="toggle-btn cursor-pointer flex items-center justify-center border-solid border-[1px] border-[#E4E4E7] h-[40px] w-[40px] rounded-[50%]">
-                                  <svg class="fill-[#A1A1AA]" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#EFEFEF">
-                                      <path d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z" />
-                                  </svg>
-                              </div>
-                              <!-- Action -->
-                              <div class="action-box absolute bottom-0 right-0 mb-[-40px] sm:mb-[-70px] z-[99] mr-[25px] sm:mr-[30px] hidden flex-col gap-[10px] rounded-[4px] border-[1px] bg-white border-[#D4D4D8] p-[15px]">
-                                  <div class="flex items-center gap-[8px]">
-                                      <svg class="fill-[#71717A] h-[30px] w-[30px]" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
-                                          <path d="m382-354 339-339q12-12 28-12t28 12q12 12 12 28.5T777-636L410-268q-12 12-28 12t-28-12L182-440q-12-12-11.5-28.5T183-497q12-12 28.5-12t28.5 12l142 143Z" />
-                                      </svg>
-                                      <div class="text-[#71717A] font-semibold text-[18px]">Mark as Read</div>
-                                  </div>
-                                  <div class="flex items-center gap-[8px]">
-                                      <svg class="fill-[#71717A] h-[30px] w-[30px]" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
-                                          <path d="M480-424 284-228q-11 11-28 11t-28-11q-11-11-11-28t11-28l196-196-196-196q-11-11-11-28t11-28q11-11 28-11t28 11l196 196 196-196q11-11 28-11t28 11q11 11 11 28t-11 28L536-480l196 196q11 11 11 28t-11 28q-11 11-28 11t-28-11L480-424Z" />
-                                      </svg>
-                                      <div class="text-[#71717A] font-semibold text-[18px]">Cancel Appointment</div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="action-box absolute bottom-0 right-0 mb-[-40px] sm:mb-[-70px] z-[99] mr-[25px] sm:mr-[30px] hidden flex-col gap-[10px] rounded-[4px] border-[1px] bg-white border-[#D4D4D8] p-[15px]">
-                          <div class="flex gap-[20px]">
-                              <div class="flex flex-col gap-[0px]">
-                                  <h1 class="font-medium text-[25px] font-serif">Blood Test Schedule</h1>
-                                  <p class="text-[18px] font-normal text-[#71717A]">Dr. Maria Santos (Hermathology) • 10 September 28, 2025 at 10:30 AM • Blood Test</p>
-                                  <small class="font-semibold text-[#D4D4D8] text-[12px]">05 May 2023</small>
-                              </div>
-                          </div>
-                          <div class="margin-left-auto flex">
-                              <div class="toggle-btn cursor-pointer flex items-center justify-center border-solid border-[1px] border-[#E4E4E7] h-[40px] w-[40px] rounded-[50%]">
-                                  <svg class="fill-[#A1A1AA]" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#EFEFEF">
-                                      <path d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z" />
-                                  </svg>
-                              </div>
-                              <!-- Action -->
-                              <div class="action-box absolute bottom-0 right-0 mb-[-40px] sm:mb-[-70px] z-[99] mr-[25px] sm:mr-[30px] hidden flex-col gap-[10px] rounded-[4px] border-[1px] bg-white border-[#D4D4D8] p-[15px]">
-                                  <div class="flex items-center gap-[8px]">
-                                      <svg class="fill-[#71717A] h-[30px] w-[30px]" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
-                                          <path d="m382-354 339-339q12-12 28-12t28 12q12 12 12 28.5T777-636L410-268q-12 12-28 12t-28-12L182-440q-12-12-11.5-28.5T183-497q12-12 28.5-12t28.5 12l142 143Z" />
-                                      </svg>
-                                      <div class="text-[#71717A] font-semibold text-[18px]">Mark as Read</div>
-                                  </div>
-                                  <div class="flex items-center gap-[8px]">
-                                      <svg class="fill-[#71717A] h-[30px] w-[30px]" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
-                                          <path d="M480-424 284-228q-11 11-28 11t-28-11q-11-11-11-28t11-28l196-196-196-196q-11-11-11-28t11-28q11-11 28-11t28 11l196 196 196-196q11-11 28-11t28 11q11 11 11 28t-11 28L536-480l196 196q11 11 11 28t-11 28q-11 11-28 11t-28-11L480-424Z" />
-                                      </svg>
-                                      <div class="text-[#71717A] font-semibold text-[18px]">Cancel Appointment</div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="group relative w-full justify-between flex items-center border-solid border-b-[1px] px-[0px] border-[#E4E4E7] py-[15px]">
-                          <div class="flex gap-[20px]">
-                              <div class="flex flex-col gap-[0px]">
-                                  <h1 class="font-medium text-[25px] font-serif">Blood Test Schedule</h1>
-                                  <p class="text-[18px] font-normal text-[#71717A]">Dr. Maria Santos (Hermathology) • 10 September 28, 2025 at 10:30 AM • Blood Test</p>
-                                  <small class="font-semibold text-[#D4D4D8] text-[12px]">05 May 2023</small>
-                              </div>
-                          </div>
-                          <div class="margin-left-auto flex">
-                              <div class="toggle-btn cursor-pointer flex items-center justify-center border-solid border-[1px] border-[#E4E4E7] h-[40px] w-[40px] rounded-[50%]">
-                                  <svg class="fill-[#A1A1AA]" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#EFEFEF">
-                                      <path d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z" />
-                                  </svg>
-                              </div>
-                              <!-- Action -->
-                              <div class="action-box absolute bottom-0 right-0 mb-[-40px] sm:mb-[-70px] z-[99] mr-[25px] sm:mr-[30px] hidden flex-col gap-[10px] rounded-[4px] border-[1px] bg-white border-[#D4D4D8] p-[15px]">
-                                  <div class="flex items-center gap-[8px]">
-                                      <svg class="fill-[#71717A] h-[30px] w-[30px]" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
-                                          <path d="m382-354 339-339q12-12 28-12t28 12q12 12 12 28.5T777-636L410-268q-12 12-28 12t-28-12L182-440q-12-12-11.5-28.5T183-497q12-12 28.5-12t28.5 12l142 143Z" />
-                                      </svg>
-                                      <div class="text-[#71717A] font-semibold text-[18px]">Mark as Read</div>
-                                  </div>
-                                  <div class="flex items-center gap-[8px]">
-                                      <svg class="fill-[#71717A] h-[30px] w-[30px]" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
-                                          <path d="M480-424 284-228q-11 11-28 11t-28-11q-11-11-11-28t11-28l196-196-196-196q-11-11-11-28t11-28q11-11 28-11t28 11l196 196 196-196q11-11 28-11t28 11q11 11 11 28t-11 28L536-480l196 196q11 11 11 28t-11 28q-11 11-28 11t-28-11L480-424Z" />
-                                      </svg>
-                                      <div class="text-[#71717A] font-semibold text-[18px]">Cancel Appointment</div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="action-box absolute bottom-0 right-0 mb-[-40px] sm:mb-[-70px] z-[99] mr-[25px] sm:mr-[30px] hidden flex-col gap-[10px] rounded-[4px] border-[1px] bg-white border-[#D4D4D8] p-[15px]">
-                          <div class="flex gap-[20px]">
-                              <div class="flex flex-col gap-[0px]">
-                                  <h1 class="font-medium text-[25px] font-serif">Blood Test Schedule</h1>
-                                  <p class="text-[18px] font-normal text-[#71717A]">Dr. Maria Santos (Hermathology) • 10 September 28, 2025 at 10:30 AM • Blood Test</p>
-                                  <small class="font-semibold text-[#D4D4D8] text-[12px]">05 May 2023</small>
-                              </div>
-                          </div>
-                          <div class="margin-left-auto flex">
-                              <div class="toggle-btn cursor-pointer flex items-center justify-center border-solid border-[1px] border-[#E4E4E7] h-[40px] w-[40px] rounded-[50%]">
-                                  <svg class="fill-[#A1A1AA]" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#EFEFEF">
-                                      <path d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z" />
-                                  </svg>
-                              </div>
-                              <!-- Action -->
-                              <div class="action-box absolute bottom-0 right-0 mb-[-40px] sm:mb-[-70px] z-[99] mr-[25px] sm:mr-[30px] hidden flex-col gap-[10px] rounded-[4px] border-[1px] bg-white border-[#D4D4D8] p-[15px]">
-                                  <div class="flex items-center gap-[8px]">
-                                      <svg class="fill-[#71717A] h-[30px] w-[30px]" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
-                                          <path d="m382-354 339-339q12-12 28-12t28 12q12 12 12 28.5T777-636L410-268q-12 12-28 12t-28-12L182-440q-12-12-11.5-28.5T183-497q12-12 28.5-12t28.5 12l142 143Z" />
-                                      </svg>
-                                      <div class="text-[#71717A] font-semibold text-[18px]">Mark as Read</div>
-                                  </div>
-                                  <div class="flex items-center gap-[8px]">
-                                      <svg class="fill-[#71717A] h-[30px] w-[30px]" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
-                                          <path d="M480-424 284-228q-11 11-28 11t-28-11q-11-11-11-28t11-28l196-196-196-196q-11-11-11-28t11-28q11-11 28-11t28 11l196 196 196-196q11-11 28-11t28 11q11 11 11 28t-11 28L536-480l196 196q11 11 11 28t-11 28q-11 11-28 11t-28-11L480-424Z" />
-                                      </svg>
-                                      <div class="text-[#71717A] font-semibold text-[18px]">Cancel Appointment</div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="group relative w-full justify-between flex items-center border-solid border-b-[1px] px-[0px] border-[#E4E4E7] py-[15px]">
-                          <div class="flex gap-[20px]">
-                              <div class="flex flex-col gap-[0px]">
-                                  <h1 class="font-medium text-[25px] font-serif">Blood Test Schedule</h1>
-                                  <p class="text-[18px] font-normal text-[#71717A]">Dr. Maria Santos (Hermathology) • 10 September 28, 2025 at 10:30 AM • Blood Test</p>
-                                  <small class="font-semibold text-[#D4D4D8] text-[12px]">05 May 2023</small>
-                              </div>
-                          </div>
-                          <div class="margin-left-auto flex">
-                              <div class="toggle-btn cursor-pointer flex items-center justify-center border-solid border-[1px] border-[#E4E4E7] h-[40px] w-[40px] rounded-[50%]">
-                                  <svg class="fill-[#A1A1AA]" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#EFEFEF">
-                                      <path d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z" />
-                                  </svg>
-                              </div>
-                              <!-- Action -->
-                              <div class="action-box absolute bottom-0 right-0 mb-[-40px] sm:mb-[-70px] z-[99] mr-[25px] sm:mr-[30px] hidden flex-col gap-[10px] rounded-[4px] border-[1px] bg-white border-[#D4D4D8] p-[15px]">
-                                  <div class="flex items-center gap-[8px]">
-                                      <svg class="fill-[#71717A] h-[30px] w-[30px]" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
-                                          <path d="m382-354 339-339q12-12 28-12t28 12q12 12 12 28.5T777-636L410-268q-12 12-28 12t-28-12L182-440q-12-12-11.5-28.5T183-497q12-12 28.5-12t28.5 12l142 143Z" />
-                                      </svg>
-                                      <div class="text-[#71717A] font-semibold text-[18px]">Mark as Read</div>
-                                  </div>
-                                  <div class="flex items-center gap-[8px]">
-                                      <svg class="fill-[#71717A] h-[30px] w-[30px]" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
-                                          <path d="M480-424 284-228q-11 11-28 11t-28-11q-11-11-11-28t11-28l196-196-196-196q-11-11-11-28t11-28q11-11 28-11t28 11l196 196 196-196q11-11 28-11t28 11q11 11 11 28t-11 28L536-480l196 196q11 11 11 28t-11 28q-11 11-28 11t-28-11L480-424Z" />
-                                      </svg>
-                                      <div class="text-[#71717A] font-semibold text-[18px]">Cancel Appointment</div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
+                      @forelse($appointments as $appointment)
+        <div class="group relative w-full justify-between flex items-center border-solid border-b-[1px] px-[0px] border-[#E4E4E7] py-[15px]">
+            <div class="flex gap-[20px]">
+                <div class="flex flex-col gap-[0px]">
+                    <h1 class="font-medium text-[25px] font-serif">{{ $appointment->diagnostic_service }}</h1>
+                    <p class="text-[18px] font-normal text-[#71717A]">
+                        {{ $appointment->formatted_date_time }} • {{ $appointment->symptoms }}
+                    </p>
+                    <small class="font-semibold text-[#D4D4D8] text-[12px]">
+                        Booked on {{ $appointment->created_at->format('d M Y') }}
+                    </small>
+                    <span class="inline-block mt-2 px-3 py-1 text-xs font-semibold rounded-full 
+                        @if($appointment->status === 'pending') bg-yellow-100 text-yellow-800
+                        @elseif($appointment->status === 'confirmed') bg-blue-100 text-blue-800
+                        @elseif($appointment->status === 'completed') bg-green-100 text-green-800
+                        @else bg-red-100 text-red-800
+                        @endif">
+                        {{ ucfirst($appointment->status) }}
+                    </span>
+                </div>
+            </div>
+            @if($appointment->status !== 'cancelled' && $appointment->status !== 'completed')
+            <div class="margin-left-auto flex">
+                <div class="toggle-btn cursor-pointer flex items-center justify-center border-solid border-[1px] border-[#E4E4E7] h-[40px] w-[40px] rounded-[50%]">
+                    <svg class="fill-[#A1A1AA]" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px">
+                        <path d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z" />
+                    </svg>
+                </div>
+                <div class="action-box absolute bottom-0 right-0 mb-[-40px] sm:mb-[-70px] z-[99] mr-[25px] sm:mr-[30px] hidden flex-col gap-[10px] rounded-[4px] border-[1px] bg-white border-[#D4D4D8] p-[15px]">
+                    <form action="{{ route('appointment.cancel', $appointment) }}" method="POST">
+                        @csrf
+                        <button type="submit" class="flex items-center gap-[8px] w-full" onclick="return confirm('Are you sure you want to cancel this appointment?')">
+                            <svg class="fill-[#71717A] h-[30px] w-[30px]" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px">
+                                <path d="M480-424 284-228q-11 11-28 11t-28-11q-11-11-11-28t11-28l196-196-196-196q-11-11-11-28t11-28q11-11 28-11t28 11l196 196 196-196q11-11 28-11t28 11q11 11 11 28t-11 28L536-480l196 196q11 11 11 28t-11 28q-11 11-28 11t-28-11L480-424Z" />
+                            </svg>
+                            <div class="text-[#71717A] font-semibold text-[18px]">Cancel Appointment</div>
+                        </button>
+                    </form>
+                        </div>
+                    </div>
+                @endif
+                </div>
+                @empty
+                <div class="text-center py-10 text-gray-500">
+            <p class="text-xl">No appointments yet</p>
+            <p class="text-sm mt-2">Click "Book Appointment" to schedule your first appointment</p>
+                </div>
+                @endforelse
               </div>
           </section>
       </main>

@@ -31,7 +31,7 @@
              <div class="flex w-full items-start justify-between py-[25px] border-b-[1px] border-[#D4D4D8] px-[15px] sm:px-[0]">
                  <div class="flex items-center gap-[10px] max-w-[579px]">
                      <div class="flex flex-col">
-                         <h1 class="font-serif font-medium sm:text-[35px] text-[25px]">Verify Account</h1>
+                         <h1 class="font-serif font-medium sm:text-[35px] text-[25px]">Certificate of Residency</h1>
                          <p class="sm:text-[16px] text-[14px] font-medium text-[#A1A1AA]">Lorem ipsum dolor sit amet, consectetur adipiscing
                              elit, sed do eiusmod tempor incididunt ut
                               labore et dolore </p>

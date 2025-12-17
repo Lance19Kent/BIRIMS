@@ -27,9 +27,10 @@
                     </div>
                     <div class="flex flex-col w-full">
                         <Label class="font-medium text-[18px]">Gender:</Label>
-                        <Select class="py-[10px] border-b-[1px] border-b-gray-700 focus:outline-none font-regular text-gray-600 text-[18px]">
-                            <option value="">Choose Gender</option>
-                        </Select>
+                        <select class="py-[10px] border-b-[1px] border-b-gray-700 focus:outline-none font-regular text-gray-600 text-[18px]">
+                            <option value="" disabled selected>Choose Gender</option> <option value="Male">Male</option> <option value="Female">Female</option> <option value="LGBTQA+">LGBTQA+</option>
+                             <option value="Prefer not to say">Prefer not to say</option>
+                        </select>
                     </div>
                 </div>
                 <div class="flex flex-col gap-[10px]">
@@ -45,9 +46,9 @@
                     </div>
                     <div class="flex flex-col w-full">
                         <Label class="font-medium text-[18px]">Civil Status:</Label>
-                        <Select class="py-[10px] border-b-[1px] border-b-gray-700 focus:outline-none font-regular text-gray-600 text-[18px]">
-                            <option value="">Choose Gender</option>
-                        </Select>
+                        <select class="py-[10px] border-b-[1px] border-b-gray-700 focus:outline-none font-regular text-gray-600 text-[18px]">
+                            <option value="">Single</option> <option value="Married">Married</option> <option value="Widowed">Widowed</option> <option value="Divorced">Divorced</option>
+                        </select>
                     </div>
                 </div>
                 <div class="flex flex-col gap-[10px]">
@@ -76,7 +77,7 @@
                 </div>
                 <div class="flex flex-col sm:flex-row items-center gap-[30px] w-full">
                     <div class="flex flex-col w-full">
-                        <Label class="font-medium text-[18px]">Create Passord:</Label>
+                        <Label class="font-medium text-[18px]">Create Password:</Label>
                         <input type="password" placeholder="" class="py-[10px] border-b-[1px] border-b-gray-700 focus:outline-none font-regular text-gray-600 text-[18px]">
                     </div>
                     <div class="flex flex-col w-full">
@@ -96,7 +97,7 @@
                 <h3 class="font-bold text-[40px]">Update Password</h3>
                 <div class="flex flex-col sm:flex-row items-center gap-[30px] w-full">
                     <div class="flex flex-col w-full">
-                        <Label class="font-medium text-[18px]">Create Passord:</Label>
+                        <Label class="font-medium text-[18px]">Create Password:</Label>
                         <input type="password" placeholder="" class="py-[10px] border-b-[1px] border-b-gray-700 focus:outline-none font-regular text-gray-600 text-[18px]">
                     </div>
                     <div class="flex flex-col w-full">

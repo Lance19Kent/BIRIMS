@@ -71,7 +71,6 @@
                     </ul>
                 </div>
             @endif
-
                 <div class="leading-10">
                     <h4 class="font-medium md:text-[18px] text-[16px] text-[var(--darkgray)]">Welcome to BIRIMS</h4>
                     <h6 class="md:text-[50px] text-[46px] font-medium" style="font-family: 'IBM Plex Serif, serif;'">Sign In</h6>
@@ -102,16 +101,19 @@
                         </svg>
                     </span>
                     <div class="flex gap-[8px]">
-                        <input type="checkbox" class="cursor-pointer accent-[var(--orange)]"><label class="md:text-[13px] text-[12px] font-semibold">I agree to the <a href="{{url('terms')}}" target="_blank" class="text-[var(--orange)] duration-150 ease-in hover:underline ">Terms and Conditions</a> and <a href="{{url('privacy')}}" target="_blank" class="text-[var(--orange)] duration-150 ease-in hover:underline">Privacy Policy</a></label>
+                        <input type="checkbox" name="agree" value="1" class="cursor-pointer accent-[var(--orange)]"><label class="md:text-[13px] text-[12px] font-semibold">I agree to the <a href="{{url('terms')}}" target="_blank" class="text-[var(--orange)] duration-150 ease-in hover:underline ">Terms and Conditions</a> and <a href="{{url('privacy')}}" target="_blank" class="text-[var(--orange)] duration-150 ease-in hover:underline">Privacy Policy</a></label>
                     </div>
                     <div class="flex flex-col gap-4">
                             <button type="submit" class="bg-[var(--orange)] w-full border border-[var(--orange)] rounded-[4px] text-white md:text-[18px] text-[16px] text-center py-[8px] ease-out duration-150 hover:bg-white hover:text-[var(--orange)]">Sign In</button>
                             <a href="{{url('signup')}}" class="bg-white block text-center w-full py-[8px] font-medium text-[var(--orange)] md:text-[18px] text-[16px] rounded-[4px] border border-[var(--orange)] duration-150 ease-out hover:bg-[var(--orange)] hover:text-white">Create Account</a>
-                    </div>  
+                    </div>
+                    
+                    @error('agree')
+                    <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
+                    @enderror
                 </div>
-            </form> 
+            </form>
         </div>
-        <!--/ Login Form -->
     </main>
 </body>
 </html>

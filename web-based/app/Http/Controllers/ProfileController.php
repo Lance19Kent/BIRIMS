@@ -2,59 +2,70 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\ProfileUpdateRequest;
-use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Redirect;
-use Illuminate\View\View;
+use Illuminate\Support\Facades\Hash;
 
 class ProfileController extends Controller
 {
-    /**
-     * Display the user's profile form.
-     */
-    public function edit(Request $request): View
+    public function index()
     {
-        return view('profile.edit', [
-            'user' => $request->user(),
+        return view('settings', [
+            'user' => Auth::user()
         ]);
     }
 
-    /**
-     * Update the user's profile information.
-     */
-    public function update(ProfileUpdateRequest $request): RedirectResponse
+    public function update(Request $request)
     {
-        $request->user()->fill($request->validated());
+        $user = Auth::user();
 
-        if ($request->user()->isDirty('email')) {
-            $request->user()->email_verified_at = null;
+        $validated = $request->validate([
+            'first_name'      => 'required|string|max:255',
+            'last_name'       => 'required|string|max:255',
+            'middle_name'     => 'nullable|string|max:255',
+            'birthdate'       => 'nullable|date',
+            'gender'          => 'nullable|string|max:20',
+            'phone_number'    => 'nullable|string|max:11',
+            'email'           => 'required|email|unique:users,email,' . $user->id,
+            'place_of_birth'  => 'nullable|string|max:255',
+            'citizenship'     => 'nullable|string|max:255',
+            'civil_status'    => 'nullable|string|max:255',
+            'occupation'      => 'nullable|string|max:255',
+            'house_no'        => 'nullable|string|max:50',
+            'street'          => 'nullable|string|max:255',
+        ]);
+
+        $user->update($validated);
+
+        return back()->with('success', 'Information updated!');
+    }
+
+    public function updatePassword(Request $request)
+    {
+        $request->validate([
+            'current_password'      => 'required',
+            'new_password'          => 'required|min:8|confirmed'
+        ]);
+
+        $user = Auth::user();
+
+        if (!Hash::check($request->current_password, $user->password)) {
+            return back()->with('error', 'Current password is incorrect.');
         }
 
-        $request->user()->save();
+        $user->password = Hash::make($request->new_password);
+        $user->save();
 
-        return Redirect::route('profile.edit')->with('status', 'profile-updated');
+        return back()->with('success', 'Password updated!');
     }
 
-    /**
-     * Delete the user's account.
-     */
-    public function destroy(Request $request): RedirectResponse
+    public function destroy(Request $request)
     {
-        $request->validateWithBag('userDeletion', [
-            'password' => ['required', 'current_password'],
-        ]);
-
-        $user = $request->user();
+        $user = Auth::user();
 
         Auth::logout();
-
         $user->delete();
 
-        $request->session()->invalidate();
-        $request->session()->regenerateToken();
-
-        return Redirect::to('/');
+        return redirect('/login')->with('success', 'Account deleted.');
     }
 }

@@ -31,7 +31,7 @@
             <div class="flex w-full items-start justify-between py-[25px] border-b-[1px] border-[#D4D4D8] px-[15px] sm:px-[0]">
                 <div class="flex items-center gap-[10px] max-w-[579px]">
                     <div class="flex flex-col">
-                        <h1 class="font-serif font-medium sm:text-[35px] text-[25px]">Account Notifications</h1>
+                        <h1 class="font-serif font-medium sm:text-[35px] text-[25px]">Blotter Form</h1>
                         <p class="sm:text-[16px] text-[14px] font-medium text-[#A1A1AA]">Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit, sed do eiusmod tempor incididunt ut
                              labore et dolore </p>
@@ -66,55 +66,71 @@
                         </div>
                         <div class="font-bold text-[18px] font-serif text-center">OFFICE OF THE SANGGUNIANG BAYAN</div>
                     </div>
-                    <form class="w-full flex flex-col gap-[15px] mt-[30px]" action="">
+                    <form class="w-full flex flex-col gap-[15px] mt-[30px]" method="POST" action="{{ route('blotter.store') }}">
+                    @csrf
+                    @if(session('success'))
+                        <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-4">
+                        {{ session('success') }}
+                        </div>
+                        @endif
+
+                        @if($errors->any())
+                            <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4">
+                            <ul class="list-disc ml-5">
+                         @foreach ($errors->all() as $error)
+                         <li>{{ $error }}</li>
+                            @endforeach
+                            </ul>
+                        </div>
+                            @endif  
                         <h3 class="font-bold text-[18px] font-serif text-center">BARANGAY BLOTTER FORM</h3>
                         <div class="flex items-start sm:items-center flex-col sm:flex-row gap-[10px]">
                             <label class="text-[16px] font-semibold font-serif" for="">Blotter Date</label>
-                            <input class="border-b-[1px] text-[16px] focus:outline-none text-regular font-serif" type="date">
+                            <input class="border-b-[1px] text-[16px] focus:outline-none text-regular font-serif" type="date" name="blotter_date">
                         </div>
                         <div class="flex items-start sm:items-center flex-col sm:flex-row gap-[10px] w-full max-w-[700px]">
                             <label class="text-[16px] font-semibold font-serif whitespace-nowrap" for="">Name of Reporter/Complainant:</label>
-                            <input class="w-full border-b-[1px] text-[16px] focus:outline-none text-regular font-serif" type="text">
+                            <input class="w-full border-b-[1px] text-[16px] focus:outline-none text-regular font-serif" type="text" name="complainant_name">
                         </div>
                         <div class="flex items-start sm:items-center flex-col sm:flex-row gap-[10px] w-full max-w-[700px]">
                             <label class="text-[16px] font-semibold font-serif" for="">Address:</label>
-                            <input class="w-full border-b-[1px] text-[16px] focus:outline-none text-regular font-serif" type="text">
+                            <input class="w-full border-b-[1px] text-[16px] focus:outline-none text-regular font-serif" type="text" name="complainant_address">
                         </div>
                         <div class="flex flex-col sm:flex-row items-center gap-[15px]">
                             <div class="flex items-start flex-col sm:flex-row gap-[10px] w-full max-w-[700px]">
                                 <label class="text-[16px] font-semibold font-serif whitespace-nowrap" for="">Contact Number:</label>
-                                <input class="w-full border-b-[1px] text-[16px] focus:outline-none text-regular font-serif" type="text">
+                                <input class="w-full border-b-[1px] text-[16px] focus:outline-none text-regular font-serif" type="text" name="complainant_contact">
                             </div>
                             <div class="flex items-start flex-col sm:flex-row gap-[10px] w-full max-w-[700px]">
-                                <label class="text-[16px] font-semibold font-serif" for="">Edad:</label>
-                                <input class=" border-b-[1px] text-[16px] focus:outline-none text-regular font-serif" type="text">
+                                <label class="text-[16px] font-semibold font-serif" for="">Age:</label>
+                                <input class=" border-b-[1px] text-[16px] focus:outline-none text-regular font-serif" type="text" name="complainant_age">
                             </div>
                         </div>
                         <div class="flex items-start sm:items-center flex-col sm:flex-row gap-[10px] w-full max-w-[700px]">
                             <label class="text-[16px] font-semibold font-serif" for="">Blotter Date:</label>
-                            <input class=" border-b-[1px] text-[16px] focus:outline-none text-regular font-serif" type="date">
+                            <input class=" border-b-[1px] text-[16px] focus:outline-none text-regular font-serif" type="date" name="blotter_date">
                         </div>
                         <div class="flex items-start sm:items-center flex-col sm:flex-row gap-[10px] w-full max-w-[700px]">
                             <label class="text-[16px] font-semibold font-serif whitespace-nowrap" for="">Name of Respondent:</label>
-                            <input class="w-full border-b-[1px] text-[16px] focus:outline-none text-regular font-serif" type="text">
+                            <input class="w-full border-b-[1px] text-[16px] focus:outline-none text-regular font-serif" type="text" name="respondent_name">
                         </div>
                         <div class="flex items-start sm:items-center flex-col sm:flex-row gap-[10px] w-full max-w-[700px]">
                             <label class="text-[16px] font-semibold font-serif whitespace-nowrap" for="">Address:</label>
-                            <input class="w-full border-b-[1px] text-[16px] focus:outline-none text-regular font-serif" type="text">
+                            <input class="w-full border-b-[1px] text-[16px] focus:outline-none text-regular font-serif" type="text" name="respondent_address">
                         </div>
                         <div class="flex flex-col sm:flex-row items-center gap-[15px]">
                             <div class="flex items-start flex-col sm:flex-row gap-[10px] w-full max-w-[700px]">
                                 <label class="text-[16px] font-semibold font-serif whitespace-nowrap" for="">Contact Number:</label>
-                                <input class="w-full border-b-[1px] text-[16px] focus:outline-none text-regular font-serif" type="text">
+                                <input class="w-full border-b-[1px] text-[16px] focus:outline-none text-regular font-serif" type="text" name="respondent_contact">
                             </div>
                             <div class="flex items-start flex-col sm:flex-row gap-[10px] w-full max-w-[700px]">
-                                <label class="text-[16px] font-semibold font-serif" for="">Edad:</label>
-                                <input class=" border-b-[1px] text-[16px] focus:outline-none text-regular font-serif" type="text">
+                                <label class="text-[16px] font-semibold font-serif" for="">Age:</label>
+                                <input class=" border-b-[1px] text-[16px] focus:outline-none text-regular font-serif" type="text" name="respondent_age">
                             </div>
                         </div>
                         <div class="flex items-start sm:items-center flex-col sm:flex-row gap-[10px] w-full max-w-[700px]">
                             <label class="text-[16px] font-semibold font-serif whitespace-nowrap" for="">Complaint:</label>
-                            <input class="w-full border-b-[1px] text-[16px] focus:outline-none text-regular font-serif" type="text">
+                            <input class="w-full border-b-[1px] text-[16px] focus:outline-none text-regular font-serif" type="text" name="complaint_type">
                         </div>
                         <div class="flex flex-col items-start gap-[10px] w-full">
                             <label class="text-[16px] font-semibold font-serif whitespace-nowrap">
@@ -122,24 +138,25 @@
                             </label>
                             <textarea
                                 class="w-full border-b border-black text-[16px] h-[475px] resize-none focus:outline-none text-gray-800 font-serif leading-[27px] p-1"
-                                style="background-image: repeating-linear-gradient(white, white 26px, #000000 27px);"></textarea>
+                                style="background-image: repeating-linear-gradient(white, white 26px, #000000 27px);"
+                                name="incident_description"></textarea>
                         </div>
                         <div class="flex items-start sm:items-center flex-col sm:flex-row gap-[10px] w-full max-w-[500px]">
                             <label class="text-[16px] font-semibold font-serif whitespace-nowrap" for="">Signature of Reporter:</label>
-                            <input class="w-full border-b-[1px] text-[16px] focus:outline-none text-regular font-serif" type="text">
+                            <input class="w-full border-b-[1px] text-[16px] focus:outline-none text-regular font-serif" type="text" name="reporter_signature">
                         </div>
                         <div class="flex items-start sm:items-center flex-col sm:flex-row gap-[10px] w-full max-w-[700px]">
                             <label class="text-[16px] font-semibold font-serif whitespace-nowrap" for="">Name of Reporter:</label>
-                            <input class="w-full border-b-[1px] text-[16px] focus:outline-none text-regular font-serif" type="text">
+                            <input class="w-full border-b-[1px] text-[16px] focus:outline-none text-regular font-serif" type="text" name="reporter_name">
                         </div>
                         <div class="flex flex-col sm:flex-row items-center gap-[15px]">
                             <div class="flex items-start flex-col sm:flex-row gap-[10px] w-full max-w-[700px]">
                                 <label class="text-[16px] font-semibold font-serif whitespace-nowrap" for="">Date:</label>
-                                <input class="w-full border-b-[1px] text-[16px] focus:outline-none text-regular font-serif" type="text">
+                                <input class="w-full border-b-[1px] text-[16px] focus:outline-none text-regular font-serif" type="text" name="report_date">
                             </div>
                             <div class="flex items-start flex-col sm:flex-row gap-[10px] w-full max-w-[700px]">
                                 <label class="text-[16px] font-semibold font-serif" for="">Time:</label>
-                                <input class=" border-b-[1px] text-[16px] focus:outline-none text-regular font-serif" type="text">
+                                <input class=" border-b-[1px] text-[16px] focus:outline-none text-regular font-serif" type="text" name="report_time">
                             </div>
                         </div>
                         <div class="w-full justify-end mt-[30px] flex gap-[50px]">

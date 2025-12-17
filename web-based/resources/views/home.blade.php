@@ -1,6 +1,7 @@
+<?php $title = 'Home'; ?>
+@include('partials.header', ['title' => $title])
 <!-- header section -->
 @include('partials.header')
-
 <body>
     <!-- sidebar section -->
     @include('partials.sidebar')
@@ -17,15 +18,16 @@
             <div class="h-[40px] w-[40px] rounded-[50%] border-solid border-[2px] border-[#EA580C] overflow-hidden">
                 <img class="w-full h-full object-center object-cover" src="{{asset('images/3d cartoon avatar of a man minimal 3d character _ Premium AI-generated image.jpg')}}" alt="">
             </div>
-            <a href="#" class="group rounded-[4px] py-[7px] px-[8px] hover:bg-orange-700 transition-all duration-300 bg-[#EA580C] flex items-center gap-[12px]">
-                <svg class="h-[25px] w-[25px]  group-hover:fill-gray-50 transition-all duration-300 fill-[#ffffff]" xmlns="http://www.w3.org/2000/svg" height="24px"
-                    viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
-                    <path
-                        d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h240q17 0 28.5 11.5T480-800q0 17-11.5 28.5T440-760H200v560h240q17 0 28.5 11.5T480-160q0 17-11.5 28.5T440-120H200Zm487-320H400q-17 0-28.5-11.5T360-480q0-17 11.5-28.5T400-520h287l-75-75q-11-11-11-27t11-28q11-12 28-12.5t29 11.5l143 143q12 12 12 28t-12 28L669-309q-12 12-28.5 11.5T612-310q-11-12-10.5-28.5T613-366l74-74Z" />
-                </svg>
-                <div class="text-[16px] group-hover:text-gray-50 transition-all duration-300 font-medium text-[#ffffff]">Log Out</div>
-            </a>
-        </div>
+            <!-- MOBILE LOGOUT --> 
+            <form method="POST" action="{{ route('logout') }}" class="inline">
+            @csrf
+        <button type="submit" class="group rounded-[4px] py-[7px] px-[8px] hover:bg-orange-700 transition-all duration-300 bg-[#EA580C] flex items-center gap-[12px] w-full">
+        <svg class="h-[25px] w-[25px] group-hover:fill-gray-50 transition-all duration-300 fill-[#ffffff]" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
+            <path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h240q17 0 28.5 11.5T480-800q0 17-11.5 28.5T440-760H200v560h240q17 0 28.5 11.5T480-160q0 17-11.5 28.5T440-120H200Zm487-320H400q-17 0-28.5-11.5T360-480q0-17 11.5-28.5T400-520h287l-75-75q-11-11-11-27t11-28q11-12 28-12.5t29 11.5l143 143q12 12 12 28t-12 28L669-309q-12 12-28.5 11.5T612-310q-11-12-10.5-28.5T613-366l74-74Z"/>
+        </svg>
+        <div class="text-[16px] group-hover:text-gray-50 transition-all duration-300 font-medium text-[#ffffff]">Log Out</div>
+            </button>
+        </form>
     </section>
     <main class="w-full h-[100vh] sm:pl-[290px] sm:pr-[20px] flex flex-col gap-[30px] transition-all duration-300">
         <div class="flex w-full items-start justify-between py-[25px] border-b-[1px] border-[#D4D4D8] px-[15px] sm:px-[0]">
@@ -34,27 +36,26 @@
                     <img class="h-full w-full object-center object-cover" src="{{ asset('images/3d cartoon avatar of a man minimal 3d character _ Premium AI-generated image.jpg') }}" alt="">
                 </div>
                 <div class="flex flex-col">
-                    <h1 class="font-serif font-medium sm:text-[35px] text-[25px]">Welcome, John Doe!</h1>
-                    <p class="sm:text-[16px] text-[14px] font-medium text-[#A1A1AA]">Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit, sed do eiusmod tempor incididunt ut
-                         labore et dolore </p>
+                    <h1 class="font-serif font-medium sm:text-[35px] text-[25px]">Welcome, {{ $user->first_name }} {{ $user->last_name }}!</h1>
+                    <p class="sm:text-[16px] text-[14px] font-medium text-[#A1A1AA]">This is your official dashboard for requesting documents, checking announcements, and setting up appointments with the Barangay Hall.</p>
                 </div>
             </div>
             <div class="sm:flex hidden gap-[20px]">
-                <div class="h-[50px] w-[50px] rounded-[50%] border-solid border-[2px] border-[#EA580C] overflow-hidden">
-                    <img class="w-full h-full object-center object-cover" src="{{asset('images/3d cartoon avatar of a man minimal 3d character _ Premium AI-generated image.jpg')}}" alt="">
-                </div>
-                <a href="#" class="group rounded-[4px] hover:bg-orange-700 transition-all duration-300 bg-[#EA580C] px-[20px] flex items-center gap-[12px]">
-                    <svg class="h-[25px] w-[25px]  group-hover:fill-gray-50 transition-all duration-300 fill-[#ffffff]" xmlns="http://www.w3.org/2000/svg" height="24px"
-                        viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
-                        <path
-                            d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h240q17 0 28.5 11.5T480-800q0 17-11.5 28.5T440-760H200v560h240q17 0 28.5 11.5T480-160q0 17-11.5 28.5T440-120H200Zm487-320H400q-17 0-28.5-11.5T360-480q0-17 11.5-28.5T400-520h287l-75-75q-11-11-11-27t11-28q11-12 28-12.5t29 11.5l143 143q12 12 12 28t-12 28L669-309q-12 12-28.5 11.5T612-310q-11-12-10.5-28.5T613-366l74-74Z" />
-                    </svg>
-                    <div class="text-[16px] group-hover:text-gray-50 transition-all duration-300 font-medium text-[#ffffff]">Log Out</div>
-                </a>
-            </div>
+    <div class="h-[50px] w-[50px] rounded-[50%] border-solid border-[2px] border-[#EA580C] overflow-hidden">
+        <img class="w-full h-full object-center object-cover" src="{{asset('images/3d cartoon avatar of a man minimal 3d character _ Premium AI-generated image.jpg')}}" alt="">
+    </div>
+        <!-- PC LOGOUT -->
+        <form method="POST" action="{{ route('logout') }}" class="inline">
+        @csrf
+            <button type="submit" class="group rounded-[4px] hover:bg-orange-700 transition-all duration-300 bg-[#EA580C] px-[20px] flex items-center gap-[12px]">
+                <svg class="h-[50px] w-[25px] group-hover:fill-gray-50 transition-all duration-300 fill-[#ffffff]" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
+                    <path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h240q17 0 28.5 11.5T480-800q0 17-11.5 28.5T440-760H200v560h240q17 0 28.5 11.5T480-160q0 17-11.5 28.5T440-120H200Zm487-320H400q-17 0-28.5-11.5T360-480q0-17 11.5-28.5T400-520h287l-75-75q-11-11-11-27t11-28q11-12 28-12.5t29 11.5l143 143q12 12 12 28t-12 28L669-309q-12 12-28.5 11.5T612-310q-11-12-10.5-28.5T613-366l74-74Z"/>
+                </svg>
+            <div class="text-[16px] group-hover:text-gray-50 transition-all duration-300 font-medium text-[#ffffff]">Log Out</div>
+            </button>
+        </form>
+    </div>
         </div>
-
         <section class="w-full justify-between flex sm:flex-row flex-col">
             <div class="w-full flex flex-col gap-[50px] sm:gap-[20px] mr-[50px]">
                 <!-- Documents -->
@@ -324,10 +325,10 @@
                                     d="M119.791 108.346C119.508 108.347 119.226 108.332 118.944 108.302C114.98 108.536 111.075 107.256 108.015 104.72C103.992 101.326 101.709 95.8413 101.239 88.4116L102.086 88.3586C102.539 95.5486 104.716 100.836 108.562 104.073C113.259 108.028 118.847 107.466 118.902 107.466H118.949H118.995C119.918 107.585 120.855 107.495 121.738 107.201C122.621 106.907 123.426 106.418 124.094 105.769C127.946 102.179 129.1 93.8179 128.925 89.3915C128.713 84.4052 130.511 70.1354 132.652 67.3061C134.526 64.8267 135.688 53.6515 135.701 53.539L135.733 53.2209L136.046 53.1658C136.065 53.1658 137.895 52.8179 138.124 51.4478C138.42 49.662 143.735 44.9938 144.339 44.4656L144.891 45.1019C142.695 47.0108 139.14 50.4637 138.962 51.5857C138.704 53.1382 137.185 53.732 136.516 53.9187C136.305 55.7766 135.189 65.3527 133.34 67.8109C131.447 70.3157 129.56 84.0722 129.772 89.3512C129.954 93.9282 128.732 102.599 124.672 106.382C123.365 107.652 121.613 108.358 119.791 108.346Z"
                                     fill="#353146" />
                                 <g opacity="0.1">
-                                    <path
+                                <path
                                         d="M154.251 21.7333C154.599 20.448 155.018 19.1542 155.31 17.852C154.961 19.1606 154.539 20.448 154.251 21.7333Z"
                                         fill="black" />
-                                    <path
+                                <path
                                         d="M150.708 31.8332C150.285 30.9021 150.511 29.8247 150.52 28.8024C150.528 27.7801 150.151 26.5839 149.169 26.2976C147.204 25.7482 145.848 29.4196 143.917 28.7558C142.435 28.2488 142.827 25.9985 141.971 24.6984C141.296 23.6676 139.942 23.3792 138.892 22.7344C136.652 21.3579 136.719 19.1564 135.682 17.0736C134.591 14.889 132.294 15.5338 130.295 16.8233C128.776 17.8032 127.47 19.1161 125.848 19.8987C124.444 20.5753 122.866 20.8213 121.31 20.8573C119.414 20.9019 117.352 20.5647 116.049 19.186C115.046 18.1256 114.684 16.5709 114.891 15.1138C114.855 15.2135 114.823 15.3132 114.792 15.4129C114.283 17.0821 114.58 19.0439 115.768 20.3123C117.07 21.6909 119.133 22.026 121.028 21.9836C122.586 21.9475 124.162 21.7015 125.568 21.0249C127.194 20.2402 128.501 18.9294 130.015 17.9495C132.014 16.66 134.314 16.0152 135.402 18.1998C136.44 20.2826 136.374 22.4841 138.613 23.8606C139.671 24.4969 141.016 24.7938 141.694 25.8246C142.541 27.129 142.166 29.3751 143.64 29.882C145.569 30.5437 146.924 26.8745 148.889 27.4238C149.872 27.6995 150.251 28.9085 150.24 29.9286C150.23 30.9488 150.01 32.0284 150.429 32.9595C152.057 32.8852 154.071 32.5353 154.543 30.9658C154.608 30.7405 154.638 30.5066 154.632 30.2722C153.944 31.4621 152.174 31.7675 150.708 31.8332Z"
                                         fill="black" />
                                 </g>
@@ -434,8 +435,8 @@
                             </defs>
                         </svg>
                         <div class="w-full flex flex-col gap-[9px]">
-                            <h3 class="font-medium text-[25px] text-[#ffffff]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</h3>
-                            <p class="text-[16px] font-medium text-[#FED7AA]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut  labore et </p>
+                            <h3 class="font-medium text-[25px] text-[#ffffff]">Need a Health or Legal Consultation?</h3>
+                            <p class="text-[16px] font-medium text-[#FED7AA]">Set an official appointment with the Barangay for your personal concerns. </p>
                             <a href="{{url('/appointment')}}" class="rounded-[4px] hover:bg-orange-100 hover:text-orange-700 transition-all duration-300 w-fit bg-[#ffffff] px-[50px] py-[5px] text-[#EA580C] text-[16px] font-semibold">Set Now</a>
                         </div>
                     </div>

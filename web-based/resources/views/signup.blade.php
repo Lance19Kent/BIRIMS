@@ -151,7 +151,7 @@
                         <h1 class="font-semibold text-[14px]">Account Credential</h1>
                         <p class="text-red-600 text-[12px] font-semibold">* Indicates required field</p>
                     </div>
-                    <span class="flex flex-col relative leading-3">                
+                    <span class="flex flex-col relative leading-3">
                         <label class="font-semibold md:text-[13px] text-[12px]">Email<span class="text-red-600 font-medium"> *</span></label>
                             <input type="email" name="email" placeholder="example@chakraui" class="peer md:text-[13px] text-[12px] w-full duration-150 ease-out h-[45px] border-b focus:outline-none focus:border-b focus:border-[var(--orange)] placeholder:pl-[25px] placeholder-shown:placeholder:opacity-100 focus:placeholder-shown:placeholder:opacity-0 placeholder:text-[var(--darkgray)] placeholder:md:text-[14px] placeholder:text-[13px]">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 absolute bottom-[11px] w-[20px] stroke-[var(--darkgray)] opacity-0 pointer-events-none peer-placeholder-shown:opacity-100 peer-focus:opacity-0">

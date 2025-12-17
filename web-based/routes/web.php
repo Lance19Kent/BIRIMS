@@ -1,11 +1,20 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\Auth\ForgotPasswordController;
 use App\Http\Controllers\Auth\ResetPasswordController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\SettingsController;
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\NotificationController;
+use App\Http\Controllers\BlotterController;
+use App\Http\Controllers\AppointmentController;
+use App\Http\Controllers\AnnouncementController;
 
+require __DIR__.'/auth.php';
 
 Route::post('/login', [LoginController::class, 'login'])->name('login.post');
 Route::post('/signup', [RegisterController::class, 'register'])->name('register.post');
@@ -27,7 +36,7 @@ Route::get('/', function () {
 
 Route::get('/login', function () {
     return view('login');
-});
+})->name('login');
 
 Route::get('/signup', function () {
     return view('signup');
@@ -53,37 +62,50 @@ Route::get('/privacy', function () {
     return view('privacy');
 });
 
-Route::get('/home', function () {
-    return view('home');
+
+// Authenticated Routes
+Route::middleware(['auth'])->group(function () {
+
+    Route::get('/home', [HomeController::class, 'index']);
+
+    // Settings Page
+    Route::get('/settings', [ProfileController::class, 'index'])->name('settings');
+    Route::post('/settings/update', [ProfileController::class, 'update'])->name('settings.update');
+    Route::post('/settings/update-password', [ProfileController::class, 'updatePassword'])->name('settings.password');
+    Route::post('/settings/delete-account', [ProfileController::class, 'destroy'])->name('settings.deleteAccount');
+
+    // Notification Page
+    Route::get('/notifications', [NotificationController::class, 'index'])->name('notifications');
+    Route::post('/notifications/{id}/read', [NotificationController::class, 'markAsRead'])
+            ->name('notifications.read');
+    Route::delete('/notifications/{id}', [NotificationController::class, 'destroy'])
+            ->name('notifications.delete');
+
+    // Blotter Page
+    Route::get('/blotter', [BlotterController::class, 'create'])->name('blotter.create');
+    Route::post('/blotter', [BlotterController::class, 'store'])->name('blotter.store');
+    Route::get('/blotter/list', [BlotterController::class, 'index'])->name('blotter.index');
+    Route::get('/blotter/{blotter}', [BlotterController::class, 'show'])->name('blotter.show');
+
+    // Appointment Page
+    Route::get('/appointment', [AppointmentController::class, 'index'])->name('appointment.index');
+    Route::post('/appointment', [AppointmentController::class, 'store'])->name('appointment.store');
+    Route::post('/appointment/{appointment}/cancel', [AppointmentController::class, 'cancel'])->name('appointment.cancel');
+    Route::post('/appointment/{appointment}/read', [AppointmentController::class, 'markAsRead'])->name('appointment.read');
+    Route::get('/appointment/{appointment}', [AppointmentController::class, 'show'])->name('appointment.show');
+
+    // Announcement Page
+    Route::get('/announcements', [AnnouncementController::class, 'index'])->name('announcements.index');
+    
+    // Other authenticated pages
+    Route::get('/orders', fn() => view('orders'));
+    Route::get('/documents', fn() => view('documents'));
+    Route::get('/verify', fn() => view('verify'));
+    Route::get('/document', fn() => view('document'));
 });
 
-Route::get('/settings', function () {
-    return view('settings');
-});
-Route::get('/notifications', function () {
-    return view('notifications');
-});
-Route::get('/orders', function () {
-    return view('orders');
-});
-Route::get('/documents', function () {
-    return view('documents');
-});
-Route::get('/blotter', function () {
-    return view('blotter');
-});
-Route::get('/appointment', function () {
-    return view('appointment');
-});
-Route::get('/announcements', function () {
-    return view('announcements');
-});
-Route::get('/verify', function () {
-    return view('verify');
-});
-Route::get('/document', function () {
-    return view('document');
-});
+
+// Admin Routes
 Route::get('/admin/home', function () {
     return view('admin.home');
 });
